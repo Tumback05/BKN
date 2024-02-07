@@ -1,0 +1,125 @@
+﻿SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVb_GRttgABC_ABC_Aufkl_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Aufklärungssoldat Männlich;;True
+BKN_LVb_GRttgABC_ABC_Aufkl_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Aufklärungssoldat Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Aufklfz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Aufklärungsfahrzeug-Fahrer Männlich;;True
+BKN_LVb_GRttgABC_ABC_Aufklfz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Aufklärungsfahrzeug-Fahrer Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Dekontamination_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Dekontaminationssoldat Männlich;;True
+BKN_LVb_GRttgABC_ABC_Dekontamination_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Dekontaminationssoldat Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Bio_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Biologischer Labor Spezialist Männlich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Bio_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Biologischer Labor Spezialist Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Chemie_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Chemie Labor Spezialist Männlich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Chemie_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Chemie Labor Spezialist Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Nuk_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Nuklear Labor Spezialist Männlich;;True
+BKN_LVb_GRttgABC_ABC_Nach_Nuk_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis Nuklear Labor Spezialist Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Nach_SIBCRA_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis SIBCRA Männlich;;True
+BKN_LVb_GRttgABC_ABC_Nach_SIBCRA_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Abwehr Soldat Nachweis SIBCRA Weiblich;;True
+BKN_LVb_GRttgABC_ABC_Nachfz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Nachweisfahrzeugfahrer Männlich;;True
+BKN_LVb_GRttgABC_ABC_Nachfz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC ABC Nachweisfahrzeugfahrer Weiblich;;True
+BKN_LVb_GRttgABC_Bau_Pi_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier ABC Spürer Männlich;;True
+BKN_LVb_GRttgABC_Bau_Pi_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier ABC Spürer Weiblich;;True
+BKN_LVb_GRttgABC_Bau_Pi_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier Fahrer C1 Männlich;;True
+BKN_LVb_GRttgABC_Bau_Pi_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier Fahrer C1 Weiblich;;True
+BKN_LVb_GRttgABC_Bau_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier Männlich;;True
+BKN_LVb_GRttgABC_Bau_Pi_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baupionier Weiblich;;True
+BKN_LVb_GRttgABC_Betr_Sdt_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Betriebssoldat Fahrer C1 Männlich;;True
+BKN_LVb_GRttgABC_Betr_Sdt_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Betriebssoldat Fahrer C1 Weiblich;;True
+BKN_LVb_GRttgABC_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Betriebssoldat Männlich;;True
+BKN_LVb_GRttgABC_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Betriebssoldat Weiblich;;True
+BKN_LVb_GRttgABC_Bm_Fahr_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baumaschinenfahrer Durchdiener Männlich;;True
+BKN_LVb_GRttgABC_Bm_Fahr_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baumaschinenfahrer Durchdiener Weiblich;;True
+BKN_LVb_GRttgABC_Bm_Fahr_ABC_spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baumaschinenfahrer ABC Spürer Männlich;;True
+BKN_LVb_GRttgABC_Bm_Fahr_ABC_spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Baumaschinenfahrer ABC Spürer Weiblich;;True
+BKN_LVb_GRttgABC_BootS_ABC_spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze ABC Spürer Männlich;;True
+BKN_LVb_GRttgABC_BootS_ABC_spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze ABC Spürer Weiblich;;True
+BKN_LVb_GRttgABC_BootS_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Fahrer B Männlich;;True
+BKN_LVb_GRttgABC_BootS_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Fahrer B Weiblich;;True
+BKN_LVb_GRttgABC_BootS_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Fahrer C1 Männlich;;True
+BKN_LVb_GRttgABC_BootS_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Fahrer C1 Weiblich;;True
+BKN_LVb_GRttgABC_BootS_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Männlich;;True
+BKN_LVb_GRttgABC_BootS_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Bootsschütze Weiblich;;True
+BKN_LVb_GRttgABC_Buero_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Büroordonanz Männlich;;True
+BKN_LVb_GRttgABC_Buero_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Büroordonanz Weiblich;;True
+BKN_LVb_GRttgABC_Einh_San_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Einheitssanitäter Fahrer C1 Männlich;;True
+BKN_LVb_GRttgABC_Einh_San_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Einheitssanitäter Fahrer C1 Weiblich;;True
+BKN_LVb_GRttgABC_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Einheitssanitäter Männlich;;True
+BKN_LVb_GRttgABC_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Einheitssanitäter Weiblich;;True
+BKN_LVb_GRttgABC_LW_Sap_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Fahrer B Männlich;;True
+BKN_LVb_GRttgABC_LW_Sap_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Fahrer B Weiblich;;True
+BKN_LVb_GRttgABC_LW_Sap_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Fahrer C1 Männlich;;True
+BKN_LVb_GRttgABC_LW_Sap_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Fahrer C1 Weiblich;;True
+BKN_LVb_GRttgABC_LW_Sap_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Männlich;;True
+BKN_LVb_GRttgABC_LW_Sap_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Luftwaffensappeur Weiblich;;True
+BKN_LVb_GRttgABC_Mat-Mun_Spez_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Material-Munitionsspezialist Fahrer B Männlich;;True
+BKN_LVb_GRttgABC_Mat-Mun_Spez_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Material-Munitionsspezialist Fahrer B Weiblich;;True
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Langmat_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Langmaterial Durchdiener Männlich;;True
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Langmat_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Langmaterial Durchdiener Weiblich;;True
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Ns_Modul_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Nachschubmodul Männlich;;
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Ns_Modul_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Nachschubmodul Weiblich;;
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Schw_Brue_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Schwere Brücke Männlich;;
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Schw_Brue_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Schwere Brücke Weiblich;;
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Schwertrsp_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Schwertransport Männlich;;
+BKN_LVb_GRttgABC_Motf_Spez_Fz_Schwertrsp_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Motorfahrer Spezialfahrzeuge Schwertransport Weiblich;;
+BKN_LVb_GRttgABC_Pont_ABC_spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier ABC Spürer Männlich;;
+BKN_LVb_GRttgABC_Pont_ABC_spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier ABC Spürer Weiblich;;
+BKN_LVb_GRttgABC_Pont_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Fahrer B Männlich;;
+BKN_LVb_GRttgABC_Pont_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Fahrer B Weiblich;;
+BKN_LVb_GRttgABC_Pont_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Pont_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Pont_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Männlich;;
+BKN_LVb_GRttgABC_Pont_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Pontonier Weiblich;;
+BKN_LVb_GRttgABC_Rammpont_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Rammpont_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Rammpont_ABC_spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier ABC Spürer Männlich;;
+BKN_LVb_GRttgABC_Rammpont_ABC_spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier ABC Spürer Weiblich;;
+BKN_LVb_GRttgABC_Rammpont_Fahr_B_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Fahrer B Männlich;;
+BKN_LVb_GRttgABC_Rammpont_Fahr_B_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Fahrer B Weiblich;;
+BKN_LVb_GRttgABC_Rammpont_Fahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Rammpont_Fahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rammpontonier Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Gtw_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettung Gerätewart Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Rttg_Gtw_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettung Gerätewart Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Gtw_ABC_Spuer_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettung Gerätewart ABC Spürer Männlich;;
+BKN_LVb_GRttgABC_Rttg_Gtw_ABC_Spuer_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettung Gerätewart ABC Spürer Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_ABC_Spuer_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat ABC Spürer Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_ABC_Spuer_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat ABC Spürer Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Fahrer B Männlich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Fahrer B Weiblich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_Fahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Rttg_Sdt_Fahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Rettungssoldat Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Sap_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Sap_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Sap_ABC_spuer_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur ABC Spürer Männlich;;
+BKN_LVb_GRttgABC_Sap_ABC_spuer_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur ABC Spürer Weiblich;;
+BKN_LVb_GRttgABC_Sap_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Fahrer B Männlich;;
+BKN_LVb_GRttgABC_Sap_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Fahrer B Weiblich;;
+BKN_LVb_GRttgABC_Sap_Fahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Fahrer C1 Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Sap_Fahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Sappeur Fahrer C1 Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Uem_Na_Sdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungs- Nachrichtensoldat Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Uem_Na_Sdt_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungs- Nachrichtensoldat Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Uem_Na_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungs- Nachrichtensoldat Männlich;;
+BKN_LVb_GRttgABC_Uem_Na_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungs- Nachrichtensoldat Weiblich;;
+BKN_LVb_GRttgABC_Uem_Pi_FIS_HE_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Männlich;;
+BKN_LVb_GRttgABC_Uem_Pi_FIS_HE_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Weiblich;;
+BKN_LVb_GRttgABC_Uem_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier Männlich;;
+BKN_LVb_GRttgABC_Uem_Pi_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_ABC_spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat ABC Spürer Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_ABC_spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat ABC Spürer Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_B_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer B Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_B_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer B Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer B Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer B Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer C1 Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer C1 Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Durchdiener Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Durchdiener Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Fahrer C1 Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungspionier FIS HEER Fahrer C1 Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat FIS HEER Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_FIS_HE_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat FIS HEER Weiblich;;
+BKN_LVb_GRttgABC_Uem_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Männlich;;
+BKN_LVb_GRttgABC_Uem_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb GRttgABC Übermittlungssoldat Weiblich;;

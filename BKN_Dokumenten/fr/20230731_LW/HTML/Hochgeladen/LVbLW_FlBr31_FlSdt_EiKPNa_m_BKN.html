@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_LW.png" align=right><br><br>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funktion:</th>
+				<td>Fliegersoldat Einsatz Kommandoposten Nachrichten</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Soldat {{User.FirstLastName}} f&#252;r sein Engagement zugunsten der Schweizer Armee und w&#252;nsche ihm
+			f&#252;r seine zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Fliegerbrigade 31
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_LW.png"  />
+		</p>
+		<p>
+			Brigadier Peter Bruns</br>
+			Kommandant
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Er hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Eigenverantwortung
+				</td>
+				<td>
+					Durch das Zusammenleben in seiner milit&#228;rischen Einheit musste er Verantwortung f&#252;r sich und andere
+					innerhalb der Gruppe &#252;bernehmen.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyalit&#228;t
+				</td>
+				<td>
+					W&#228;hrend der Dienstdauer lebte er nach gemeinschaftlichen Werten, sozialen Normen sowie
+					gruppenspezifischen Regeln.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Belastbarkeit
+				</td>
+				<td>
+					In der Rekrutenschule durchlebte er Phasen erh&#246;hter physischer sowie psychischer Belastung. Er hielt
+					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
+				</td>
+				<td>
+					Dank seiner Lern- und Anpassungsf&#228;higkeit integrierte er sich in ein f&#252;r ihn ungewohntes Umfeld.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kritik- und Konfliktf&#228;higkeit
+				</td>
+				<td>
+					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Teamf&#228;higkeit
+				</td>
+				<td>
+					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
+					Wertsch&#228;tzung.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Sozialkompetenz
+				</td>
+				<td>
+					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
+					sozialer Stellung begleiteten ihn w&#228;hrend seiner Dienstzeit und forderten/f&#246;rderten seine
+					Sozialkompetenz.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Kompetenzen
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Er hat in der Fachausbildung folgende Module absolviert:</p>
+					<ul>
+						<li>Human Factors / Flight Safety</li>
+						<li>Einf&#252;hrung und Verhalten auf einem Flugplatz</li>
+						<li>Ground Handling Signal</li>
+						<li>Milit&#228;rflugdienst</li>
+						<li>Meteodienst</li>
+						<li>Aeronautical Information Service (AIS)</li>
+						<li>VOICE (Ausbildung im Funk- und Telefonsystem)</li>
+						<li>Nachrichtendienst</li>
+						<li>F&#252;hren von Fahrzeugen bis 3,5 t auch unter erschwerten Bedingungen auf der Strasse und im Gel&#228;nde</li>
+					</ul>
+					<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<ul>
+						<li>Einsatz im operativen Dienst &#252;ber l&#228;ngere Zeit</li>
+						<li>Nachrichten- und Informationsbeschaffung, Verarbeitung, Darstellung und Weiterleitung an die entsprechenden Empf&#228;nger</li>
+						<li>Personentransport auf dem Flugplatz</li>
+						<li>Selbst&#228;ndiges Warten der Fahrzeuge im Rahmen der Parkdienstvorschriften bis zur Einleitung f&#252;r notwendige Instandsetzungsarbeiten</li>
+					</ul>
+					<p>
+						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelfer erhalten.
+					</p>
+					<p>
+						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#252;berpr&#252;fungen durch. Bei
+						der ersten &#220;berpr&#252;fung zum Zeitpunkt seiner Rekrutierung hat er die Sicherheitspr&#252;fung
+						bestanden.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

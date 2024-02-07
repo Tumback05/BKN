@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funktion:</th>
+				<td>&#220;bermittlungssoldat</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Soldat {{User.FirstLastName}} f&#252;r sein Engagement zugunsten der Schweizer Armee und w&#252;nsche ihm
+			f&#252;r seine zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Bodengest&#252;tzte Luftverteidigungsbrigade 33
+		</p>
+		<p>
+			<img width=167 height=145 src="Images/Unterschrift_BODLUV_Br33.png" />
+		</p>
+		<p>
+			Brigadier Peter Soller</br>
+			Kommandant
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Er hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Eigenverantwortung
+				</td>
+				<td>
+					Durch das Zusammenleben in seiner milit&#228;rischen Einheit musste er Verantwortung f&#252;r sich und andere
+					innerhalb der Gruppe &#252;bernehmen.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyalit&#228;t
+				</td>
+				<td>
+					W&#228;hrend der Dienstdauer lebte er nach gemeinschaftlichen Werten, sozialen Normen sowie
+					gruppenspezifischen Regeln.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Belastbarkeit
+				</td>
+				<td>
+					In der Rekrutenschule durchlebte er Phasen erh&#246;hter physischer sowie psychischer Belastung. Er hielt
+					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
+				</td>
+				<td>
+					Dank seiner Lern- und Anpassungsf&#228;higkeit integrierte er sich in ein f&#252;r ihn ungewohntes Umfeld.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kritik- und Konfliktf&#228;higkeit
+				</td>
+				<td>
+					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Teamf&#228;higkeit
+				</td>
+				<td>
+					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
+					Wertsch&#228;tzung.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Sozialkompetenz
+				</td>
+				<td>
+					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
+					sozialer Stellung begleiteten ihn w&#228;hrend seiner Dienstzeit und forderten/f&#246;rderten seine
+					Sozialkompetenz.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Kompetenzen
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Er hat in der Fachausbildung folgende Module absolviert:</p>
+					<ul>
+						<li>Ausbildung an den mobilen Kommunikationssystemen (Funk)</li>
+						<li>Betrieb und Bereitstellungsarbeiten der Funksysteme gem&#228;ss Checklisten</li>
+						<li>Ausbildung im Umgang mit sensitivem Material</li>
+						<li>Vertiefen der Kenntnisse Microsoft Office Programme (Word, Excel, Power Point)</li>
+						<li>Effizientes Recherchieren von nachrichtendienstlichen Themen und Erstellen von Lageberichten</li>
+						<li>Anwendung von Landeskarten und der Kartendarstellungs-Software (KADAS)</li>
+						<li>Kenntnisse in den Bereichen Symbole und taktische Zeichen</li>
+						<li>Grundlagen Netzwerkinstallation</li>
+					</ul>
+					<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<ul>
+						<li>&#220;berwachen des Betriebes der Funknetze und startet bei technischen Problemen sofort und selbstst&#228;ndig die systematische Fehlersuche und &ndash;behebung</li>
+						<li>Selbst&#228;ndiges Betreiben einer Triage (erfassen und bearbeiten von ein- und ausgehenden Meldungen)</li>
+						<li>Verlegung von Telefon- und Netzwerkkabeln</li>
+						<li>Ben&#246;tigte Karten erstellen, vervollst&#228;ndigen, unterhalten und sich bem&#252;hen, die passenden Inhalte zu verarbeiten</li>
+						<li>Selbst&#228;ndiges Aktualisieren der Produkte (wie z Bsp Personelles, Nachrichtendienst, Systemtechnik, Risk-Management, Wetter, News und Logistik) in den einzelnen Bereichen</li>
+						<li>Lagerung, Kontrolle und Bewirtschaftung des Materials im eigenen Bereich</li>
+					</ul>
+					<p>
+						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelfer erhalten.
+					</p>
+					<p>
+						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
+						der ersten &#220;berpr&#252;fung zum Zeitpunkt seiner Rekrutierung hat er die Sicherheitspr&#252;fung
+						bestanden.
+					</p>
+			</tr>
+		</table>
+	</div>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right><br><br>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Attestation de formation et de comp&#233;tence</h1>
+			L&#8242;Arm&#233;e suisse confirme que
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			n&#233; le {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			a accompli le service militaire suivant:
+		</p>
+		<table>
+			<tr>
+				<th>Service militaire &#224;:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>P&#233;riode:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Fonction:</th>
+				<td>Soldat de transmission</td>
+			</tr>
+			<tr>
+				<th>Rang:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Je remercier le soldat {{User.FirstLastName}} pour son engagement dans l&#8242;arm&#233;e suisse et lui souhaite beaucoup de de satisfaction et succ&#232;s dans sa future carri&#232;re.
+		</p>
+		<p>
+			Brigade d&#233;fense sol-air 33
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_BODLUV_Br33.png" />
+		</p>
+		<p>
+			Brigadier Peter Soller</br>
+			Commandant
+		</p>
+		<p class="small">
+			Ce certificat de formation et de comp&#233;tence est transparent et ne contient donc aucune information cach&#233;e
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Il a acquis les comp&#233;tences th&#233;oriques et pratiques suivantes au cours de son &#233;cole de recrues:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Comp&#233;tences</th>
+				<th>Contenu / champ d&#8242;application</th>
+			</tr>
+			<tr>
+				<td>
+					Responsabilit&#233; personnelle
+				</td>
+				<td>
+					En vivant ensemble dans son unit&#233;, il a d&#251; prendre des responsabilit&#233;s pour lui-m&#234;me et pour les autres au sein du groupe.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyaut&#233;
+				</td>
+				<td>
+					Pendant la p&#233;riode de service, il a v&#233;cu selon les valeurs de la communaut&#233;, les normes 
+					sociales et les r&#234;gles sp&#233;cifique
+				</td>
+			</tr>
+			<tr>
+				<td>
+					R&#233;silience
+				</td>
+				<td>
+					Dans son &#233;cole de recrues, il a travers&#233; des phases de stress physique et psychologique accru. Il a r&#233;sist&#233; &#224; ces conditions difficiles et a pu se concentrer sur l&#8242;essentiel.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#233; d&#8242;apprentissage et d&#8242;adaptation (flexibilit&#233;)
+				</td>
+				<td>
+					Gr&#226;ce &#224; sa capacit&#233; d&#8242;apprentissage et d&#8242;adaptation, s&#8242;est int&#233;gr&#233; dans un environnement qui ne lui &#233;tait pas familier.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#233; &#224; g&#233;rer les critiques et les conflits
+				</td>
+				<td>
+					Dans un contexte de stress physique et/ou psychologique accru, la capacit&#233; à g&#233;rer les critiques et les conflits &#233;tait n&#233;cessaire.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					L&#8242;esprit d&#8242;&#233;quipe
+				</td>
+				<td>
+					Le partage des t&#226;ches, objectifs et exp&#233;riences communs ont renforc&#233; la compr&#233;hension et l&#8242;appr&#233;ciation mutuels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Comp&#233;tences sociales
+				</td>
+				<td>
+					Des personnes d&#8242;origines, de langues, de cultures, de sexes, de religions et de statuts sociaux diff&#233;rents 
+					l&#8242;ont accompagn&#233; pendant son service et ont remis en question/promotionn&#233; comp&#233;tences sociales
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Comp&#233;tences sp&#233;cifiques &#224; la fonction
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Il a suivi les modules suivants dans le cadre de sa formation sp&#233;cialis&#233;e: </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<ul>					
+						<li>Instruction sur les syst&#232;mes de communication mobiles (radio)</li>
+						<li>Exploitation et travaux de mise &#224; disposition des syst&#232;mes radio, selon les listes de contr&#224;le</li>
+						<li>Formation &#224; la manipulation de mat&#233;riel sensible</li>
+						<li>Approfondissement des connaissances des programmes Microsoft Office (Word, Excel, PowerPoint)</li>
+						<li>Recherche efficace de th&#232;mes li&#233;s au renseignement et r&#233;daction de rapports de situation</li>
+						<li>Utilisation des cartes nationales et du logiciel de repr&#233;sentation cartographique (KADAS)</li>
+						<li>Connaissance des symboles et des signes tactiques</li>
+						<li>Connaissance des principes de base de l&#8242;installation r&#233;seau</li>
+					</ul>
+					<p class="bold">Les activit&#233;s suivantes faisaient partie de ses attributions:</p>
+					<ul>
+						<li>Surveillance de l&#8242;exploitation des r&#233;seaux radio et, en cas de probl&#232;mes tech-niques, lancement imm&#233;diat et de mani&#232;re autonome de la recherche et de la r&#233;solution syst&#233;matiques des erreurs </li>
+						<li>Gestion autonome d&#8242;un triage (saisie et traitement des messages entrants et sortants)</li>
+						<li>Pose de c&#226;bles t&#233;l&#233;phoniques et de r&#233;seau</li>
+						<li>&#200;tablissement des cartes n&#233;cessaires, tenue &#224; jour et traitement appropri&#233; des contenus</li>
+						<li>Mise &#224; jour autonome des produits (par exemple Personnel, Service de renseignement, Tech-nique des syst&#232;mes, Gestion des risques, M&#233;t&#233;o, Actualit&#233;s et Logistique) dans les diff&#233;rents domaines</li>
+						<li>Stockage, contr&#224;le et gestion du mat&#233;riel propre &#224; son domaine</li>
+					</ul>
+					<p>
+						Dans le cadre de l&#8242;aide &#224; soi-m&#234;me et aux camarades, il a re &#231;u la formation de premiers secours.
+					</p>
+					<p>
+						L&#8242;Arm&#233;e suisse effectue &#224;  intervalles r&#233;guliers des contr&#244;les de s&#233;curit&#233; relatifs aux personnes. Lors de la premi&#232;re v&#233;rification au moment de son recrutement, il a pass&#233; le contr&#244;le de s&#233;curit&#233; de base.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right><br><br>
+		</header>
+		<h1>Attestato di formazione e di competenza</h1>
+		L&#8242;Esercito svizzero conferma che
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			nato il {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			ha prestato il seguente servizio militare.
+		</p>
+		<table>
+			<tr>
+				<th>Servizio militare presso:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Periodo:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funzione:</th>
+				<td>Soldato delle trasmissioni</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldato</td>
+			</tr>
+		</table>
+		<p>
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro ogni  soddisfazione e successo nella sua futura carriera professionale.
+		</p>
+		<p>
+			Brigata d’aviazione 31
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_BODLUV_Br33.png" />
+		</p>
+		<p>
+			Brigadier Peter Soller</br>
+			Comandante
+		</p>
+		<p class="small">
+			Questo attestato di formazione e di competenza &#232; trasparente e e quindi non contiene informazioni nascoste
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Soldato {{User.FirstLastName}} ha acquisito le seguenti competenze nella teoria e nella pratica durante la sua scuola reclute:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Competenze</th>
+				<th>Contenuto / ambito di applicazione</th>
+			</tr>
+			<tr>
+				<td>
+					Responsabilit&#224; personale
+				</td>
+				<td>
+					Vivendo insieme nella sua unit&#224; militare ha dovuto assumersi la responsabilit&#224; per s&#233; stesso e per gli altri all&#8242;interno del gruppo.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lealt&#224;
+				</td>
+				<td>
+					Durante il suo servizio ha vissuto secondo i valori comuni, le norme sociali e le regole specifiche del gruppo.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Resilienza
+				</td>
+				<td>
+					Nella scuola reclute ha attraversato fasi di pressione fisica e psicologica elevate. Ha resistito a queste difficili condizioni e ha saputo concentrarsi sull&#8242;essenziale.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
+				</td>
+				<td>
+					Grazie alla sua capacit&#224; imparare e di adattarsi, si &#232; integrato in un ambiente a lui sconosciuto
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di affrontare le critiche e i conflitti
+				</td>
+				<td>
+					Sotto stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224; di affrontare le critiche e i conflitti.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Senso di squadra
+				</td>
+				<td>
+					Compiti, obiettivi ed esperienze comuni hanno rafforzato la considerazione e l&#8242;apprezzamento reciproci.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Competenza sociale
+				</td>
+				<td>
+					Persone di origini, lingue, culture, generi, religioni e status sociale diversi lo hanno accompagnato durante il suo servizio e hanno richiesto e migliorato la sua competenza sociale.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Competenze specifiche
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Durante l&#8242;istruzione specialistica ha assolto i seguenti moduli: </p>
+				</td>
+			<tr>
+				<td>
+					<ul>					
+						<li>Istruzione nei sistemi di comunicazione mobili (radio)</li>
+						<li>Esercizio e lavori di preparazione dei sistemi radio secondo le liste di controllo</li>
+						<li>Istruzione nel trattamento di materiale sensibile</li>
+						<li>Approfondimento delle conoscenze dei programmi Microsoft Office (Word, Excel, Power Point)</li>
+						<li>Ricerche efficienti nell&#8242;ambito di temi relativi al servizio informazioni e realizzazione di rapporti sulla situazione</li>
+						<li>Impiego di carte nazionali e del software di rappresentazione delle carte (KADAS)</li>
+						<li>Conoscenze nell&#8242;ambito dei simboli e dei segni tattici</li>
+						<li>Basi dell&#8242;installazione di reti</li>
+					</ul>
+				<p class="bold">La sua sfera di competenza comprendeva le seguenti attivit&#224;</p>
+					<ul>
+						<li>Sorveglianza dell&#8242;esercizio delle reti radio e in caso di problemi tecnici avvia immediatamente la ricerca sistematica dei guasti e la relativa eliminazione</li>
+						<li>Esercizio autonomo di uno smistamento (rilevamento e trattamento di annunci in entrata e in uscita)</li>
+						<li>Posa di cavi telefonici e di rete</li>
+						<li>Realizzare le carte necessarie, completarle e aggiornarle facendo in modo di elaborare i contenuti confacenti</li>
+						<li>Aggiornare autonomamente i prodotti (per es. personale, servizio informazioni, tecnica dei sistemi, gestione dei rischi, meteo, ultime notizie e logistica) nei singoli ambiti</li>
+						<li>Immagazzinamento, controllo e gestione del materiale nel proprio ambito</li>
+					</ul>
+					<p>
+						Nell&#8242;ambito dell&#8242;aiuto a s&#233; stesso e al camerata, ha ricevuto ll&#8242;attestato di soccorritore.
+					</p>
+					<p>
+						L&#8242;Esercito svizzero effettua controlli di sicurezza relativi alle persone a intervalli regolari. Al primo controllo, al momento del reclutamento, ha superato il controllo di sicurezza di base.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+</html>

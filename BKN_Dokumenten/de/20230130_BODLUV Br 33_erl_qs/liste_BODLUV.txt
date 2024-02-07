@@ -1,0 +1,47 @@
+ DatentrÑger in Laufwerk Z: ist 08$
+ Volumeseriennummer: 80AB-04E2
+
+ Verzeichnis von Z:\BKN\RS_1-23\20230130_BODLUV Br 33
+
+24.03.2023  09:35            90'442 230130_Sdt_BKN_BODLUVBr33_Betr Sdt_m_d.docx
+24.03.2023  09:35            90'189 230130_Sdt_BKN_BODLUVBr33_Betr Sdt_w_d.docx
+24.03.2023  09:36            90'415 230130_Sdt_BKN_BODLUVBr33_BÅro Ord_m_d.docx
+24.03.2023  09:37            90'317 230130_Sdt_BKN_BODLUVBr33_BÅro Ord_w_d.docx
+24.03.2023  09:37            90'386 230130_Sdt_BKN_BODLUVBr33_Einh San_m_d.docx
+24.03.2023  09:38            90'296 230130_Sdt_BKN_BODLUVBr33_Einh San_w_d.docx
+24.03.2023  09:38            91'385 230130_Sdt_BKN_BODLUVBr33_Kan  Fahr DD_m_d.docx
+24.03.2023  09:39            90'601 230130_Sdt_BKN_BODLUVBr33_Kan  Fahr DD_w_d.docx
+24.03.2023  09:39            91'502 230130_Sdt_BKN_BODLUVBr33_Kan  Fahr_m_d.docx
+24.03.2023  09:40            90'472 230130_Sdt_BKN_BODLUVBr33_Kan  Fahr_w_d.docx
+24.03.2023  09:40            91'317 230130_Sdt_BKN_BODLUVBr33_Kan DD_m_d.docx
+24.03.2023  09:40            90'654 230130_Sdt_BKN_BODLUVBr33_Kan DD_w_d.docx
+24.03.2023  09:41            91'302 230130_Sdt_BKN_BODLUVBr33_Kan_m_d.docx
+24.03.2023  09:41            90'559 230130_Sdt_BKN_BODLUVBr33_Kan_w_d.docx
+24.03.2023  09:43            91'432 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt BeobABC SpÅr_m_d.docx
+24.03.2023  09:44            90'785 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt BeobABC SpÅr_w_d.docx
+24.03.2023  09:44            91'186 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt BeobFahr C1_m_d.docx
+24.03.2023  09:45            90'630 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt BeobFahr C1_w_d.docx
+24.03.2023  09:42            91'185 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt Beob_m_d.docx
+24.03.2023  09:43            90'956 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt Beob_w_d.docx
+24.03.2023  09:45            90'988 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt SFahr C1_m_d.docx
+24.03.2023  09:46            90'352 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt SFahr C1_w_d.docx
+24.03.2023  09:47            91'508 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt STINGER ABC SpÅr_m_d.docx
+24.03.2023  09:47            90'601 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt STINGER ABC SpÅr_w_d.docx
+24.03.2023  09:48            91'233 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt STINGER_m_d.docx
+24.03.2023  09:48            90'543 230130_Sdt_BKN_BODLUVBr33_Lwf Sdt STINGER_w_d.docx
+24.03.2023  09:51            91'274 230130_Sdt_BKN_BODLUVBr33_Na SdtFahr C1_m_d.docx
+24.03.2023  09:51            90'761 230130_Sdt_BKN_BODLUVBr33_Na SdtFahr C1_w_d.docx
+24.03.2023  09:49            91'399 230130_Sdt_BKN_BODLUVBr33_Na Sdt_m_d.docx
+24.03.2023  09:50            90'819 230130_Sdt_BKN_BODLUVBr33_Na Sdt_w_d.docx
+24.03.2023  09:51            91'521 230130_Sdt_BKN_BODLUVBr33_Radsdt ABC SpÅr_m_d.docx
+24.03.2023  09:52            90'741 230130_Sdt_BKN_BODLUVBr33_Radsdt ABC SpÅr_w_d.docx
+24.03.2023  09:53            91'135 230130_Sdt_BKN_BODLUVBr33_Radsdt DD_m_d.docx
+24.03.2023  09:53            90'366 230130_Sdt_BKN_BODLUVBr33_Radsdt DD_w_d.docx
+24.03.2023  09:54            90'917 230130_Sdt_BKN_BODLUVBr33_Radsdt_m_d.docx
+24.03.2023  09:55            90'582 230130_Sdt_BKN_BODLUVBr33_Radsdt_w_d.docx
+24.03.2023  09:55            91'132 230130_Sdt_BKN_BODLUVBr33_Uem Sdt Fahr C1_m_d.docx
+24.03.2023  09:56            90'880 230130_Sdt_BKN_BODLUVBr33_Uem Sdt Fahr C1_w_d.docx
+24.03.2023  09:56            91'616 230130_Sdt_BKN_BODLUVBr33_Uem Sdt_m_d.docx
+24.03.2023  09:57            90'915 230130_Sdt_BKN_BODLUVBr33_Uem Sdt_w_d.docx
+              40 Datei(en),      3'635'294 Bytes
+               0 Verzeichnis(se), 670'559'678'464 Bytes frei

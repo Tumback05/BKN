@@ -1,0 +1,23 @@
+﻿SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_KSK_Gren_Aufkl_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Aufklärer Männlich;;True
+BKN_KSK_Gren_Aufkl_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Aufklärer Weiblich;;True
+BKN_KSK_Gren_Fahrer_C1_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Fahrer C1 Männlich;;True
+BKN_KSK_Gren_Fahrer_C1_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Fahrer C1 Weiblich;;True
+BKN_KSK_Gren_Fhr_St_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Führungsstaffel Männlich;;True
+BKN_KSK_Gren_Fhr_St_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Führungsstaffel Weiblich;;True
+BKN_KSK_Gren_Medic_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Medic Männlich;;True
+BKN_KSK_Gren_Medic_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Medic Weiblich;;True
+BKN_KSK_Gren_SK_Fhr_St_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Führungsstaffel Männlich;;True
+BKN_KSK_Gren_SK_Fhr_St_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Führungsstaffel Weiblich;;True
+BKN_KSK_Gren_SK_Ns_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Nachschub Männlich;;True
+BKN_KSK_Gren_SK_Ns_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Nachschub Weiblich;;True
+BKN_KSK_Gren_SK_Si_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Sicherung Männlich;;True
+BKN_KSK_Gren_SK_Si_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Spezialkräfte Sicherung Weiblich;;True
+BKN_KSK_Gren_Sprenger_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Sprenger Männlich;;True
+BKN_KSK_Gren_Sprenger_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Sprenger Weiblich;;True
+BKN_KSK_Gren_Sturm_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Sturm Männlich;;True
+BKN_KSK_Gren_Sturm_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Sturm Weiblich;;True
+BKN_KSK_Gren_TE_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier TE Scharfschütze Männlich;;True
+BKN_KSK_Gren_TE_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier TE Scharfschütze Weiblich;;True
+BKN_KSK_Gren_Ust_m;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Unterstützung Männlich;;True
+BKN_KSK_Gren_Ust_w;de-CH;de-CH;BKN;Soldat;BKN KSK Grenadier Unterstützung Weiblich;;True

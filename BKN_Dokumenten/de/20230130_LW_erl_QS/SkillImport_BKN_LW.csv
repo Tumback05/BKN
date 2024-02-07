@@ -1,0 +1,95 @@
+﻿SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVbLW_FlBr31_FlSdt_Betr_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Betrieb Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_Betr_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Betrieb Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_Buero_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Büroordonnanz Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_Buero_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Büroordonnanz Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_EiKPNa_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Esatz Kommandoposten Nachrichten Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_EiKPNa_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Esatz Kommandoposten Nachrichten Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_ElmHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Elektromechaniker Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_ElmHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Elektromechaniker Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_EloGtmHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugelektronikgerätemechaniker Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_EloGtmHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugelektronikgerätemechaniker Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzGtmHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeuggerätemechaniker Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzGtmHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeuggerätemechaniker Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzMun_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugmunition Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzMun_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugmunition Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzWafmHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwaffenmechaniker Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzWafmHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwaffenmechaniker Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzWtHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwart Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_FlzWtHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwart Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliElm_PUMA_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopter Elektromechaniker PUMA Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliElm_PUMA_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopter Elektromechaniker PUMA Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliEloGtm_PUMA_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopter Elektronikgerätemechaniker PUMA Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliEloGtm_PUMA_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopter Elektronikgerätemechaniker PUMA Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_Helim_PUMA_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikoptermechaniker PUMA Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_Helim_PUMA_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikoptermechaniker PUMA Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_EC6_ST1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart E6 Stufe 1 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_EC6_ST1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart E6 Stufe 1 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_EC6_ST2_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart E6 Stufe 2 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_EC6_ST2_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart E6 Stufe 2 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 1 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 1 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST2_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 2 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST2_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 2 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST3_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 3 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST3_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 3 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST4_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 4 Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_HeliWt_PUMA_ST4_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Helikopterwart PUMA Stufe 4 Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_MatWt_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Materialwart Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_MatWt_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Materialwart Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_Twm_HO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Treibwerkmechaniker Hornet Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_Twm_HO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Treibwerkmechaniker Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_UP_Motf_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Unfallpicket Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_UP_Motf_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Unfallpicket Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_UP_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Unfallpicket Motorfahrer Männlich;;True
+BKN_LVbLW_FlBr31_FlSdt_UP_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Unfallpicket Motorfahrer Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_WafWtHO_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwart Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_WafWtHO_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Flugzeugwart Hornet Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_WkSi_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Werksicherung Weiblich;;True
+BKN_LVbLW_FlBr31_FlSdt_WkSi_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Werksicherung Weiblich;;True
+BKN_LVbLW_FlBr31_LW_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Betriebssoldat Männlich;;True
+BKN_LVbLW_FlBr31_LW_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Betriebssoldat Weiblich;;True
+BKN_LVbLW_FlBr31_LW_FL_EinhSan_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter / Fahrer C1 Männlich;;True
+BKN_LVbLW_FlBr31_LW_FL_EinhSan_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter / Fahrer C1 Weiblich;;True
+BKN_LVbLW_FlBr31_LW_FL_EinhSan_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter Männlich;;True
+BKN_LVbLW_FlBr31_LW_FL_EinhSan_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter Weiblich;;True
+BKN_LVbLW_FlBr31_LW_FL_Na_EinhSan_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter Männlich;;True
+BKN_LVbLW_FlBr31_LW_FL_Na_EinhSan_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Eheitssanitäter Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaGtm_Radar_TAFLIR_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichten Gerätemechaniker Radar TAFLIR Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaGtm_Radar_TAFLIR_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichten Gerätemechaniker Radar TAFLIR Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaGtm_Uem_TAFLIR_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichten Gerätemechaniker Übermittlung TAFLIR Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaGtm_Uem_TAFLIR_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichten Gerätemechaniker Übermittlung TAFLIR Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / ABC Spürer Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF / ABC Spürer Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_COMINT_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF COMT Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_COMINT_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF COMT Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_ELINT_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF ELT Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_EKF_ELINT_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat EKF ELT Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / ABC Spürer Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_FahrB_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / Fahrer B Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_FahrB_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / Fahrer B Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / Fahrer C1 Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten / Fahrer C1 Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Na_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Nachrichten Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung / ABC Spürer Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung / Fahrer C1 Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung / Fahrer C1 Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung Männlich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Uem_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Übermittlung Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter / ABC Spürer Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_FahrC1_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter / Fahrer C1 Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_FahrC1_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter / Fahrer C1 Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter Weiblich;;True
+BKN_LVbLW_FlBr31_LW_NaSdt_Wet_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Luftwaffen Nachrichtensoldat Wetter Weiblich;;True
+BKN_LVbLW_FlBr31_Uem_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Übermittlung Männlich;;True
+BKN_LVbLW_FlBr31_Uem_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Fliegersoldat Übermittlung Weiblich;;True
+BKN_LVbLW_Kulog_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Küchenlogistik Soldat Männlich;;
+BKN_LVbLW_Kulog_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Küchenlogistik Soldat Weiblich;;
+BKN_LVbLW_Kulog_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb LW Küchenlogistik Soldat Durchdiener Männlich;;
+BKN_LVbLW_Kulog_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb LW Küchenlogistik Soldat Durchdiener Weiblich;;

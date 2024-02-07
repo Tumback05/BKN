@@ -1,0 +1,159 @@
+SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVbFU_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Betriebssoldat Männlich;;True
+BKN_LVbFU_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Betriebssoldat Weiblich;;True
+BKN_LVbFU_Buero_Ord_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Büroordonanz Durchdiener Männlich;;True
+BKN_LVbFU_Buero_Ord_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Büroordonanz Durchdiener Weiblich;;True
+BKN_LVbFU_Buero_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Büroordonanz Männlich;;True
+BKN_LVbFU_Buero_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Büroordonanz Weiblich;;True
+BKN_LVbFU_Diagn_Fhr_Netz_CH_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Diagnostiker Führungsnetz CH Männlich;;True
+BKN_LVbFU_Diagn_Fhr_Netz_CH_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Diagnostiker Führungsnetz CH Weiblich;;True
+BKN_LVbFU_Einh_San_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Durchdiener Männlich;;True
+BKN_LVbFU_Einh_San_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Durchdiener Weiblich;;True
+BKN_LVbFU_Einh_San_Fhr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Fahrer C1 Durchdiener Männlich;;True
+BKN_LVbFU_Einh_San_Fhr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVbFU_Einh_San_Fhr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Fahrer C1 Männlich;;True
+BKN_LVbFU_Einh_San_Fhr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Fahrer C1 Weiblich;;True
+BKN_LVbFU_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Männlich;;True
+BKN_LVbFU_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Einheitssanitäter Weiblich;;True
+BKN_LVbFU_FhrSt_Sdt_FIS_HE_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat FIS HEER Männlich;;True
+BKN_LVbFU_FhrSt_Sdt_FIS_HE_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat FIS HEER Weiblich;;True
+BKN_LVbFU_FhrSt_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat ABC Spürer Männlich;;True
+BKN_LVbFU_FhrSt_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat ABC Spürer Weiblich;;True
+BKN_LVbFU_FhrSt_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat Fahrer C1 Männlich;;True
+BKN_LVbFU_FhrSt_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat Fahrer C1 Weiblich;;True
+BKN_LVbFU_FhrSt_SdtRadspz_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat Radschützenpanzer Männlich;;True
+BKN_LVbFU_FhrSt_SdtRadspz_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Führungsstaffelsoldat Radschützenpanzer Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_Aw_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_Aw_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_MZSABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Mehrzwecksender ABC Spürer Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_MZSABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Mehrzwecksender ABC Spürer Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_MZS_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Mehrzwecksender Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Effektor_MZS_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Effektor Mehrzwecksender Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Planer_IFASS_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Planer IFASS Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Planer_IFASS_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Planer IFASS Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Aw_SU_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Auswerter SU Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Aw_SU_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Auswerter SU Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Aw_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Auswerter Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Aw_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Auswerter Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler ABC Spürer Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler ABC Spürer Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Fahere C1 Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Fahere C1 Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerTech_Mat_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Technisches Material Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_PeilerTech_Mat_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Technisches Material Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Peiler_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Sensor_Peiler_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Sensor Peiler Weiblich;;True
+BKN_LVbFU_Fk_Aufkl_Fahr_Radspz_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Radschützenpanzer Männlich;;True
+BKN_LVbFU_Fk_Aufkl_Fahr_Radspz_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Funkaufklärer Radschützenpanzer Weiblich;;True
+BKN_LVbFU_FU_Planer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU FU Planer Männlich;;True
+BKN_LVbFU_FU_Planer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU FU Planer Weiblich;;True
+BKN_LVbFU_Ik_Pi_Admin_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Administrativ Männlich;;True
+BKN_LVbFU_Ik_Pi_Admin_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Administrativ Weiblich;;True
+BKN_LVbFU_Ik_Pi_Planer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Planer Männlich;;True
+BKN_LVbFU_Ik_Pi_Planer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Planer Weiblich;;True
+BKN_LVbFU_Ik_Pi_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier ABC Spürer Männlich;;True
+BKN_LVbFU_Ik_Pi_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier ABC Spürer Weiblich;;True
+BKN_LVbFU_Ik_Pi_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Fahrer B Männlich;;True
+BKN_LVbFU_Ik_Pi_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Fahrer B Weiblich;;True
+BKN_LVbFU_Ik_Pi_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Fahrer C1 Männlich;;True
+BKN_LVbFU_Ik_Pi_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Fahrer C1 Weiblich;;True
+BKN_LVbFU_Ik_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Männlich;;True
+BKN_LVbFU_Ik_Pi_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Informatik Pionier Weiblich;;True
+BKN_LVbFU_Infra_Schutz__Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Schutzsoldat Männlich;;True
+BKN_LVbFU_Infra_Schutz__Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Schutzsoldat Weiblich;;True
+BKN_LVbFU_Infra_Sich_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat ABC Spürer Männlich;;True
+BKN_LVbFU_Infra_Sich_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat ABC Spürer Weiblich;;True
+BKN_LVbFU_Infra_Sich_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat Fahrer C1 Männlich;;True
+BKN_LVbFU_Infra_Sich_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat Fahrer C1 Weiblich;;True
+BKN_LVbFU_Infra_Sich_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat Männlich;;True
+BKN_LVbFU_Infra_Sich_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Sicherheitssoldat Weiblich;;True
+BKN_LVbFU_Infra_Tech_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Technik Soldat Männlich;;True
+BKN_LVbFU_Infra_Tech_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Infrastruktur Technik Soldat Weiblich;;True
+BKN_LVbFU_Mat-Mun_Spez_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Durchdiener Männlich;;True
+BKN_LVbFU_Mat-Mun_Spez_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Durchdiener Weiblich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_B_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer B Durchdiener Männlich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_B_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer B Durchdiener Weiblich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer B Männlich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer B Weiblich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer C1 Durchdiener Männlich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer C1 Männlich;;True
+BKN_LVbFU_Mat-Mun_SpezFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Fahrer C1 Weiblich;;True
+BKN_LVbFU_Mat-Mun_Spez_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Männlich;;True
+BKN_LVbFU_Mat-Mun_Spez_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Material - Munition Spezialist Weiblich;;True
+BKN_LVbFU_Ristl_Einh_SanFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Einheitssanitäter Fahrer C1 Männlich;;True
+BKN_LVbFU_Ristl_Einh_SanFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Einheitssanitäter Fahrer C1 Weiblich;;True
+BKN_LVbFU_Ristl_Pi_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Durchdiener Männlich;;True
+BKN_LVbFU_Ristl_Pi_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Durchdiener Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Fhr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Fahrer C1 Durchdiener Männlich;;True
+BKN_LVbFU_Ristl_Pi_Fhr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Fhr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Fahrer C1 Männlich;;True
+BKN_LVbFU_Ristl_Pi_Fhr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahl Pionier Fahrer C1 Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Vm_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Vermittler Betreuer Durchdiener Männlich;;True
+BKN_LVbFU_Ristl_Pi_Vm_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Vermittler Betreuer Durchdiener Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Vm_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Vermittler Betreuer Männlich;;True
+BKN_LVbFU_Ristl_Pi_Vm_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Vermittler Betreuer Weiblich;;True
+BKN_LVbFU_Ristl_Pi_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier ABC Spürer Männlich;;True
+BKN_LVbFU_Ristl_Pi_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier ABC Spürer Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Fahrer B Männlich;;True
+BKN_LVbFU_Ristl_Pi_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Fahrer B Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Fahrer C1 Männlich;;True
+BKN_LVbFU_Ristl_Pi_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Fahrer C1 Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Radspz_Fhr_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Radschützenpanzer Durchdiener Männlich;;True
+BKN_LVbFU_Ristl_Pi_Radspz_Fhr_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Radschützenpanzer Durchdiener Weiblich;;True
+BKN_LVbFU_Ristl_Pi_Radspz_Fhr_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Radschützenpanzer Männlich;;True
+BKN_LVbFU_Ristl_Pi_Radspz_Fhr_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Radschützenpanzer Weiblich;;True
+BKN_LVbFU_Ristl_Pi_FU_Planer_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier FU Planer Durchdiener Männlich;;True
+BKN_LVbFU_Ristl_Pi_FU_Planer_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier FU Planer Durchdiener Weiblich;;True
+BKN_LVbFU_Ristl_Pi_FU_Planer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier FU Planer Männlich;;True
+BKN_LVbFU_Ristl_Pi_FU_Planer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier FU Planer Weiblich;;True
+BKN_LVbFU_Ristl_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Männlich;;True
+BKN_LVbFU_Ristl_Pi_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Richtstrahlpionier Weiblich;;True
+BKN_LVbFU_Sekr_Fahr_C_1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Sekretär Fahrer C1 Männlich;;True
+BKN_LVbFU_Sekr_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Sekretär Fahrer C1 Weiblich;;True
+BKN_LVbFU_Sekr_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Sekretär Männlich;;True
+BKN_LVbFU_Sekr_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Sekretär Weiblich;;True
+BKN_LVbFU_Uem_Pi_FIS_HE_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier FIS HEER Männlich;;True
+BKN_LVbFU_Uem_Pi_FIS_HE_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier FIS HEER Weiblich;;True
+BKN_LVbFU_Uem_Pi_Planer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Planer Männlich;;True
+BKN_LVbFU_Uem_Pi_Planer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Planer Weiblich;;True
+BKN_LVbFU_Uem_Pi_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier ABC Spürer Männlich;;True
+BKN_LVbFU_Uem_Pi_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier ABC Spürer Weiblich;;True
+BKN_LVbFU_Uem_Pi_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Fahrer B Männlich;;True
+BKN_LVbFU_Uem_Pi_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Fahrer B Weiblich;;True
+BKN_LVbFU_Uem_Pi_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Fahrer C1 Männlich;;True
+BKN_LVbFU_Uem_Pi_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Fahrer C1 Weiblich;;True
+BKN_LVbFU_Uem_Pi_f;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier ;;True
+BKN_LVbFU_Uem_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungspionier Männlich;;True
+BKN_LVbFU_Uem_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungssoldat Fahrer C1 Männlich;;True
+BKN_LVbFU_Uem_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungssoldat Fahrer C1 Weiblich;;True
+BKN_LVbFU_Uem_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungssoldat Männlich;;True
+BKN_LVbFU_Uem_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Übermittlungssoldat Weiblich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HAABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA ABC Spürer Männlich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HAABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA ABC Spürer Weiblich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HAFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA Fahrer C1 Männlich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HAFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA Fahrer C1 Weiblich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HA_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA Männlich;;True
+BKN_LVbFU_Wk_Betr_Sdt_HA_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Betriebssoldat HA Weiblich;;True
+BKN_LVbFU_Wk_Schutzsdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Schutzsoldat Männlich;;True
+BKN_LVbFU_Wk_Schutzsdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Schutzsoldat Weiblich;;True
+BKN_LVbFU_Wk_SichSdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat ABC Spürer Männlich;;True
+BKN_LVbFU_Wk_SichSdt_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat ABC Spürer Weiblich;;True
+BKN_LVbFU_Wk_SichSdt_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Fahrer B Männlich;;True
+BKN_LVbFU_Wk_SichSdt_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Fahrer B Weiblich;;True
+BKN_LVbFU_Wk_SichSdt_Fahr_C1_f;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Fahrer C1 ;;True
+BKN_LVbFU_Wk_SichSdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Fahrer C1 Männlich;;True
+BKN_LVbFU_Wk_SichSdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Männlich;;True
+BKN_LVbFU_Wk_SichSdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werk Sicherheitssoldat Weiblich;;True
+BKN_LVbFU_Wk_TechSdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat ABC Spürer Männlich;;True
+BKN_LVbFU_Wk_TechSdt_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat ABC Spürer Weiblich;;True
+BKN_LVbFU_Wk_TechSdt_AS_Gtw_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat Atemschutz Gerätewart Männlich;;True
+BKN_LVbFU_Wk_TechSdt_AS_Gtw_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat Atemschutz Gerätewart Weiblich;;True
+BKN_LVbFU_Wk_TechSdt_FUG_Fahr_f;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat FUG Fahrer ;;True
+BKN_LVbFU_Wk_TechSdt_FUG_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat FUG Fahrer Männlich;;True
+BKN_LVbFU_Wk_TechSdt_Gasta_Fahr_f;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat GASTA Fahrer ;;True
+BKN_LVbFU_Wk_TechSdt_Gasta_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat GASTA Fahrer Männlich;;True
+BKN_LVbFU_Wk_TechSdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat Männlich;;True
+BKN_LVbFU_Wk_TechSdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Werktechniksoldat Weiblich;;True
+BKN_LVbFU_Zen_Pi_m;de-CH;de-CH;BKN;Soldat;BKN LVb FU Zentralen Pionier Männlich;;True
+BKN_LVbFU_Zen_Pi_w;de-CH;de-CH;BKN;Soldat;BKN LVb FU Zentralen Pionier Weiblich;;True

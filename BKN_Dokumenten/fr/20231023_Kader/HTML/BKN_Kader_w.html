@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 10mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #000000;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #000000;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_KdoAusb.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Einteilung:</th>
+				<td>Kommando Ausbildung – Chance Armee</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>{% if User.Attribute1.Code == 'Lt'%} Leutnant {% elsif User.Attribute1.Code == 'Wm'%} Wachmeister {% elsif User.Attribute1.Code == 'Four'%} Fourier {% elsif User.Attribute1.Code == 'Hptfw'%} Hauptfeldweibel {%endif%}</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke {% if User.Attribute1.Code == 'Lt'%} Leutnant {% elsif User.Attribute1.Code == 'Wm'%} Wachmeister {% elsif User.Attribute1.Code == 'Four'%} Fourier {% elsif User.Attribute1.Code == 'Hptfw'%} Hauptfeldweibel {% elsif User.Attribute1.Code == 'Fw'%} Feldweibel  {%endif%} {{User.FirstLastName}} f&#252;r ihr Engagement zugunsten der Schweizer Armee und w&#252;nsche ihr f&#252;r ihre zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Kommando Ausbildung
+		</p>
+		<p>
+			<img width=167 height=95 src="Images/Unterschrift_KdoAusb.png" />
+		</p>
+		<p>
+			Brigadier René Baumann</br>
+			Stabschef Kommando Ausbildung
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Sie wurde über ein Jahr im Rahmen der Öffentlichkeitsarbeit der Schweizer Armee an Berufs- und Bildungsmessen sowie Informationsveranstaltungen zu Gunsten von Bildungsinstitutionen eingesetzt.
+			</br>
+			Dabei galt es die unterschiedlichen Anspruchsgruppen (Kinder, Jugendliche, Eltern, Lehrpersonen, Berufsbildungsverantwortliche) zielgerichtet und adressatenorientiert über den Militärdienst im Allgemeinen und die individuellen Entwicklungschancen im Besonderen zu informieren. Für diese Tätigkeiten sind nebst vertieftem Fachwissen ausgeprägte Kommunikationskompetenzen, Begeisterungsfähigkeit, Flexibilität, Zuverlässigkeit und Selbständigkeit erforderlich.
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Selbstkenntnis
+				</td>
+				<td>
+					Hinterfragt sich selbst und reflektiert seine Erfahrungen als Führungsperson oder Geführter und leitet entsprechende korrigierende Massnahmen zur nachhaltigen Verhaltensänderung ein.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Selbstmanagement
+				</td>
+				<td>
+					Organisiert sich selber und plant seine Aufgaben so, dass er auch in Ausnahmezuständen strukturiert, effektiv und effizient arbeiten kann.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Präsentation und Kommunikation von Informationen
+				</td>
+				<td>
+					Kommuniziert und informiert situations-, adressaten- und zeitgerecht mit den Peers an Ausstellungen und Veranstaltungen. Visualisiert adressatengerecht. Kann schwierige Gespräche vorbereiten, durchführen und auswerten.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Konfliktmanagement
+				</td>
+				<td>
+					Ist kritikfähig, erkennt und bewältigt frühzeitig respektive situationsgerecht vorhandene Konflikte bei seinem Gegenüber. Vertritt seine Werte und Normen, z.T. auch unter erschwerten Bedingungen.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Anwendung
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Sie hat folgende Inhalte praktisch anwenden können:</p>
+					<ul>
+						<li><strong>Kommunikationsprozess / Eigenschaften der Kommunikation:</strong> 
+							Vier-Ohren-Modell, interne und externe resp horizontale und vertikale Kommunikation, interkulturelle Kommunikation</li>
+						<li><strong>Informationsbeschaffung:</strong> 
+							Informationsaufarbeitung, Phasen des Informationsbeschaffungsprozesses</li>
+						<li><strong>Form und Encodierung von Informationen:</strong> 
+							verbale, mündliche und schriftliche Kommunikation inkl Störungen, Metakommunikation, Wirkung und Nutzen, nonverbale Kommunikation, Körpersprache</li>
+						<li><strong>Mündliche Präsentationstechniken:</strong> 
+							«5-Minuten-INFO-Struktur», Talk-Power-Formel</li>
+						<li><strong>Visuelle Präsentationstechniken:</strong> 
+							Visualisierungstechniken und Hilfsmittel</li>
+						<li><strong>Decodierung von Informationen:</strong> 
+							Empathie, aktives Zuhören, Störungen im Decodierungsprozess</li>
+						<li><strong>Reaktion nach Erhalt Empfang:</strong> 
+							Wirksames Fragen, Feedback und dessen Elemente</li>
+						<li><strong>Schwierige Gespräche:</strong> 
+							Vorbereitung, Durchführung, Auswertung</li>
+						<li><strong>Verhandlungsgespräch:</strong> 
+							Vorbereitung, Durchführung, Auswertung</li>
+						<li><strong>Wahrnehmung:</strong> 
+							Wahrnehmungsprozess, Verzerrung und Störung, Primacy-, Recency-, Halo-, Kontrast- und Hierarchieeffekt, Stereotypen
+						</li>
+						<li><strong>Selbstwahrnehmung: </strong> 
+							Persönlichkeit, D, I, S & G, Einstellungen (formelle und informelle Normen und Werte, geplantes Verhalten) Verhaltenstendenzen und Einflüsse (Selektivität, Selbstschutz, wahrgenommene Ähnlichkeit, Opportunismus, Vorurteile, Authentizität, Charisma, Emotionen), Motive und Motivation (Maslow, intrinsisch und extrinsische Motivation, Engagement, Zivilcourage, Erwartung x-Wert-Modell, Situation)
+						</li>
+						<li><strong>Fremdwahrnehmung: </strong> 
+							Johari-Fenster</li>
+						<li><strong>Konfliktverhalten:</strong> 
+							Verhaltenstendenzen (Durchsetzen, Vermeiden, Kompromiss, Nachgeben und Kooperation)</li>
+						<li><strong>Lösungswege:</strong> 
+							Gesprächsführung in Konfliktsituationen, Rollen bei der Bearbeitung, Intervention, Konfliktgespräch (Vorbereitung, Durchführung, Auswertung)</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_KdoAusb.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Certificat de formation et de compétence</h1>
+		L'Armée suisse confirme par la présente que
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			née le {{User.Birthdate | Date: "dd.MM.yyyy"}} a accompli le service militaire suivant:
+		</p>
+		<table>
+			<tr>
+				<th>Service militaire auprès de:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Période:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Incorporation:</th>
+				<td>Commandement de l’Instruction – Chance Armée</td>
+			</tr>
+			<tr>
+				<th>Grade:</th>
+				<td>{% if User.Attribute1.Code == 'Lt'%} Lieutenant {% elsif User.Attribute1.Code == 'Wm'%} Sergent {% elsif User.Attribute1.Code == 'Four'%} Fourrier {% elsif User.Attribute1.Code == 'Hptfw'%} Sergent-major chef {%endif%} </td>
+			</tr>
+		</table>
+		<p>
+			Je remercie la {% if User.Attribute1.Code == 'Lt'%} Lieutenant {% elsif User.Attribute1.Code == 'Wm'%} Sergent {% elsif User.Attribute1.Code == 'Four'%} Fourrier {% elsif User.Attribute1.Code == 'Hptfw'%} Sergent-major chef {% elsif User.Attribute1.Code == 'Fw'%} Sergent-major {%endif%} {{User.FirstLastName}} pour son engagement dans l'Armée suisse et lui souhaite beaucoup de satisfaction et de succès dans sa future carrière.
+		</p>
+		<p>
+			Commandement de l’Instruction
+		</p>
+		<p>
+			<img width=167 height=95 src="Images/Unterschrift_KdoAusb.png" />
+		</p>
+		<p>
+			Brigadier René Baumann</br>
+			Chef EM du Commandement de l’Instruction
+		</p>
+		<p class="small">
+			Ce certificat de formation et de compétence est transparent et ne contient donc pas d’informations cachées
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Elle a été engagée pendant plus d'un an dans le cadre des relations publiques de l'Armée suisse lors de salons professionnels et de formation ainsi que lors de manifestations d'information en faveur d'institutions de formation.
+			</br>
+			Il s'agissait d'informer les différents groupes d'intérêt (enfants, jeunes, parents, enseignants, responsables de la formation professionnelle) de manière ciblée et orientée vers les destinataires sur le service militaire en général et les chances de développement individuel en particulier. Ces activités requièrent, outre des connaissances techniques approfondies, des compétences marquées en communication, de l'enthousiasme, de la flexibilité, de la fiabilité et de l'autonomie.
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Compétences</th>
+				<th>Contenus / Champs d’application</th>
+			</tr>
+			<tr>
+				<td>
+					Connaissance de soi
+				</td>
+				<td>
+					Se remet en question et réfléchit à ses expériences en tant que leader ou personne dirigée et prend les mesures correctives qui s'imposent pour modifier durablement son comportement.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Gestion de soi
+				</td>
+				<td>
+					S'organise et planifie ses tâches de manière à pouvoir travailler de manière structurée, efficace et efficiente, même dans des circonstances exceptionnelles.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Présentation et communication d’informations
+				</td>
+				<td>
+					Communique et informe en fonction de la situation, du destinataire et du moment avec ses pairs lors d'expositions et de manifestations. Visualise en fonction du destinataire. Peut préparer, mener et évaluer des entretiens difficiles.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Gestion des conflits
+				</td>
+				<td>
+					Est capable de critiquer, reconnaît et gère à temps ou de manière adaptée à la situation les conflits existants chez son interlocuteur. Défend ses valeurs et ses normes, parfois dans des conditions difficiles.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Application technique
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Elle a pu mettre en pratique les contenus suivants:</p>
+					<ul>
+						<li><strong>processus de communication / caractéristiques de la communication: </strong>
+							modèle des quatre oreilles, communication interne et externe, horizontale et verticale, communica-tion interculturelle</li>
+						<li><strong>recherche d'informations: </strong>
+							traitement de l'information, phases du processus de recherche d'informations</li>
+						<li><strong>forme et encodage des informations: </strong>
+							communication verbale, orale et écrite, y compris interférences, métacommunication, effet et utilité, communication non verbale, langage corporel</li>
+						<li><strong>techniques de présentation orale:</strong>
+							"structure INFO en 5 minutes", formule Talk Power</li>
+						<li><strong>techniques de présentation visuelle: </strong>
+							techniques de visualisation et moyens auxiliaires</li>
+						<li><strong>décodage des informations: </strong> 
+							empathie, écoute active, interférences dans le processus de décodage</li>
+						<li><strong>réaction après obtention de la réception: </strong>
+							questions efficaces, feedback et ses éléments</li>
+						<li><strong>entretiens difficiles: </strong>
+							préparation, conduite, évaluation</li>
+						<li><strong>entretien de négociation: </strong>
+							préparation, conduite, évaluation</li>
+						<li><strong>perception: </strong>
+							processus de perception, distorsion et perturbation, effet de primauté, de récence, de halo, de contraste et de hiérarchie, stéréotypes
+						</li>
+						<li><strong>perception de soi: </strong>
+							personnalité, attitudes D, I, S & G (normes et valeurs formelles et informelles, comportement planifié), tendances comportementales et influences (sélectivité, autoprotection, similitude perçue, opportunisme, préjugés, authenticité, charisme, émotions), motifs et motivation (Maslow, motivation intrinsèque et extrinsèque, engagement, courage civique, attente du modèle valeur-x, situation)
+						</li>
+						<li><strong>perception d'autrui: </strong>
+							fenêtre de Johari</li>
+						<li><strong>comportement en cas de conflit: </strong>
+							tendances comportementales (s'imposer, éviter, compromis, céder et coopérer)</li>
+						<li><strong>pistes de solution: </strong>
+							conduite d'entretiens dans des situations conflictuelles, rôles dans le traitement, intervention, entretien conflictuel (préparation, conduite, évaluation).</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

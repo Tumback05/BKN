@@ -1,0 +1,67 @@
+SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVb_Inf_Betr_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Betriebssoldat Männlich;;True
+BKN_LVb_Inf_Betr_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Betriebssoldat Weiblich;;True
+BKN_LVb_Inf_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Betriebssoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Betriebssoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Buro_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Büroordonannz Männlich;;True
+BKN_LVb_Inf_Buro_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Büroordonannz Weiblich;;True
+BKN_LVb_Inf_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Einheitssanitäter Männlich;;True
+BKN_LVb_Inf_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Einheitssanitäter Weiblich;;True
+BKN_LVb_Inf_Fhr_St_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Führungsstaffelsoldat Männlich;;True
+BKN_LVb_Inf_Fhr_St_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Führungsstaffelsoldat Weiblich;;True
+BKN_LVb_Inf_Fhr_St_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Führungsstaffelsoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_Fhr_St_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Führungsstaffelsoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Geb_SpezFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Gebirgsspezialist / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_Geb_SpezFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Gebirgsspezialist / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Geb_Spez_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Gebirgsspezialist Männlich;;True
+BKN_LVb_Inf_Geb_Spez_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Gebirgsspezialist Weiblich;;True
+BKN_LVb_Inf_Inf_BesInf_Pz_Fahr_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Besatzer / Infanterie Panzerfahrer Durchdiener Männlich;;True
+BKN_LVb_Inf_Inf_BesInf_Pz_Fahr_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Besatzer / Infanterie Panzerfahrer Durchdiener Weiblich;;True
+BKN_LVb_Inf_Inf_BesInf_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Besatzer / Infanterie Panzerfahrer Männlich;;True
+BKN_LVb_Inf_Inf_BesInf_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Besatzer / Infanterie Panzerfahrer Weiblich;;True
+BKN_LVb_Inf_Inf_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist Durchdiener Männlich;;True
+BKN_LVb_Inf_Inf_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist Durchdiener Weiblich;;True
+BKN_LVb_Inf_Inf_Einh_SanFahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Einheitssanitäter / Fahrer C1 Durchdiener Männlich;;True
+BKN_LVb_Inf_Inf_Einh_SanFahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Einheitssanitäter / Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVb_Inf_Inf_Einh_SanFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Einheitssanitäter / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_Inf_Einh_SanFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterie Einheitssanitäter / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_InfFahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist / Fahrer C1 Durchdiener Männlich;;True
+BKN_LVb_Inf_InfFahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist / Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVb_Inf_InfFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_InfFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Inf_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist Männlich;;True
+BKN_LVb_Inf_Inf_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Infanterist Weiblich;;True
+BKN_LVb_Inf_MP_BesInf_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Besatzter / Infanterie Panzerfahrer  Männlich;;True
+BKN_LVb_Inf_MP_BesInf_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Besatzter / Infanterie Panzerfahrer  Weiblich;;True
+BKN_LVb_Inf_MP_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Einheitssanitäter Männlich;;True
+BKN_LVb_Inf_MP_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Einheitssanitäter Weiblich;;True
+BKN_LVb_Inf_MP_GrenFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Grenadier / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_MP_GrenFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Grenadier / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_MP_Gren_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Grenadier  Männlich;;True
+BKN_LVb_Inf_MP_Gren_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Grenadier  Weiblich;;True
+BKN_LVb_Inf_MP_Si_Sdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat Durchdiener Männlich;;True
+BKN_LVb_Inf_MP_Si_Sdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat Durchdiener Weiblich;;True
+BKN_LVb_Inf_MP_Si_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_MP_Si_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_MP_Si_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat Männlich;;True
+BKN_LVb_Inf_MP_Si_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Militärpolizei Sicherungssoldat Weiblich;;True
+BKN_LVb_Inf_Mw_KanFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier / Fahrer B Männlich;;True
+BKN_LVb_Inf_Mw_KanFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier / Fahrer B Weiblich;;True
+BKN_LVb_Inf_Mw_KanFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_Mw_KanFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Mw_Kan_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier Männlich;;True
+BKN_LVb_Inf_Mw_Kan_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Minenwerfer Kanonier Weiblich;;True
+BKN_LVb_Inf_Schlz_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Schlagzeuger Männlich;;True
+BKN_LVb_Inf_Schlz_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Schlagzeuger Weiblich;;True
+BKN_LVb_Inf_Si_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf  Männlich;;True
+BKN_LVb_Inf_Si_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf  Weiblich;;True
+BKN_LVb_Inf_Si_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf  Männlich;;True
+BKN_LVb_Inf_Si_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf  Weiblich;;True
+BKN_LVb_Inf_SpaeherFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Späher / Fahrer C1 Männlich;;True
+BKN_LVb_Inf_SpaeherFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Späher / Fahrer C1 Weiblich;;True
+BKN_LVb_Inf_Spaeher_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Späher Männlich;;True
+BKN_LVb_Inf_Spaeher_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Späher Weiblich;;True
+BKN_LVb_Inf_Tamb_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Tampour Männlich;;True
+BKN_LVb_Inf_Tamb_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Tampour Weiblich;;True
+BKN_LVb_Inf_Tromp_m;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Trompeter Männlich;;True
+BKN_LVb_Inf_Tromp_w;de-CH;de-CH;BKN;Soldat;BKN LVb Inf Trompeter Weiblich;;True

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #4F6228;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #4F6228;
+			color: white;
+		}
+		ul.a {
+			list-style-type: circle;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_AZ_SK.png" align=right><br><br><br><br><br><br><br>
+		</header>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funktion:</th>
+				<td>Grenadier Aufkl&#228;rer</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Soldat {{User.FirstLastName}} fur sein Engagement zugunsten der Schweizer Armee und wunsche ihm
+			fur seine zukunftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Kommando Spezialkr&#228;fte
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_AZ_SK.png" />
+		</p>
+		<p>
+			Oberst im Generalstab Nicola Guerini</br>
+			Kommandant
+			<br><br><br>
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Er hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Eigenverantwortung
+				</td>
+				<td>
+					Durch das Zusammenleben in seiner milit&#228;rischen Einheit musste er Verantwortung fur sich und andere
+					innerhalb der Gruppe ubernehmen.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyalit&#228;t
+				</td>
+				<td>
+					W&#228;hrend der Dienstdauer lebte er nach gemeinschaftlichen Werten, sozialen Normen sowie
+					gruppenspezifischen Regeln.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Belastbarkeit
+				</td>
+				<td>
+					In der Rekrutenschule durchlebte er Phasen erh&#246;hter physischer sowie psychischer Belastung. Er hielt
+					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
+				</td>
+				<td>
+					Dank seiner Lern- und Anpassungsf&#228;higkeit integrierte er sich in ein fur ihn ungewohntes Umfeld.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kritik- und Konfliktf&#228;higkeit
+				</td>
+				<td>
+					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Teamf&#228;higkeit
+				</td>
+				<td>
+					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige Rucksichtnahme und
+					Wertsch&#228;tzung.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Sozialkompetenz
+				</td>
+				<td>
+					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
+					sozialer Stellung begleiteten ihn w&#228;h-rend seiner Dienstzeit und forderten/f&#246;rderten seine
+					Sozialkompetenz.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Kompetenzen
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Er hat in der Ausbildung folgende Module absolviert:</p>
+					<ul>
+						<li>Soldatische Grundausbildung f&#252;r die Gefechtst&228;tigkeiten im urbanen und ruralen Gel&#228;nde mit diversen Handfeuerwaffen sowie Handwurfmunition</li>
+						<li>Gefechtsausbildung in folgenden Themenbereichen:</li>
+						<ul class="a">
+							<li>Systematische Standardverhalten f&#252;r den Einsatz im Gefecht</li>
+							<li>Leben und &#220;berleben im Felde inklusive Navigation</li>
+							<li>Selbst- und Kameradenhilfe (TCCC)</li>
+							<li>Erweiterte Nachtausbildung mit dem Nachtsichtger&#228;t</li>
+							<li>Zwangsmittel- und Wachtausbildung inklusive Einsatz des Reizstoffger&#228;tes</li>
+							<li>Gebirgs- und Seiltechnikausbildung (Bewegen in schwierigem Gel&#228;nde)</li>
+							<li>Helikopterausbildung (Abseilen und Aufnahmetau bei Tag und Nacht)</li>
+						</ul>
+						<li>&#220;bermittlungsausbildung mit allen Funkger&#228;ten (Raum- und Bodenwellen)</li>
+					</ul>
+					<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<ul>
+						<li>Aufkl&#228;ren, Erkunden und &#220;berwachen von klar definierten R&#228;umen und Objekten</li>
+						<li>Materialverwaltung im Bereich Inventur, Bestellungen, Lieferkontrollen der Dokumente und des
+							Buromaterials</li>
+						<li>Hartn&#228;ckigkeit in der Auftragstreue &#252;ber l&#228;ngere Zeit und autonom unter widrigen Umwelteinfl&#252;ssen</li>
+						<li>Pr&#228;zision in der &#220;bermittlung von Nachrichten mit diversen &#220;bermittlungsmitteln (Fotografie, Bildbearbeitung 
+						und -&#252;bermittlung)</li>
+						<li>Kreatives, probleml&#246;seorientiertes Handeln in Bezug auf die Zielerreichung</li>
+						<li>Durch eine rasche Auffassungsgabe, ein r&#228;umlich ausgepr&#228;gtes Vorstellungsverm&#246;gen bei Tag und Nacht sowie eine 
+						hohe Selbstdisziplin die erlernten systematischen Standardverhalten situationsgerecht im Team anwenden</li>
+					</ul>
+					<p>
+						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelfer erhalten.
+					</p>
+					<p>
+						Die Schweizer Armee fuhrt in regelm&#228;ssigen Abst&#228;nden Personensicherheitsuberprufungen durch. Bei
+						der ersten uberprufung zum Zeitpunkt seiner Rekrutierung hat er die Sicherheitsprufung
+						bestanden.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

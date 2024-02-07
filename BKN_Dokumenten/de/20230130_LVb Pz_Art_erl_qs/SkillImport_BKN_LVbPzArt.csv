@@ -1,0 +1,107 @@
+SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVb_Pz_Art_Art_Ns_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat Männlich;;True
+BKN_LVb_Pz_Art_Art_Ns_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat Weiblich;;True
+BKN_LVb_Pz_Art_Art_Ns_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Art_Ns_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_Art_Wet_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Wetter Soldat Männlich;;True
+BKN_LVb_Pz_Art_Art_Wet_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Wetter Soldat Weiblich;;True
+BKN_LVb_Pz_Art_Art_Wet_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Wetter Soldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Art_Wet_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Wetter Soldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_ArtNs_SdtFahr_FUG_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / FUG Fahrer Männlich;;True
+BKN_LVb_Pz_Art_ArtNs_SdtFahr_FUG_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / FUG Fahrer Weiblich;;True
+BKN_LVb_Pz_Art_Aufkl_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer Männlich;;True
+BKN_LVb_Pz_Art_Aufkl_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer Weiblich;;True
+BKN_LVb_Pz_Art_AufklABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_AufklABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_AufklAufklfz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / Aufklärungsfahrzeugfahrer Männlich;;True
+BKN_LVb_Pz_Art_AufklAufklfz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / Aufklärungsfahrzeugfahrer Weiblich;;True
+BKN_LVb_Pz_Art_AufklFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / Fahrer B Männlich;;True
+BKN_LVb_Pz_Art_AufklFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Aufklärer / Fahrer B Weiblich;;True
+BKN_LVb_Pz_Art_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Betriebssoldat Männlich;;True
+BKN_LVb_Pz_Art_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Betriebssoldat Weiblich;;True
+BKN_LVb_Pz_Art_BPz_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Bergepanzersoldat Männlich;;True
+BKN_LVb_Pz_Art_BPz_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Bergepanzersoldat Weiblich;;True
+BKN_LVb_Pz_Art_Buero_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Büroordonnanz Männlich;;True
+BKN_LVb_Pz_Art_Buero_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Büroordonnanz Weiblich;;True
+BKN_LVb_Pz_Art_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter Männlich;;True
+BKN_LVb_Pz_Art_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter Weiblich;;True
+BKN_LVb_Pz_Art_Einh_SanFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter / Fahrer C1 Männlich;;True
+BKN_LVb_Pz_Art_Einh_SanFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter / Fahrer C1 Weiblich;;True
+BKN_LVb_Pz_Art_Einh_SanSan_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter / Sanitätspanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Einh_SanSan_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Einheitssanitäter / Sanitätspanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Fhr_St_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat Männlich;;True
+BKN_LVb_Pz_Art_Fhr_St_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat Weiblich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / Fahrer B Männlich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / Fahrer B Weiblich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / Fahrer C1 Männlich;;True
+BKN_LVb_Pz_Art_Fhr_St_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Führungsstaffel Soldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Pz_Art_Kan_Pz_Hb_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Kanonier Panzerhaubitze Männlich;;True
+BKN_LVb_Pz_Art_Kan_Pz_Hb_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Kanonier Panzerhaubitze Weiblich;;True
+BKN_LVb_Pz_Art_KanPzHbFahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Kanonier / Panzerhaubitzenfahrer Männlich;;True
+BKN_LVb_Pz_Art_KanPzHbFahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Kanonier / Panzerhaubitzenfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Bes_Richter_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Besatzer Richter Männlich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Bes_Richter_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Besatzer Richter Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Gren_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Männlich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Spr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Sprenger Männlich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Spr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Sprenger Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Ust_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Unterstützung Männlich;;True
+BKN_LVb_Pz_Art_Pz_Gren_Ust_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Unterstützung Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Gren_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier Weiblich;;True
+BKN_LVb_Pz_Art_Pz_GrenSpz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier / Schützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pz_GrenSpz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzergrenadier / Schützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Sap_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur Männlich;;True
+BKN_LVb_Pz_Art_Pz_Sap_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur Weiblich;;True
+BKN_LVb_Pz_Art_Pz_SapBrue_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Brückenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pz_SapBrue_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Brückenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_PzSapG_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Geniepanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_PzSapG_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Geniepanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pz_SapMirm_Pz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Minenräumpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pz_SapMirm_Pz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Minenräumpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pz_SapSpz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Schützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pz_SapSpz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzersappeur / Schützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pz_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzer Soldat Männlich;;True
+BKN_LVb_Pz_Art_Pz_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzer Soldat Weiblich;;True
+BKN_LVb_Pz_Art_Pz_SdtPz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzer Soldat / Panzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pz_SdtPz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzer Soldat / Panzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Pzj_Sdt_Gef_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat Gefechtsordonnanz Männlich;;True
+BKN_LVb_Pz_Art_Pzj_Sdt_Gef_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat Gefechtsordonnanz Weiblich;;True
+BKN_LVb_Pz_Art_Pzj_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat Männlich;;True
+BKN_LVb_Pz_Art_Pzj_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat Weiblich;;True
+BKN_LVb_Pz_Art_Pzj_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Pzj_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_Pzj_SdtRadspz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat / Radschützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Pzj_SdtRadspz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Panzerjägersoldat / Radschützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_SdtRp_TrspwFahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / Transportwagen Fahrer Männlich;;True
+BKN_LVb_Pz_Art_SdtRp_TrspwFahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Artillerie Nachschub Soldat / Transportwagen Fahrer Weiblich;;True
+BKN_LVb_Pz_Art_Si_Sdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Pz_Art_Si_Sdt_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Pz_Art_Si_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat Männlich;;True
+BKN_LVb_Pz_Art_Si_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat Weiblich;;True
+BKN_LVb_Pz_Art_Si_Sdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Si_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_Si_SdtSpz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / Schützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Si_SdtSpz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Sicherungssoldat / Schützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Fahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / Fahrer B Männlich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Fahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / Fahrer B Weiblich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_FFZ_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat FFZ Männlich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_FFZ_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat FFZ Weiblich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Log_Spez_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Logistikspezialist Männlich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_Log_Spez_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Logistikspezialist Weiblich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Männlich;;True
+BKN_LVb_Pz_Art_Uem_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Weiblich;;True
+BKN_LVb_Pz_Art_Uem_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / ABC Spürer Männlich;;True
+BKN_LVb_Pz_Art_Uem_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Pz_Art_Uem_SdtRadspz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Radschützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Uem_SdtRadspz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Radschützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Uem_SdtSpzFahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Schützenpanzerfahrer Männlich;;True
+BKN_LVb_Pz_Art_Uem_SdtSpzFahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Übermittlungssoldat Schützenpanzerfahrer Weiblich;;True
+BKN_LVb_Pz_Art_Verm_Beob_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser Beobachter Männlich;;True
+BKN_LVb_Pz_Art_Verm_Beob_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser Beobachter Weiblich;;True
+BKN_LVb_Pz_Art_Verm_Flst_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser Feuerleitstelle Männlich;;True
+BKN_LVb_Pz_Art_Verm_Flst_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser Feuerleitstelle Weiblich;;True
+BKN_LVb_Pz_Art_VermSKdt_Fz_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser / Schiesskommandantenfahrzeugfahrer Männlich;;True
+BKN_LVb_Pz_Art_VermSKdt_Fz_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb Pz Art Vermesser / Schiesskommandantenfahrzeugfahrer Weiblich;;True

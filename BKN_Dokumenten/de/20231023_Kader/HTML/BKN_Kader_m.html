@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #000000;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #000000;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_KdoAusb.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Leutnant</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Leutnant {{User.FirstLastName}} f&#252;r sein Engagement zugunsten der Schweizer Armee und wünsche ihm für seine zukünftige berufliche Tätigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Kommando Ausbildung
+		</p>
+		<p>
+			<img width=167 height=95 src="Images/Unterschrift_KdoAusb.png" />
+		</p>
+		<p>
+			Brigadier René Baumann</br>
+			Stabschef Kommando Ausbildung
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Er wurde über ein Jahr im Rahmen der Öffentlichkeitsarbeit der Schweizer Armee an Berufs- und Bildungs-messen sowie Informationsveranstaltungen zu Gunsten von Bildungsinstitutionen eingesetzt.
+			</br>
+			Dabei galt es die unterschiedlichen Anspruchsgruppen (Kinder, Jugendliche, Eltern, Lehrpersonen, Berufsbil-dungsverantwortliche) zielgerichtet und adressatenorientiert über den Militärdienst im Allgemeinen und die individuellen Entwicklungschancen im Besonderen zu informieren. Für diese Tätigkeiten sind nebst vertieftem Fachwissen ausgeprägte Kommunikationskompetenzen, Begeisterungsfähigkeit, Flexibilität, Zuverlässigkeit und Selbständigkeit erforderlich.
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Selbstkenntnis
+				</td>
+				<td>
+					Hinterfragt sich selbst und reflektiert seine Erfahrungen als Führungs-person oder Geführter und leitet entsprechende korrigierende Mass-nahmen zur nachhaltigen Verhaltensänderung ein.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Selbstmanagement
+				</td>
+				<td>
+					Organisiert sich selber und plant seine Aufgaben so, dass er auch in Ausnahmezuständen strukturiert, effektiv und effizient arbeiten kann.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Präsentation und Kommunikation von Informationen
+				</td>
+				<td>
+					Kommuniziert und informiert situations-, adressaten- und zeitgerecht mit den Peers an Ausstellungen und Veranstaltungen. Visualisiert adres-satengerecht. Kann schwierige Gespräche vorbereiten, durchführen und auswerten.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Konfliktmanagement
+				</td>
+				<td>
+					Ist kritikfähig, erkennt und bewältigt frühzeitig respektive situationsgerecht vorhandene Konflikte bei seinem Gegenüber. Vertritt seine Werte und Normen, z.T. auch unter erschwerten Bedingungen.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Anwendung
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Sie hat folgende Inhalte praktisch anwenden können:</p>
+					<ul>
+						<li><strong>Kommunikationsprozess / Eigenschaften der Kommunikation:</strong> 
+							Vier-Ohren-Modell, interne und externe resp horizontale und vertikale Kommunikation, interkul-turelle Kommunikation</li>
+						<li><strong>Informationsbeschaffung:</strong> 
+							Informationsaufarbeitung, Phasen des Informationsbeschaffungsprozesses</li>
+						<li><strong>Form und Encodierung von Informationen:</strong> 
+							verbale, mündliche und schriftliche Kommunikation inkl Störungen, Metakommunikation, Wir-kung und Nutzen, nonverbale Kommunikation, Körpersprache</li>
+						<li><strong>Mündliche Präsentationstechniken:</strong> 
+							«5-Minuten-INFO-Struktur», Talk-Power-Formel</li>
+						<li><strong>Visuelle Präsentationstechniken:</strong> 
+							Visualisierungstechniken und Hilfsmittel</li>
+						<li><strong>Decodierung von Informationen:</strong> 
+							Empathie, aktives Zuhören, Störungen im Decodierungsprozess</li>
+						<li><strong>Reaktion nach Erhalt Empfang:</strong> 
+							Wirksames Fragen, Feedback und dessen Elemente</li>
+						<li><strong>Schwierige Gespräche:</strong> 
+							Vorbereitung, Durchführung, Auswertung</li>
+						<li><strong>Verhandlungsgespräch:</strong> 
+							Vorbereitung, Durchführung, Auswertung</li>
+						<li><strong>Wahrnehmung:</strong> 
+							Wahrnehmungsprozess, Verzerrung und Störung, Primacy-, Recency-, Halo-, Kontrast- und Hierarchieeffekt, Stereotypen
+						</li>
+						<li><strong>Fremdwahrnehmung: </strong> 
+							Johari-Fenster</li>
+						<li><strong>Konfliktverhalten:</strong> 
+							Verhaltenstendenzen (Durchsetzen, Vermeiden, Kompromiss, Nachgeben und Kooperation)</li>
+						<li><strong>Lösungswege:</strong> 
+							Gesprächsführung in Konfliktsituationen, Rollen bei der Bearbeitung, Intervention, Konfliktgespräch (Vorbereitung, Durchführung, Auswertung)</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

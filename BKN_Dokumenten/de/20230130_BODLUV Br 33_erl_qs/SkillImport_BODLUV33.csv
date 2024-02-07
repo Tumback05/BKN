@@ -1,0 +1,41 @@
+﻿SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-ch;SkillDescription_de-CH;IsApproved
+BKN_BODLUVBr33_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Betriebssoldat Männlich;;True
+BKN_BODLUVBr33_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Betriebssoldat Weiblich;;True
+BKN_BODLUVBr33_Buero_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Büroordonanz Männlich;;True
+BKN_BODLUVBr33_Buero_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Büroordonanz Weiblich;;True
+BKN_BODLUVBr33_Einh_San_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Einheitssanitäter Männlich;;True
+BKN_BODLUVBr33_Einh_San_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Einheitssanitäter Weiblich;;True
+BKN_BODLUVBr33_Kan_Fahr_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier / Fahrer C1 Durchdiener Männlich;;True
+BKN_BODLUVBr33_Kan_Fahr_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier / Fahrer C1 Durchdiener Weiblich;;True
+BKN_BODLUVBr33_Kan_Fahr_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier / Fahrer C1 Männlich;;True
+BKN_BODLUVBr33_Kan_Fahr_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier / Fahrer C1 Weiblich;;True
+BKN_BODLUVBr33_Kan_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier Durchdiener Männlich;;True
+BKN_BODLUVBr33_Kan_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier Durchdiener Weiblich;;True
+BKN_BODLUVBr33_Kan_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier Männlich;;True
+BKN_BODLUVBr33_Kan_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Kanonier Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_BeobABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_BeobABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_BeobFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung / ABC Spürer Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_BeobFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung / ABC Spürer Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_Beob_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung / Fahrer C1 Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_Beob_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat Beobachtung / Fahrer C1 Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_SFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER / Fahrer C1 Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_SFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER / Fahrer C1 Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_STINGER_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER / ABC Spürer Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_STINGER_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER / ABC Spürer Weiblich;;True
+BKN_BODLUVBr33_Lwf_Sdt_STINGER_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER Männlich;;True
+BKN_BODLUVBr33_Lwf_Sdt_STINGER_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Luftwaffensoldat STINGER Weiblich;;True
+BKN_BODLUVBr33_Na_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Nachrichtensoldat / Fahrer C1 Männlich;;True
+BKN_BODLUVBr33_Na_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Nachrichtensoldat / Fahrer C1 Weiblich;;True
+BKN_BODLUVBr33_Na_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Nachrichtensoldat Männlich;;True
+BKN_BODLUVBr33_Na_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Nachrichtensoldat Weiblich;;True
+BKN_BODLUVBr33_Radsdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat / ABC Spürer Männlich;;True
+BKN_BODLUVBr33_Radsdt_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat / ABC Spürer Weiblich;;True
+BKN_BODLUVBr33_Radsdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat Durchdiener Männlich;;True
+BKN_BODLUVBr33_Radsdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat Durchdiener Weiblich;;True
+BKN_BODLUVBr33_Radsdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat Männlich;;True
+BKN_BODLUVBr33_Radsdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Radarsoldat Weiblich;;True
+BKN_BODLUVBr33_Uem_Sdt_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Übermittlungssoldat / Fahrer C1 Männlich;;True
+BKN_BODLUVBr33_Uem_Sdt_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Übermittlungssoldat / Fahrer C1 Weiblich;;True
+BKN_BODLUVBr33_Uem_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Übermittlungssoldat Männlich;;True
+BKN_BODLUVBr33_Uem_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVb BODLUV Br. 33 Übermittlungssoldat Weiblich;;True

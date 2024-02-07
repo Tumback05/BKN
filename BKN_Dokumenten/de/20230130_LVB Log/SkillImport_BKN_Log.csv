@@ -1,0 +1,135 @@
+﻿SkillSid;DefaultLanguage;Languages;SkillTypeCode;SkillLevelCode;SkillTitle_de-CH;SkillDescription_de-CH;IsApproved
+BKN_LVb_Log_Betr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Betriebssoldat Männlich;;True
+BKN_LVb_Log_Betr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Betriebssoldat Weiblich;;True
+BKN_LVb_Log_Bueo_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Büroordonanz Männlich;;True
+BKN_LVb_Log_Bueo_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Büroordonanz Weiblich;;True
+BKN_LVb_Log_Diagn_Ik_Syst_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Informatik Systeme / Durchdiener Männlich;;True
+BKN_LVb_Log_Diagn_Ik_Syst_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Informatik Systeme / Durchdiener Weiblich;;True
+BKN_LVb_Log_Diagn_IMFS_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker IMFS / Durchdiener Männlich;;True
+BKN_LVb_Log_Diagn_IMFS_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker IMFS / Durchdiener Weiblich;;True
+BKN_LVb_Log_Diagn_Komm_Ffhr_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Feuerführung Männlich;;True
+BKN_LVb_Log_Diagn_Komm_Ffhr_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Feuerführung Weiblich;;True
+BKN_LVb_Log_Diagn_Komm_FIS_HE_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation FIS HEER / Durchdiener Männlich;;True
+BKN_LVb_Log_Diagn_Komm_FIS_HE_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation FIS HEER / Durchdiener Weiblich;;True
+BKN_LVb_Log_Diagn_Komm_Flt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Feuerleit Männlich;;True
+BKN_LVb_Log_Diagn_Komm_Flt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Feuerleit Weiblich;;True
+BKN_LVb_Log_Diagn_Komm_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Männlich;;True
+BKN_LVb_Log_Diagn_Komm_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Kommunikation Weiblich;;True
+BKN_LVb_Log_Diagn_Wet_P_Art_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Wetter Peiler Artillerie Männlich;;True
+BKN_LVb_Log_Diagn_Wet_P_Art_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Diagnostiker Wetter Peiler Artillerie Weiblich;;True
+BKN_LVb_Log_Gtm_M_Flab_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker Mittlere Fliegerabwehr Männlich;;True
+BKN_LVb_Log_Gtm_M_Flab_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker Mittlere Fliegerabwehr Weiblich;;True
+BKN_LVb_Log_Gtm_San_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker Sanität Männlich;;True
+BKN_LVb_Log_Gtm_San_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker Sanität Weiblich;;True
+BKN_LVb_Log_Gtm_STINGER_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker STINGER Männlich;;True
+BKN_LVb_Log_Gtm_STINGER_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Gerätemechaniker STINGER Weiblich;;True
+BKN_LVb_Log_Hfs_Fahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Hufschmied / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Hfs_Fahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Hufschmied / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Hfs_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Hufschmied Männlich;;True
+BKN_LVb_Log_Hfs_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Hufschmied Weiblich;;True
+BKN_LVb_Log_Log_Einh_SanFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Einheitssanitäter / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Log_Einh_SanFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Einheitssanitäter / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Mech_Eagle_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Eagle Männlich;;True
+BKN_LVb_Log_Mech_Eagle_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Eagle Weiblich;;True
+BKN_LVb_Log_Mech_GMTF_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker GMTF Männlich;;True
+BKN_LVb_Log_Mech_GMTF_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker GMTF Weiblich;;True
+BKN_LVb_Log_Mech_Hb_ELA_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Elektronikanlagen Männlich;;True
+BKN_LVb_Log_Mech_Hb_ELA_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Elektronikanlagen Weiblich;;True
+BKN_LVb_Log_Mech_Hb_Fahrgestell_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Fahrgestell Männlich;;True
+BKN_LVb_Log_Mech_Hb_Fahrgestell_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Fahrgestell Weiblich;;True
+BKN_LVb_Log_Mech_Hb_Turm_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Turm Männlich;;True
+BKN_LVb_Log_Mech_Hb_Turm_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Haubitze Turm Weiblich;;True
+BKN_LVb_Log_Mech_Leo_ELA_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Elektronikanlagen Männlich;;True
+BKN_LVb_Log_Mech_Leo_ELA_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Elektronikanlagen Weiblich;;True
+BKN_LVb_Log_Mech_Leo_Fahrgestell_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Fahrgestell Männlich;;True
+BKN_LVb_Log_Mech_Leo_Fahrgestell_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Fahrgestell Weiblich;;True
+BKN_LVb_Log_Mech_Leo_FLA_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Feuerleitanlage Männlich;;True
+BKN_LVb_Log_Mech_Leo_FLA_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Feuerleitanlage Weiblich;;True
+BKN_LVb_Log_Mech_Leo_Turm_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Turm Männlich;;True
+BKN_LVb_Log_Mech_Leo_Turm_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Leopard Turm Weiblich;;True
+BKN_LVb_Log_Mech_M_Flab_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Mittlere Fliegerabwehr Männlich;;True
+BKN_LVb_Log_Mech_M_Flab_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Mittlere Fliegerabwehr Weiblich;;True
+BKN_LVb_Log_Mech_Motfz_L_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Motorfahrzeug leicht / Durchdiener Männlich;;True
+BKN_LVb_Log_Mech_Motfz_L_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Motorfahrzeug leicht / Durchdiener Weiblich;;True
+BKN_LVb_Log_Mech_Motfz_sch_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Motorfahrzeug schwer / Durchdiener Männlich;;True
+BKN_LVb_Log_Mech_Motfz_sch_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Motorfahrzeug schwer / Durchdiener Weiblich;;True
+BKN_LVb_Log_Mech_Ns_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Nachschub Männlich;;True
+BKN_LVb_Log_Mech_Ns_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Nachschub Weiblich;;True
+BKN_LVb_Log_Mech_Radspz_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Radschützenpanzer / Durchdiener Männlich;;True
+BKN_LVb_Log_Mech_Radspz_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Radschützenpanzer / Durchdiener Weiblich;;True
+BKN_LVb_Log_Mech_Spz_2000_ELA_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Elektronikanlagen Männlich;;True
+BKN_LVb_Log_Mech_Spz_2000_ELA_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Elektronikanlagen Weiblich;;True
+BKN_LVb_Log_Mech_Spz_2000_Fahrgestell_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Fahrgestell Männlich;;True
+BKN_LVb_Log_Mech_Spz_2000_Fahrgestell_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Fahrgestell Weiblich;;True
+BKN_LVb_Log_Mech_Spz_2000_Turm_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Turm Männlich;;True
+BKN_LVb_Log_Mech_Spz_2000_Turm_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer 2000 Turm Weiblich;;True
+BKN_LVb_Log_Mech_Spz_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer Männlich;;True
+BKN_LVb_Log_Mech_Spz_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Mechaniker Schützenpanzer Weiblich;;True
+BKN_LVb_Log_Mech_Waf_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Waffenmechaniker / Durchdiener Männlich;;True
+BKN_LVb_Log_Mech_Waf_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Waffenmechaniker / Durchdiener Weiblich;;True
+BKN_LVb_Log_Motfhr_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Motorfahrer Männlich;;True
+BKN_LVb_Log_Motfhr_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Motorfahrer Weiblich;;True
+BKN_LVb_Log_Ns_Sdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Durchdiener Männlich;;True
+BKN_LVb_Log_Ns_Sdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Durchdiener Weiblich;;True
+BKN_LVb_Log_Ns_Sdt_FP_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Feldpost Durchdiener Männlich;;True
+BKN_LVb_Log_Ns_Sdt_FP_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Feldpost Durchdiener Weiblich;;True
+BKN_LVb_Log_Ns_Sdt_FP_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Feldpost Männlich;;True
+BKN_LVb_Log_Ns_Sdt_FP_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Feldpost Weiblich;;True
+BKN_LVb_Log_Ns_SdtABC_Spuer_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / ABC Spürer Durchdiener Männlich;;True
+BKN_LVb_Log_Ns_SdtABC_Spuer_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / ABC Spürer Durchdiener Weiblich;;True
+BKN_LVb_Log_Ns_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / ABC Spürer Männlich;;True
+BKN_LVb_Log_Ns_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer B Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer B Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer C1 Durchdiener Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_FUG_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / FUG Fahrer Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_FUG_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / FUG Fahrer Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_Gasta_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Gabelstaplerfahrer Durchdiener Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_Gasta_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Gabelstaplerfahrer Durchdiener Weiblich;;True
+BKN_LVb_Log_Ns_SdtFahr_Gasta_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Gabelstaplerfahrer Männlich;;True
+BKN_LVb_Log_Ns_SdtFahr_Gasta_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat / Gabelstaplerfahrer Weiblich;;True
+BKN_LVb_Log_Ns_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Männlich;;True
+BKN_LVb_Log_Ns_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Nachschubsoldat Weiblich;;True
+BKN_LVb_Log_Of_Ord_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Offiziersordonnanz Männlich;;True
+BKN_LVb_Log_Of_Ord_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Offiziersordonnanz Weiblich;;True
+BKN_LVb_Log_Rttg_HundefhrFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Rettungshundeführer / Fahrer B Männlich;;True
+BKN_LVb_Log_Rttg_HundefhrFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Rettungshundeführer / Fahrer B Weiblich;;True
+BKN_LVb_Log_SchutzhundefhrFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Schutzhundeführer / Fahrer B Männlich;;True
+BKN_LVb_Log_SchutzhundefhrFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Schutzhundeführer / Fahrer B Weiblich;;True
+BKN_LVb_Log_Schutzhundefhr_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Schutzhundeführer Männlich;;True
+BKN_LVb_Log_Schutzhundefhr_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Schutzhundeführer Weiblich;;True
+BKN_LVb_Log_Tr_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / ABC Spürer Männlich;;True
+BKN_LVb_Log_Tr_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / ABC Spürer Weiblich;;True
+BKN_LVb_Log_Tr_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Tr_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Tr_SdtPatrR_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / Patr R Männlich;;True
+BKN_LVb_Log_Tr_SdtPatrR_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat / Patr R Weiblich;;True
+BKN_LVb_Log_Tr_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat Männlich;;True
+BKN_LVb_Log_Tr_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Train Soldat Weiblich;;True
+BKN_LVb_Log_Trp_BH_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Truppenbuchhalter Männlich;;True
+BKN_LVb_Log_Trp_BH_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Truppenbuchhalter Weiblich;;True
+BKN_LVb_Log_Trp_Koch_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Truppenkoch Männlich;;True
+BKN_LVb_Log_Trp_Koch_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Truppenkoch Weiblich;;True
+BKN_LVb_Log_Uem_Sdt_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat Durchdiener Männlich;;True
+BKN_LVb_Log_Uem_Sdt_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat Durchdiener Weiblich;;True
+BKN_LVb_Log_Uem_SdtABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / ABC Spürer Männlich;;True
+BKN_LVb_Log_Uem_SdtABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Log_Uem_SdtFahr_B_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer B Durchdiener Männlich;;True
+BKN_LVb_Log_Uem_SdtFahr_B_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer B Durchdiener Weiblich;;True
+BKN_LVb_Log_Uem_SdtFahr_B_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer B Männlich;;True
+BKN_LVb_Log_Uem_SdtFahr_B_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer B Weiblich;;True
+BKN_LVb_Log_Uem_SdtFahr_C1_DD_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer C1 Durchdiener Männlich;;True
+BKN_LVb_Log_Uem_SdtFahr_C1_DD_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer C1 Durchdiener Weiblich;;True
+BKN_LVb_Log_Uem_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Uem_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Uem_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat Männlich;;True
+BKN_LVb_Log_Uem_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Übermittlungssoldat Weiblich;;True
+BKN_LVb_Log_Vet_Sdt_ABC_Spuer_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat / ABC Spürer Männlich;;True
+BKN_LVb_Log_Vet_Sdt_ABC_Spuer_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat / ABC Spürer Weiblich;;True
+BKN_LVb_Log_Vet_SdtFahr_C1_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat / Fahrer C1 Männlich;;True
+BKN_LVb_Log_Vet_SdtFahr_C1_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat / Fahrer C1 Weiblich;;True
+BKN_LVb_Log_Vet_Sdt_m;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat Männlich;;True
+BKN_LVb_Log_Vet_Sdt_w;de-CH;de-CH;BKN;Soldat;BKN LVbLog Veterinärsoldat;;True
