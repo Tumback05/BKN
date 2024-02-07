@@ -45,15 +45,13 @@ function_text = "Fuktion:"
 # Paths #
 #########
 
-# basic_path = os.path.dirname(os.path.abspath(__file__))
-basic_path = os.getcwd()
-file_path = os.path.join(basic_path, 'BKN_Dokumenten', 'de')
+file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'de')
 
 folders = {}
 
 # gets all the names of the folders with documents in it
-for file in os.listdir(file_path):
-    folders[file] = True
+for folder in os.listdir(file_path):
+    folders[folder] = True
 
 male_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_m.html")
 female_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_w.html")
@@ -67,9 +65,7 @@ sample_doc = "210820_Sdt_BKN_KSK_Gren Aufkl_m_d.docx"
 sample_fail_doc = "230130_Sdt_BKN_LVbInf_Inf BesInf Pz Fahr_m_d.docx"
 
 # Exceptions
-exceptions = [
-    "230130_Sdt_BKN_LVbLog_Motfhr_w_d.docx"
-]
+exceptions = []
 
 
 #############
@@ -170,11 +166,15 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
         html_v0 = f.read()
     sdt_function = doc_attributes[0]
     html_v1 = replace_function(sdt_function, html_v0)
+    print(f'html_v1 is of type:', type(html_v1))
     sdt_competences = doc_attributes[1]
+    print(f'Soldat competences: ', sdt_competences)
     html_v2 = replace_competence(sdt_competences, html_v1)
+    print(f'html_v2 is of type:', type(html_v2))
     is_einh_san = doc_attributes[2]
     is_dd = doc_attributes[3]
     html_v3 = replace_end(is_einh_san, is_dd, html_v2, is_male)
+    print(f'html_v3 is of type:', type(html_v3))
     html_v4 = replace_str(html_v3)
     print(f'create file = {create_file}    -    print html = {print_html}')
     if print_html:
@@ -275,7 +275,7 @@ def create_html_path(doc_name: str) -> str:
     html_name = html_name.replace('ü', 'ue')
     html_name = html_name.replace('„', 'ae')
     html_name = html_name.replace('ä', 'ae')
-    html_path = path + "\\HTML" + "\\TEST" + "\\" + html_name
+    html_path = os.path.join(path, "HTML", "TEST", html_name)
 
     if not html_name.isascii():
         problematic_docs[sign_txt].append(doc_name)
@@ -361,7 +361,7 @@ def iterate_word_docs(create_folders: bool, exception_list: list):
 # iterate_folders = False
 iterate_folders = True
 
-sign_txt = "Wrong sign in title:"
+sign_txt = "Wrong character in title (not ASCII):"
 competence_txt = "No competence text:"
 miscellaneous = "Other errors:"
 no_paragraph = "Nothing in the Table:"
@@ -378,7 +378,6 @@ if iterate_folders:
         if not value:
             continue
         path = os.path.join(file_path, key)
-        print(f'path = {path}')
         path_to_male_template = os.path.join(path, male_template)
         path_to_female_template = os.path.join(path, female_template)
         iterate_word_docs(create_folders=True, exception_list=exceptions)
