@@ -167,6 +167,7 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
     sdt_function = doc_attributes[0]
     html_v1 = replace_function(sdt_function, html_v0)
     print(f'html_v1 is of type:', type(html_v1))
+    print(f'contents of html_v1: ', html_v1)
     sdt_competences = doc_attributes[1]
     print(f'Soldat competences: ', sdt_competences)
     html_v2 = replace_competence(sdt_competences, html_v1)
@@ -245,6 +246,7 @@ def competence_from_word(doc_name: str) -> list:
     if no_competence_text:
         problematic_docs[competence_txt].append(doc_name)
 
+    print(f'Soldat competences in the function: ', sdt_competences)
     return sdt_competences
 
 
@@ -320,6 +322,7 @@ def make_new_html(doc_name: str, create_a_file: bool, print_html: bool = False, 
         "Einh San" in doc_name,
         "DD" in doc_name
     ]
+    print(f'started function competence_from_word', doc_attributes)
     create_html_file(doc_attributes, path_to_html, is_male, create_file = False, print_html = True)
 
 
