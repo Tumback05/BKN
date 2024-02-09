@@ -36,6 +36,7 @@ dd_block_w = ('''\n
 
 # keywords to find competences in word
 training_text = "suivants dans le cadre"  # in KSK mal versions have "Ausbildung" instead of "Fachausbildung"
+training_test_2 = "a suivi les modules de formation" # in fr mal anders beschrieben
 activities_text = "Les activités suivantes faisaient partie"
 
 # keyword to find function in word
@@ -165,13 +166,17 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
     path_to_template = path_to_male_template if is_male else path_to_female_template
     with open(path_to_template, 'r') as f:
         html_v0 = f.read()
+    print(type(html_v0))
     sdt_function = doc_attributes[0]
     html_v1 = replace_function(sdt_function, html_v0)
+    print(type(html_v1))
     sdt_competences = doc_attributes[1]
     html_v2 = replace_competence(sdt_competences, html_v1)
+    print(type(html_v2))
     is_einh_san = doc_attributes[2]
     is_dd = doc_attributes[3]
     html_v3 = replace_end(is_einh_san, is_dd, html_v2, is_male)
+    print(type(html_v3))
     html_v4 = replace_str(html_v3)
     if print_html:
         print(f'Created file successfully: ', title)
@@ -187,6 +192,8 @@ def find_competence_cell(word_doc: docx, doc_name: str):
         for row in table.rows:
             for paragraph in row.cells[0].paragraphs:
                 if training_text in paragraph.text:
+                    return row.cells[0]
+                elif training_test_2 in paragraph.text:
                     return row.cells[0]
     print(f'Error, couldnt find competence cell. Word: ', path, doc_name)
     return None
@@ -370,7 +377,12 @@ problematic_docs = {
     no_paragraph: []
 }
 
-exceptions = []
+exceptions = [
+    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufkl Sdt_m_f.docx',
+    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufkl Sdt_w_f.docx',
+    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufklfz Fahr_m_f.docx',
+    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufklfz Fahr_w_f.docx'
+]
 
 if iterate_folders:
     for key, value in folders.items():
