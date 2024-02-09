@@ -34,11 +34,11 @@ dd_block_w = ('''\n
 
 # keywords to find competences in word
 training_text = "folgende Module absolviert"  # in KSK mal versions have "Ausbildung" instead of "Fachausbildung"
-activities_text = "Aufgabenbereich gehört folgende Tätigkeiten"
+activities_text = "Aufgabenbereich gehörten folgende Tätigkeiten"
 
 # keyword to find function in word
 # as well as in replace_function in html
-function_text = "Fuktion:"
+function_text = "Funktion:"
 
 
 #########
@@ -185,7 +185,7 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
             f.write(html_v4)
 
 
-def find_competence_cell(word_doc: docx):
+def find_competence_cell(word_doc: docx, doc_name: str):
     """returns the cell of the Word with the competence description"""
 
     for table in word_doc.tables:
@@ -193,6 +193,7 @@ def find_competence_cell(word_doc: docx):
             for paragraph in row.cells[0].paragraphs:
                 if training_text in paragraph.text:
                     return row.cells[0]
+    print(f'Error, couldnt find competence cell. Word: ', path, doc_name)
     return None
 
 
@@ -204,7 +205,8 @@ def competence_from_word(doc_name: str) -> list:
     end_of_indented_list = list_space + '</ul>' + '\n'
 
     word_doc = docx.Document(os.path.join(path, doc_name))
-    sdt_competence_cell = find_competence_cell(word_doc)
+    sdt_competence_cell = find_competence_cell(word_doc, doc_name)
+    print(f'output of find_competence_cell function: ', sdt_competence_cell)
     sdt_competences = ['']
     double_indent = False
 
@@ -375,6 +377,12 @@ problematic_docs = {
     miscellaneous: [],
     no_paragraph: []
 }
+
+exceptions = [
+    '230130_Sdt_BKN_LVbInf_Einh San_m_d.docx',
+    '20231023_Kader_BKN_Chance Armee_m_d.docx',
+    '20231023_Kader_BKN_Chance Armee_w.docx'
+]
 
 if iterate_folders:
     for key, value in folders.items():
