@@ -64,9 +64,6 @@ path = os.path.join(file_path, list(folders.keys())[current])
 sample_doc = "210820_Sdt_BKN_KSK_Gren Aufkl_m_d.docx"
 sample_fail_doc = "230130_Sdt_BKN_LVbInf_Inf BesInf Pz Fahr_m_d.docx"
 
-# Exceptions
-exceptions = []
-
 
 #############
 # Functions #
@@ -238,7 +235,7 @@ def competence_from_word(doc_name: str) -> list:
         print("ERROR: " + doc_name)
         problematic_docs[competence_txt].append(doc_name)
         return []
-
+    
     no_competence_text = sdt_competences[0].count('\n') < 2 or sdt_competences[1].count('\n') < 2
     if no_competence_text:
         problematic_docs[competence_txt].append(doc_name)
@@ -391,4 +388,3 @@ for problem, docs in problematic_docs.items():
     print(problem)
     for problem_doc in docs:
         print('"' + problem_doc + '"' + ',')
-print()

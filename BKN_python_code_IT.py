@@ -47,14 +47,13 @@ function_text = "Funzione:"
 # Paths #
 #########
 
-basic_path = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(basic_path, 'BKN_Dokumenten', 'it')
+file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'it')
 
 folders = {}
 
 # gets all the names of the folders with documents in it
-for file in os.listdir(file_path):
-    folders[file] = True
+for folder in os.listdir(file_path):
+    folders[folder] = True
 
 male_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_m.html")
 female_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_w.html")
@@ -63,16 +62,9 @@ female_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_w.html")
 current = 0
 
 path = os.path.join(file_path, list(folders.keys())[current])
-path_to_male_template = path + male_template
-path_to_female_template = path + female_template
 
 sample_doc = "210820_Sdt_BKN_KSK_Gren Aufkl_m_d.docx"
 sample_fail_doc = "230130_Sdt_BKN_LVbInf_Inf BesInf Pz Fahr_m_d.docx"
-
-# Exceptions
-exceptions = [
-    "230130_Sdt_BKN_LVbLog_Motfhr_w_d.docx"
-]
 
 
 #############
@@ -83,11 +75,15 @@ def replace_str(string: str) -> str:
     """replaces umlaut as well as known mistakes within the html string"""
 
     html_codes = {
-        'À': '&#192;', 'È': '&#200;', 'É': '&#201;', 'Ì': '&#204;', 'Í': '&#205;', 'Ï': '&#207;', 'Ò': '&#210;', 'Ó': '&#211;', 'Ù': '&#217;', 'Ú': '&#218;',
-        'à': '&#224;', 'è': '&#232;', 'é': '&#233;', 'ì': '&#236;', 'í': '&#237;', 'ï': '&#239;', 'ò': '&#242;', 'ó': '&#243;', 'ù': '&#249;', 'ú': '&#250;',
-        '–': '&ndash;'
+        'Ä': '&#196;', 'ä': '&#228;',
+        'Ö': '&#214;', 'ö': '&#246;',
+        'Ü': '&#220;', 'ü': '&#252;',
+        'à': '&#224;', 'â': '&#226;', 'æ': '&#230;', 'ç': '&#231;', 'è': '&#232;', 'é': '&#233;', 'ê': '&#234;', 'ë': '&#235;', 'î': '&#238;', 'ï': '&#239;', 'ô': '&#244;', 
+        'À': '&#192;', 'Â': '&#194;', 'Æ': '&#198;', 'Ç': '&#199;', 'È': '&#201;', 'É': '&#201;', 'Ê': '&#202;', 'Ë': '&#203;', 'Î': '&#206;', 'Ï': '&#207;', 'Ô': '&#212;', 
+	    'œ': '&#339;', 'ù': '&#249;', 'û': '&#251;', 'ÿ': '&#255;',
+	    'Œ': '&#338;','Ù': '&#217;', 'Û': '&#219;', 'Ÿ': '&#376;',
+	    '«': '&laquo;', '»': '&raquo;',  '–': '&ndash;', "'": '&apos;', '’': '&rsquo;'
     }
-
     for umlaut, code in html_codes.items():
         string = string.replace(umlaut, code)
     return string
@@ -116,13 +112,16 @@ def replace_competence(sdt_competences: list, html_v1: str) -> str:
     training_block = doc_split[1]
     task_block = doc_split[2]
 
-    training_lines = training_block.split('\n')
+    training_lines = training_block.split('\n') if training_block else []
     training_index = 0
     for line in training_lines:
         if "</ul>" in line:
             break
         training_index += 1
     training_lines = training_lines[training_index:]
+    if not sdt_competences:
+        print("Error: 'sdt_competences' is an empty list.")
+        return
     new_training_block = '\n' + sdt_competences[0] + '\n'.join(training_lines)
     doc_split[1] = new_training_block
 
@@ -175,13 +174,13 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
     html_v3 = replace_end(is_einh_san, is_dd, html_v2, is_male)
     html_v4 = replace_str(html_v3)
     if print_html:
-        print(html_v4)
+        print(f'Created file successfully: ', title)
     if create_file:
         with open(title, 'w') as f:
             f.write(html_v4)
 
 
-def find_competence_cell(word_doc: docx):
+def find_competence_cell(word_doc: docx, doc_name: str):
     """returns the cell of the Word with the competence description"""
 
     for table in word_doc.tables:
@@ -189,6 +188,7 @@ def find_competence_cell(word_doc: docx):
             for paragraph in row.cells[0].paragraphs:
                 if training_text in paragraph.text:
                     return row.cells[0]
+    print(f'Error, couldnt find competence cell. Word: ', path, doc_name)
     return None
 
 
@@ -200,7 +200,7 @@ def competence_from_word(doc_name: str) -> list:
     end_of_indented_list = list_space + '</ul>' + '\n'
 
     word_doc = docx.Document(os.path.join(path, doc_name))
-    sdt_competence_cell = find_competence_cell(word_doc)
+    sdt_competence_cell = find_competence_cell(word_doc, doc_name)
     sdt_competences = ['']
     double_indent = False
 
@@ -235,10 +235,9 @@ def competence_from_word(doc_name: str) -> list:
     incomplete_competences = len(sdt_competences) < 2
     if incomplete_competences:
         print("ERROR: " + doc_name)
-        for paragraph in sdt_competence_cell.paragraphs:
-            print(paragraph.text)
-    assert not incomplete_competences
-
+        problematic_docs[competence_txt].append(doc_name)
+        return []
+    
     no_competence_text = sdt_competences[0].count('\n') < 2 or sdt_competences[1].count('\n') < 2
     if no_competence_text:
         problematic_docs[competence_txt].append(doc_name)
@@ -256,7 +255,7 @@ def function_from_word(doc_name: str) -> str:
         if function_text in paragraph.text:
             sdt_function = re.sub(function_text, "", paragraph.text).strip()
             break
-    sdt_function = "<td>" + sdt_function + "</td>"
+    sdt_function = "<td>" + str(sdt_function) + "</td>"
     return sdt_function
 
 
@@ -273,7 +272,7 @@ def create_html_path(doc_name: str) -> str:
     html_name = html_name.replace('ü', 'ue')
     html_name = html_name.replace('„', 'ae')
     html_name = html_name.replace('ä', 'ae')
-    html_path = path + "\\HTML" + "\\TEST" + "\\" + html_name
+    html_path = os.path.join(path, "HTML", "TEST", html_name)
 
     if not html_name.isascii():
         problematic_docs[sign_txt].append(doc_name)
@@ -318,7 +317,7 @@ def make_new_html(doc_name: str, create_a_file: bool, print_html: bool = False, 
         "Einh San" in doc_name,
         "DD" in doc_name
     ]
-    create_html_file(doc_attributes, path_to_html, is_male, create_a_file, print_html)
+    create_html_file(doc_attributes, path_to_html, is_male, create_file = False, print_html = True)
 
 
 # In case of unaccepted changes in some docs
@@ -359,7 +358,7 @@ def iterate_word_docs(create_folders: bool, exception_list: list):
 # iterate_folders = False
 iterate_folders = True
 
-sign_txt = "Wrong sign in title:"
+sign_txt = "Wrong character in title (not ASCII):"
 competence_txt = "No competence text:"
 miscellaneous = "Other errors:"
 no_paragraph = "Nothing in the Table:"
@@ -371,15 +370,16 @@ problematic_docs = {
     no_paragraph: []
 }
 
+exceptions = []
+
 if iterate_folders:
     for key, value in folders.items():
         if not value:
             continue
-        path = os.path.join(file_path, key)  # Add os.path.join to combine folder path and name
-        path_to_male_template = os.path.join(path, male_template)  # Update template paths
-        path_to_female_template = os.path.join(path, female_template)  # Update template paths
+        path = os.path.join(file_path, key)
+        path_to_male_template = os.path.join(path, male_template)
+        path_to_female_template = os.path.join(path, female_template)
         iterate_word_docs(create_folders=True, exception_list=exceptions)
-
 
 print("\n# Problems")
 for problem, docs in problematic_docs.items():
