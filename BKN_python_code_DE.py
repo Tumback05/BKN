@@ -144,7 +144,6 @@ def replace_end(is_einh_san: bool, is_dd: bool, html_v2: str, is_male: bool):
     if not is_einh_san and not is_dd:
         return html_v2
     html_blocks = html_v2.split("</ul>")
-    print(html_blocks)
     additional_block = html_blocks[2]
     end_blocks = additional_block.split("</p>")
     if is_einh_san:
@@ -166,20 +165,14 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
         html_v0 = f.read()
     sdt_function = doc_attributes[0]
     html_v1 = replace_function(sdt_function, html_v0)
-    print(f'html_v1 is of type:', type(html_v1))
-    print(f'contents of html_v1: ', html_v1)
     sdt_competences = doc_attributes[1]
-    print(f'Soldat competences: ', sdt_competences)
     html_v2 = replace_competence(sdt_competences, html_v1)
-    print(f'html_v2 is of type:', type(html_v2))
     is_einh_san = doc_attributes[2]
     is_dd = doc_attributes[3]
     html_v3 = replace_end(is_einh_san, is_dd, html_v2, is_male)
-    print(f'html_v3 is of type:', type(html_v3))
     html_v4 = replace_str(html_v3)
-    print(f'create file = {create_file}    -    print html = {print_html}')
     if print_html:
-        print(html_v4)
+        print(f'Created file successfully: ', title)
     if create_file:
         with open(title, 'w') as f:
             f.write(html_v4)
@@ -206,7 +199,6 @@ def competence_from_word(doc_name: str) -> list:
 
     word_doc = docx.Document(os.path.join(path, doc_name))
     sdt_competence_cell = find_competence_cell(word_doc, doc_name)
-    print(f'output of find_competence_cell function: ', sdt_competence_cell)
     sdt_competences = ['']
     double_indent = False
 
@@ -248,7 +240,6 @@ def competence_from_word(doc_name: str) -> list:
     if no_competence_text:
         problematic_docs[competence_txt].append(doc_name)
 
-    print(f'Soldat competences in the function: ', sdt_competences)
     return sdt_competences
 
 
@@ -324,7 +315,6 @@ def make_new_html(doc_name: str, create_a_file: bool, print_html: bool = False, 
         "Einh San" in doc_name,
         "DD" in doc_name
     ]
-    print(f'started function competence_from_word', doc_attributes)
     create_html_file(doc_attributes, path_to_html, is_male, create_file = False, print_html = True)
 
 
@@ -398,3 +388,4 @@ for problem, docs in problematic_docs.items():
     print(problem)
     for problem_doc in docs:
         print('"' + problem_doc + '"' + ',')
+print()
