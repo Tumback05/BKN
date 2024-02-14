@@ -38,6 +38,7 @@ dd_block_w = ('''\n
 training_text = "suivants dans le cadre"  # in KSK mal versions have "Ausbildung" instead of "Fachausbildung"
 training_test_2 = "a suivi les modules de formation" # in fr mal anders beschrieben
 activities_text = "Les activités suivantes faisaient partie"
+activities_text_2 = "les tâches suivantes"
 
 # keyword to find function in word
 # as well as in replace_function in html
@@ -212,7 +213,7 @@ def competence_from_word(doc_name: str) -> list:
     double_indent = False
 
     for paragraph in sdt_competence_cell.paragraphs:
-        if activities_text in paragraph.text:
+        if activities_text in paragraph.text or activities_text_2 in paragraph.text:
             if double_indent:
                 double_indent = False
                 sdt_competences[-1] += end_of_indented_list
@@ -378,10 +379,8 @@ problematic_docs = {
 }
 
 exceptions = [
-    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufkl Sdt_m_f.docx',
-    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufkl Sdt_w_f.docx',
-    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufklfz Fahr_m_f.docx',
-    '20231004_Sdt_BKN_LVbGRttgABC_ABC Aufklfz Fahr_w_f.docx'
+    '20230530_Kader_BKN_Chance Armee_m_f.docx',
+    '20230530_Kader_BKN_Chance Armee_f_f.docx'
 ]
 
 if iterate_folders:
