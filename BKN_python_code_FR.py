@@ -51,11 +51,17 @@ function_text = "Fonction:"
 
 file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'fr')
 
-folders = {}
+folders = {
+    '20230725_BODLUV Br 33': True,
+    '20231004_G_Rttg_ABC': True,
+    '20231205_LVb Inf': True,
+    '20240123_LVb FU': True
+}
 
 # gets all the names of the folders with documents in it
-for folder in os.listdir(file_path):
-    folders[folder] = True
+if len(folders) == 0:
+    for folder in os.listdir(file_path):
+        folders[folder] = True
 
 male_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_m.html")
 female_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_w.html")
@@ -167,17 +173,13 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
     path_to_template = path_to_male_template if is_male else path_to_female_template
     with open(path_to_template, 'r') as f:
         html_v0 = f.read()
-    print(type(html_v0))
     sdt_function = doc_attributes[0]
     html_v1 = replace_function(sdt_function, html_v0)
-    print(type(html_v1))
     sdt_competences = doc_attributes[1]
     html_v2 = replace_competence(sdt_competences, html_v1)
-    print(type(html_v2))
     is_einh_san = doc_attributes[2]
     is_dd = doc_attributes[3]
     html_v3 = replace_end(is_einh_san, is_dd, html_v2, is_male)
-    print(type(html_v3))
     html_v4 = replace_str(html_v3)
     if print_html:
         print(f'Created file successfully: ', title)

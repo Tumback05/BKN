@@ -77,6 +77,8 @@
 		.page {
 			padding: 20mm;
 			page-break-after: always;
+			width: 80%;
+			box-style: border-box;		
 		}
 
 		.page:last-of-type {
@@ -116,8 +118,16 @@
 			vertical-align: top;
 		}
 
-		table.competences 
-		{
+		.melvin {
+			border-bottom: 0px solid black;
+			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
+		}
+		
+		
+		table.competences td {
+			border-bottom: 1px solid black;
 			padding: 6px 8px;
 		}
 		
@@ -138,145 +148,148 @@
 			display: inline;
 			tab-size: 60;
 		}
+		.schoel {
+			padding: 5px;
+			width: 23%;
+		}
 	</style>
 </head>
-
-<body>
+<body>	  
 	<div class="page">
 		<header>
 			<img width="319" height="51" src="Images/schweiz.png" align=left>
-			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right>
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right><br><br>
 		</header>
-		<br><br><br><br><br><br>
-		<h1>Bildungs- und Kompetenznachweis</h1>
-		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<h1>Attestato di formazione e di competenza</h1>
+		L&#8242;Esercito svizzero conferma che
 		<p class="username">
 			{{User.FirstLastName}}
 		</p>
 		<p>
-			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+			nato il  {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			ha assolto il seguente servizio militare:
 		</p>
 		<table>
 			<tr>
-				<th>Milit&#228;rdienst bei:</th>
+				<th>Servizio militare presso:</th>
 				<td>{{User.Text1}}</td>
 			</tr>
 			<tr>
-				<th>Zeitraum:</th>
+				<th>Periodo:</th>
 				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
 			</tr>
 			<tr>
-				<th>Funktion:</th>
-				<td>B&#252;roordonnanz</td>
+				<th>Periodo:</th>
+				<td>Ordinanza d&#8242;ufficio</td>
 			</tr>
 			<tr>
 				<th>Grad:</th>
-				<td>Soldat</td>
+				<td>Soldato</td>
 			</tr>
 		</table>
 		<p>
-			Ich danke Soldat {{User.FirstLastName}} f&#252;r sein Engagement zugunsten der Schweizer Armee und w&#252;nsche ihm
-			f&#252;r seine zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro 
+			ogni successo e soddisfazione nella sua futura carriera.
 		</p>
 		<p>
-			Bodengest&#252;tzte Luftverteidigungsbrigade 33
+			Brigata d’aviazione 31
 		</p>
 		<p>
 			<img width=167 height=145 src="Images/Unterschrift_BODLUV_Br33.png" />
 		</p>
 		<p>
 			Brigadier Peter Soller</br>
-			Kommandant
+			Comandante
 		</p>
 		<p class="small">
-			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+			Questo attestato di formazione e competenza &#232; trasparente e non contiene alcuna informazione nascosta
 		</p>
 	</div>
 	<div class="page">
 		<p class="medium">
-			Er hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+			Durante la scuola reclute, ha acquisito le seguenti competenze teoriche e pratiche:
 		</p>
 		<table class="competences medium">
 			<tr class="colored">
-				<th>Kompetenzen</th>
-				<th>Inhalt / Anwendungsbereich</th>
+				<th>Competenze</th>
+				<th>Contenuto / Portata</th>
 			</tr>
-			<tr class="tr1">
+			<tr>
 				<td>
-					Eigenverantwortung
+					Responsabilit&#224; personale
 				</td>
 				<td>
-					Durch das Zusammenleben in seiner milit&#228;rischen Einheit musste er Verantwortung f&#252;r sich und andere
-					innerhalb der Gruppe &#252;bernehmen.
-				</td>
-			</tr>
-			<tr class="tr1">
-				<td>
-					Loyalit&#228;t
-				</td>
-				<td>
-					W&#228;hrend der Dienstdauer lebte er nach gemeinschaftlichen Werten, sozialen Normen sowie
-					gruppenspezifischen Regeln.
+					Vivendo insieme nella sua unit&#224; militare, ha dovuto assumersi la responsabilit&#224; per 
+					s&#233; stesso e per gli altri all&#8242;interno del gruppo
 				</td>
 			</tr>
-			<tr class="tr1">
+			<tr>
 				<td>
-					Belastbarkeit
+					Lealt&#224;
 				</td>
 				<td>
-					In der Rekrutenschule durchlebte er Phasen erh&#246;hter physischer sowie psychischer Belastung. Er hielt
-					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
-				</td>
-			</tr>
-			<tr class="tr1">
-				<td>
-					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
-				</td>
-				<td>
-					Dank seiner Lern- und Anpassungsf&#228;higkeit integrierte er sich in ein f&#252;r ihn ungewohntes Umfeld.
+					Durante il periodo di servizio, ha vissuto secondo i valori della comunit&#224;, le norme 
+					sociali e le regole specifiche del gruppo.
 				</td>
 			</tr>
-			<tr class="tr1">
+			<tr>
 				<td>
-					Kritik- und Konfliktf&#228;higkeit
+					Resilienza
 				</td>
 				<td>
-					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
-				</td>
-			</tr>
-			<tr class="tr1">
-				<td>
-					Teamf&#228;higkeit
-				</td>
-				<td>
-					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
-					Wertsch&#228;tzung.
+					Durante la scuola reclute, ha vissuto fasi di maggiore stress fisico e psicologico. 
+					Ha resistito a queste condizioni difficili ed &#232; stato in grado di concentrarsi sull&#8242;essenziale.
 				</td>
 			</tr>
-			<tr class="tr1">
+			<tr>
 				<td>
-					Sozialkompetenz
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
 				</td>
 				<td>
-					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
-					sozialer Stellung begleiteten ihn w&#228;h-rend seiner Dienstzeit und forderten/f&#246;rderten seine
-					Sozialkompetenz.
+					Grazie alla sua capacit&#224; di apprendimento e adattamento, &#232; stato in grado di ambientarsi 
+					in un ambiente non familiare.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di gestire le critiche e i conflitti
+				</td>
+				<td>
+					In condizioni di maggiore stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224;
+					di gestire le critiche e i conflitti.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lavoro di squadra
+				</td>
+				<td>
+					La condivisione di compiti, obbiettivi ed esperienze ha rafforzato il rispetto e 
+					l&#8242;apprezzamento reciproco.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Competenze sociali
+				</td>
+				<td>
+					Persone di diverse origini, lingue, culture, generi, religioni e status sociale l&#8242;hanno
+					accompagnato durante il suo servizio e l&#8242;hanno stimolato a consolidare la sua competenza sociale.
 				</td>
 			</tr>
 		</table>
-		<table class="competences medium">
+		<table class="melvin">
 			<tr class="colored">
-				<th colspan="2">
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
 					Fachtechnische Kompetenzen
 				</th>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<p class="bold">Sie hat in der Fachausbildung folgende Module absolviert:</p>
+					<p class="bold">Er hat in der Fachausbildung folgende Module absolviert:</p>
 				</td>
-			</tr>
 			<tr>
-				<td>
+				<td class="schoel">
 					<ul>					
 						<li>Human Factors / Flight Safety</li>
 						<li>Ground Handling Signals</li>
@@ -307,7 +320,7 @@
 		<table class="competences medium">	
 			<tr>		
 				<td>
-				<p class="bold">Zu ihrem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+				<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
 					<ul>
 						<li>Anwendung von fachspezifischen Begriffen in der englischen Sprache</li>
 						<li>Instandhaltung sowie Instandsetzung des gesamten Elektro-, Beleuchtungs- und Flugzeugssteuerungssystems 
@@ -315,7 +328,7 @@
 						<li>Arbeiten gem&#228;ss Checklisten und Herstellervorgaben</li>
 					</ul>
 					<p>
-						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelfer erhalten.
+						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelferin erhalten.
 					</p>
 					<p>
 						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
@@ -325,6 +338,6 @@
 				</td>
 			</tr>
 		</table>
-	</div>
+	</div>	
 </body>
 </html>

@@ -77,6 +77,8 @@
 		.page {
 			padding: 20mm;
 			page-break-after: always;
+			width: 80%;
+			box-style: border-box;				
 		}
 
 		.page:last-of-type {
@@ -116,11 +118,18 @@
 			vertical-align: top;
 		}
 
-		table.competences 
-		{
+		.melvin {
+			border-bottom: 0px solid black;
 			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
 		}
 		
+		
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
 		.tr1 {
 			border-bottom: 1px solid black;
 		}
@@ -138,6 +147,10 @@
 			display: inline;
 			tab-size: 60;
 		}
+		.schoel {
+			padding: 5px;
+			width: 23%;
+		}
 	</style>
 </head>
 
@@ -147,136 +160,136 @@
 			<img width="319" height="51" src="Images/schweiz.png" align=left>
 			<img width="138" height="190" src="Images/Logo_LW.png" align=right><br><br>
 		</header>
-		<br><br><br><br><br><br>
-		<h1>Bildungs- und Kompetenznachweis</h1>
-		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<h1>Attestato di formazione e di competenza</h1>
+		L&#8242;Esercito svizzero conferma che
 		<p class="username">
 			{{User.FirstLastName}}
 		</p>
 		<p>
-			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+			nato il  {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			ha assolto il seguente servizio militare:
 		</p>
 		<table>
 			<tr>
-				<th>Milit&#228;rdienst bei:</th>
+				<th>Servizio militare presso:</th>
 				<td>{{User.Text1}}</td>
 			</tr>
 			<tr>
-				<th>Zeitraum:</th>
+				<th>Periodo:</th>
 				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
 			</tr>
 			<tr>
-				<th>Funktion:</th>
-				<td>Fliegersoldat Einsatz Kommandoposten Nachrichten</td>
+				<th>Periodo:</th>
+				<td>Ordinanza d&#8242;ufficio</td>
 			</tr>
 			<tr>
 				<th>Grad:</th>
-				<td>Soldat</td>
+				<td>Soldato</td>
 			</tr>
 		</table>
 		<p>
-			Ich danke Soldat {{User.FirstLastName}} f&#252;r ihr Engagement zugunsten der Schweizer Armee und w&#252;nsche ihr
-			f&#252;r ihre zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro 
+			ogni successo e soddisfazione nella sua futura carriera.
 		</p>
 		<p>
-			Fliegerbrigade 31
+			Brigata d’aviazione 31
 		</p>
 		<p>
-			<img width=176 height=60 src="Images/Unterschrift_LW.png"  />
+			<img width=176 height=60 src="Images/Unterschrift_LW.png" />
 		</p>
 		<p>
 			Brigadier Peter Bruns</br>
-			Kommandant
+			Comandante
 		</p>
 		<p class="small">
-			<br>Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+			Questo attestato di formazione e competenza &#232; trasparente e non contiene alcuna informazione nascosta
 		</p>
 	</div>
 	<div class="page">
 		<p class="medium">
-			Sie hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+			Durante la scuola reclute, ha acquisito le seguenti competenze teoriche e pratiche:
 		</p>
 		<table class="competences medium">
 			<tr class="colored">
-				<th>Kompetenzen</th>
-				<th>Inhalt / Anwendungsbereich</th>
+				<th>Competenze</th>
+				<th>Contenuto / Portata</th>
 			</tr>
 			<tr>
 				<td>
-					Eigenverantwortung
+					Responsabilit&#224; personale
 				</td>
 				<td>
-					Durch das Zusammenleben in ihrer milit&#228;rischen Einheit musste sie Verantwortung f&#252;r sich und andere
-					innerhalb der Gruppe &#252;bernehmen.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Loyalit&#228;t
-				</td>
-				<td>
-					W&#228;hrend der Dienstdauer lebte sie nach gemeinschaftlichen Werten, sozialen Normen sowie
-					gruppenspezifischen Regeln.
+					Vivendo insieme nella sua unit&#224; militare, ha dovuto assumersi la responsabilit&#224; per 
+					s&#233; stesso e per gli altri all&#8242;interno del gruppo
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Belastbarkeit
+					Lealt&#224;
 				</td>
 				<td>
-					In der Rekrutenschule durchlebte sie Phasen erh&#246;hter physischer sowie psychischer Belastung. Sie hielt
-					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
-				</td>
-				<td>
-					Dank ihrer Lern- und Anpassungsf&#228;higkeit integrierte sie sich in ein f&#252;r ihn ungewohntes Umfeld.
+					Durante il periodo di servizio, ha vissuto secondo i valori della comunit&#224;, le norme 
+					sociali e le regole specifiche del gruppo.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Kritik- und Konfliktf&#228;higkeit
+					Resilienza
 				</td>
 				<td>
-					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Teamf&#228;higkeit
-				</td>
-				<td>
-					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
-					Wertsch&#228;tzung.
+					Durante la scuola reclute, ha vissuto fasi di maggiore stress fisico e psicologico. 
+					Ha resistito a queste condizioni difficili ed &#232; stato in grado di concentrarsi sull&#8242;essenziale.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Sozialkompetenz
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
 				</td>
 				<td>
-					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
-					sozialer Stellung begleiteten sie w&#228;hrend ihrer Dienstzeit und forderten/f&#246;rderten ihre
-					Sozialkompetenz.
+					Grazie alla sua capacit&#224; di apprendimento e adattamento, &#232; stato in grado di ambientarsi 
+					in un ambiente non familiare.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di gestire le critiche e i conflitti
+				</td>
+				<td>
+					In condizioni di maggiore stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224;
+					di gestire le critiche e i conflitti.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lavoro di squadra
+				</td>
+				<td>
+					La condivisione di compiti, obbiettivi ed esperienze ha rafforzato il rispetto e 
+					l&#8242;apprezzamento reciproco.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Competenze sociali
+				</td>
+				<td>
+					Persone di diverse origini, lingue, culture, generi, religioni e status sociale l&#8242;hanno
+					accompagnato durante il suo servizio e l&#8242;hanno stimolato a consolidare la sua competenza sociale.
 				</td>
 			</tr>
 		</table>
-		<table class="competences medium">
+		<table class="melvin">
 			<tr class="colored">
-				<th colspan="2">
-					Fachtechnische Kompetenzen;
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+					Competenze tecniche
 				</th>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<p class="bold">Sie hat in der Fachausbildung folgende Module absolviert:</p>
+		 <p class="bold">Er hat in der Fachausbildung folgende Module absolviert:</p>
 				</td>
-			</tr>
 			<tr>
-				<td>
+				<td class="schoel">
 					<ul>					
 						<li>Human Factors / Flight Safety</li>
 						<li>Ground Handling Signals</li>
@@ -286,7 +299,7 @@
 						<li>Electrical Power System</li>
 						<li>Hydraulic Power EL</li>
 						<li>Flight Aids</li>
-						<li>WBCR Wire Bundle Connector Repair</li>
+						<li>WBCR Wire Bundle Connector Repair</li>					
 					</ul>
 				</td>
 				<td>
@@ -304,27 +317,30 @@
 				</td>
 			</tr>
 		</table>
-		<table class="competences medium">	
-			<tr>		
+		<table class="competences medium">
+			<tr>	
 				<td>
-				<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<p class="bold">Il suo ambito di competenza comprendeva le seguenti attivit&#224;:</p>
 					<ul>
-						<li>Anwendung von fachspezifischen Begriffen in der englischen Sprache</li>
-						<li>Instandhaltung sowie Instandsetzung des gesamten Elektro-, Beleuchtungs- und Flugzeugssteuerungssystems 
-						vor und nach dem Flug</li>
-						<li>Arbeiten gem&#228;ss Checklisten und Herstellervorgaben</li>
+						<li>Ex&#233;cuter diverses t&#226;ches administratives comme la distribution du travail, la 
+						protection des informations et l&#8242;analyse des banques de do</li>
+						<li>G&#233;rer le mat&#233;riel en lien avec l&#8242;inventaire, les commandes et le contr&#244;le des 
+							livraisons de documents et de mat&#233;riel de bureau</li>
+						<li>Effectuer le contr&#244;le et l&#8242;entretien des outils &#224; disposition (imprimantes, 
+							photocopieuses, plastifieuses, fax, relieus</li>
+						<li>Apporter un soutien &#224; la gestion du personnel, surveiller le calendrier</li>
+						<li>ATravailler &#224; la r&#233;ception et donner des renseignements (trier les appels)</li>
 					</ul>
 					<p>
-						Im Rahmen der Selbst- und Kameradenhilfe hat sie die Ausbildung zum Nothelferin erhalten.
+						Nell&#8242;ambito dell&#8242;aiuto a sé stesso ed al camerata ha conseguito l&#8242;istruzione quale soccorritrice.
 					</p>
 					<p>
-						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
-						der ersten &#220;berpr&#252;fung zum Zeitpunkt seiner Rekrutierung hat sie die Sicherheitspr&#252;fung
-						bestanden.
+						L&#8242;Esercito svizzero svolge a scadenze regolari controlli di sicurezza relativi alle persone. In occasione del 
+						reclutamento ha avuto il primo controllo sulla sicurezza, che ha superato.
 					</p>
 				</td>
 			</tr>
 		</table>
-	</div>
+	</div>	
 </body>
 </html>

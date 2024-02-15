@@ -77,6 +77,8 @@
 		.page {
 			padding: 20mm;
 			page-break-after: always;
+			width: 80%;
+			box-style: border-box;		   
 		}
 
 		.page:last-of-type {
@@ -84,7 +86,7 @@
 		}
 
 		h1 {
-			color: #F5B639;
+			color: #00008A;
 			margin-bottom: 48px;
 			font-size: 30px;
 		}
@@ -115,6 +117,12 @@
 		td {
 			vertical-align: top;
 		}
+		.melvin {
+			border-bottom: 0px solid black;
+			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
+			}
 
 		table.competences td {
 			border-bottom: 1px solid black;
@@ -126,9 +134,12 @@
 		}
 
 		.colored {
-			background-color: #F5B639;
+			background-color: #00008A;
 			color: white;
 		}
+			display: inline;
+			tab-size: 60;
+			}
 	</style>
 </head>
 
@@ -136,163 +147,159 @@
 	<div class="page">
 		<header>
 			<img width="319" height="51" src="Images/schweiz.png" align=left>
-			<img width="138" height="190" src="Images/LVB_GRttg_ABC_Sport.png" align=right>
-			<br><br><br><br><br><br>
+			<img width="138" height="190" src="Images/Logo_LW.png" align=right><br><br>
 		</header>
-		<h1>Bildungs- und Kompetenznachweis</h1>
-		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<h1>Attestation de formation et de comp&#233;tence</h1>
+			L&#8242;Arm&#233;e suisse confirme que
 		<p class="username">
 			{{User.FirstLastName}}
 		</p>
 		<p>
-			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+			n&#233; le {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			a accompli le service militaire suivant:
 		</p>
 		<table>
 			<tr>
-				<th>Milit&#228;rdienst bei:</th>
+				<th>Service militaire &#224;:</th>
 				<td>{{User.Text1}}</td>
 			</tr>
 			<tr>
-				<th>Zeitraum:</th>
+				<th>P&#233;riode:</th>
 				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
 			</tr>
 			<tr>
-				<th>Funktion:</th>
-				<td>B&#252;roordonnanz</td>
+				<th>Fonction:</th>
+				<td>Ordonnance de bureau</td>
 			</tr>
 			<tr>
-				<th>Grad:</th>
+				<th>Rang:</th>
 				<td>Soldat</td>
 			</tr>
 		</table>
 		<p>
-			Ich danke Soldat {{User.FirstLastName}} f&#252;r sein Engagement zugunsten der Schweizer Armee und w&#252;nsche ihm
-			f&#252;r seine zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+			Je tiens &#224; remercier le soldat {{User.FirstLastName}} pour son service dans l&#8242;Arm&#233;e suisse et lui souhaite beaucoup de succ&#232;s et de satisfaction 
+			dans sa future carri&#232;re.
 		</p>
 		<p>
-			Lehrverband Genie / Rettung / ABC
+			Brigade d'aviation 31
 		</p>
 		<p>
-			<img width=176 height=60 src="Images/Unterschrift_LvbGRttg.png" />
+			<img width=176 height=60 src="Images/Unterschrift_LW.png" />
 		</p>
 		<p>
-			Brigadier Niels Blatter</br>
-			Kommandant
+			Brigadier Peter Bruns</br>
+			Commandant
 		</p>
 		<p class="small">
-			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+			Cette attestation de formation et de comp&#233;tence est transparente et ne contient donc pas d&#8242;information cach&#233;e
 		</p>
 	</div>
 	<div class="page">
 		<p class="medium">
-			Er hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+			Durant l&#8242;&#233;cole de recrues, il a acquis les comp&#233;tences th&#233;oriques et pratiques suivantes:
 		</p>
 		<table class="competences medium">
 			<tr class="colored">
-				<th>Kompetenzen</th>
-				<th>Inhalt / Anwendungsbereich</th>
+				<th>Comp&#233;tences</th>
+				<th>Contenu / Port&#233;e</th>
 			</tr>
 			<tr>
 				<td>
-					Eigenverantwortung
+					Responsabilit&#233; personnelle
 				</td>
 				<td>
-					Durch das Zusammenleben in seiner milit&#228;rischen Einheit musste er Verantwortung f&#252;r sich und andere
-					innerhalb der Gruppe &#252;bernehmen.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Loyalit&#228;t
-				</td>
-				<td>
-					W&#228;hrend der Dienstdauer lebte er nach gemeinschaftlichen Werten, sozialen Normen sowie
-					gruppenspezifischen Regeln.
+					En vivant ensemble dans son unit&#233;, il a d&ucirc; prendre des responsabilit&#233;s 
+					pour lui-m&#234;me et pour les autres au sein du groupe.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Belastbarkeit
+					Loyaut&#233;
 				</td>
 				<td>
-					In der Rekrutenschule durchlebte er Phasen erh&#246;hter physischer sowie psychischer Belastung. Er hielt
-					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
-				</td>
-				<td>
-					Dank seiner Lern- und Anpassungsf&#228;higkeit integrierte er sich in ein f&#252;r ihn ungewohntes Umfeld.
+					Pendant la p&#233;riode de service, il a v&#233;cu selon les valeurs de la communaut&#233;, les normes 
+					sociales et les r&#234;gles sp&#233;cifique
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Kritik- und Konfliktf&#228;higkeit
+					R&#233;silience
 				</td>
 				<td>
-					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Teamf&#228;higkeit
-				</td>
-				<td>
-					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
-					Wertsch&#228;tzung.
+					Pendant l&#8242;&#233;cole de recrues, il a connu des phases de stress physique et psychologique accru.
+					Il a r&#233;sist&#233; &#224; ces conditions difficiles et a pu se concentrer sur l&#8242;essentiel.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Sozialkompetenz
+					Capacit&#233; d&#8242;apprentissage et d&#8242;adaptation (flexibilit&#233;)
 				</td>
 				<td>
-					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
-					sozialer Stellung begleiteten ihn w&#228;h-rend seiner Dienstzeit und forderten/f&#246;rderten seine
-					Sozialkompetenz.
+					Gr&#226;ce &#224; sa capacit&#233; d&#8242;apprentissage et d&#8242;adaptation, il a pu s&#8242;acclimater &#224; un environnement peu familier.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#233; &#224; g&#233;rer les critiques et les conflits
+				</td>
+				<td>
+					Dans des conditions de stress physique et/ou psycho-&#233;conomique accru, la capacit&#233; &#224; g&#233;rer les critiques et les conflit
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Travail d&#8242;&#233;quipe
+				</td>
+				<td>
+					Le partage des t&#226;ches, des objectifs et des exp&#233;riences a renforc&#233; le respect et l&#8242;appr&#233;ciation mutuels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Comp&#233;tences sociales
+				</td>
+				<td>
+					Des personnes d&#8242;origines, de langues, de cultures, de sexes, de religions et de statuts sociaux diff&#233;rents 
+					l&#8242;ont accompagn&#233; pendant son service et ont mis au d&#233;fi/promu ses comp&#233;tences sociales
 				</td>
 			</tr>
 		</table>
-		<table class="competences medium">
+		<table class="melvin">
 			<tr class="colored">
-				<th>
-					Fachtechnische Kompetenzen
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+					Comp&#233;tences techniques
 				</th>
 			</tr>
 			<tr>
 				<td>
-					<p class="bold">Er hat in der Fachausbildung folgende Module absolviert:</p>
+					<p class="bold">Il a suivi les modules de formation sp&#233;cialis&#233;e ci-dessous:</p>
 					<ul>
-						<li>Milit&#228;rische Schriftst&#252;cke (Darstellung, Abk&#252;rzungen, Signaturen)</li>
-						<li>Integrale Sicherheit</li>
-						<li>Administrative Arbeitstechnik und Arbeitsgestaltung</li>
-						<li>Kenntnisse der Formulare und Reglemente</li>
+						<li>Documents militaires (pr&#233;sentation, abr&#233;viations, signes conventionnels);</li>
+						<li>S&#233;curit&#233; int&#233;grale</li>
+						<li>Technique et organisation administratives du travail;</li>
+						<li>Connaissance des formulaires et des r&#232;glements</li>
 					</ul>
-					<p class="bold">Zu seinem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<p class="bold">Il avait les t&#226;ches suivantes:</p>
 					<ul>
-						<li>Ausf&#252;hrung diverser administrativer Aufgaben wie Arbeitsverteilung, Informationsschutz und
-							Datenbank-Analyse
-						</li>
-						<li>Materialverwaltung im Bereich Inventur, Bestellungen, Lieferkontrollen der Dokumente und des
-							B&#252;romaterials</li>
-						<li>Kontrolle, Unterhalt und Beherrschung der verschiedenen zur Verf&#252;gung gestellten Mittel
-							(Drucker, Fotokopierger&#228;t, Laminierger&#228;t, Fax, Bindeger&#228;t usw.)</li>
-						<li>Unterst&#252;tzung bei der Personalverwaltung, &#252;berwachung der Terminplanung</li>
-						<li>Arbeiten im Empfangsbereich sowie als Auskunftsstelle (telefonische Triage)</li>
+						<li>Ex&#233;cuter diverses t&#226;ches administratives comme la distribution du travail, la 
+						protection des informations et l&#8242;analyse des banques de do</li>
+						<li>G&#233;rer le mat&#233;riel en lien avec l&#8242;inventaire, les commandes et le contr&#244;le des 
+							livraisons de documents et de mat&#233;riel de bureau</li>
+						<li>Effectuer le contr&#244;le et l&#8242;entretien des outils &#224; disposition (imprimantes, 
+							photocopieuses, plastifieuses, fax, relieus</li>
+						<li>Apporter un soutien &#224; la gestion du personnel, surveiller le calendrier</li>
+						<li>ATravailler &#224; la r&#233;ception et donner des renseignements (trier les appels)</li>
 					</ul>
 					<p>
-						Im Rahmen der Selbst- und Kameradenhilfe hat er die Ausbildung zum Nothelfer erhalten.
+						Dans le cadre de l&#8242;aide &#224; soi-m&#234;me et au camarade, il a accompli une formation de secouriste.
 					</p>
 					<p>
-						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
-						der ersten &#220;berpr&#252;fung zum Zeitpunkt seiner Rekrutierung hat er die Sicherheitspr&#252;fung
-						bestanden.
+						L&#8242;Arm&#233;e suisse proc&#232;de r&#233;guli&#232;rement &#224; des contr&#244;les de s&#233;curit&#233; relatifs aux personnes. La personne 
+						concern&#233;e a pass&#233; sans probl&#232;me le premier contr&#244;le effectu&#233; au moment de son recrutement.
 					</p>
 				</td>
 			</tr>
 		</table>
-	</div>
+	</div>	
 </body>
 </html>

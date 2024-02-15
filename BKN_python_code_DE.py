@@ -47,11 +47,14 @@ function_text = "Funktion:"
 
 file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'de')
 
-folders = {}
+folders = {
+    '20230130_KSK': True
+}
 
 # gets all the names of the folders with documents in it
-for folder in os.listdir(file_path):
-    folders[folder] = True
+if len(folders) == 0:
+    for folder in os.listdir(file_path):
+        folders[folder] = True
 
 male_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_m.html")
 female_template = os.path.join('HTML', "Template_1_Spalte_letzte_Seite_w.html")
