@@ -35,8 +35,8 @@ dd_block_w = ('''\n
               e non viene più chiamata in servizio per corsi di ripetizione. \n''')
 
 # keywords to find competences in word
-training_text = "assolto i seguenti moduli"  # in KSK mal versions have "Ausbildung" instead of "Fachausbildung"
-activities_text = "comprendeva le seguenti attività"
+training_text = "seguenti moduli"  # in KSK mal versions have "Ausbildung" instead of "Fachausbildung"
+activities_text = "le seguenti attività"
 
 # keyword to find function in word
 # as well as in replace_function in html
@@ -188,7 +188,7 @@ def find_competence_cell(word_doc: docx, doc_name: str):
             for paragraph in row.cells[0].paragraphs:
                 if training_text in paragraph.text:
                     return row.cells[0]
-    print(f'Error, couldnt find competence cell. Word: ', path, doc_name)
+    print(f'Error, couldnt find competence cell. Word:', doc_name)
     return None
 
 
