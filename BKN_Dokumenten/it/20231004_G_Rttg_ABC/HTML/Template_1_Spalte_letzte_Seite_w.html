@@ -31,7 +31,7 @@
 				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
 				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
 			font-weight: 400;
-		}
+		}	
 
 		@font-face {
 			font-family: SegoeUI;
@@ -77,6 +77,8 @@
 		.page {
 			padding: 20mm;
 			page-break-after: always;
+			width: 80%;
+			box-style: border-box;	  			  
 		}
 
 		.page:last-of-type {
@@ -84,7 +86,7 @@
 		}
 
 		h1 {
-			color: #F5B639;
+			color: #00008A;
 			margin-bottom: 48px;
 			font-size: 30px;
 		}
@@ -115,6 +117,12 @@
 		td {
 			vertical-align: top;
 		}
+		 .melvin {
+			border-bottom: 0px solid black;
+			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
+			}
 
 		table.competences td {
 			border-bottom: 1px solid black;
@@ -126,174 +134,174 @@
 		}
 
 		.colored {
-			background-color: #F5B639;
+			background-color: #00008A;
 			color: white;
+			display: inline;
+			tab-size: 60;
 		}
 	</style>
 </head>
-
-<body>
+<body>	
 	<div class="page">
 		<header>
 			<img width="319" height="51" src="Images/schweiz.png" align=left>
-			<img width="138" height="190" src="Images/LVB_GRttg_ABC_Sport.png" align=right>
-			<br><br><br><br><br><br>
-		</header>					  
-		<h1>Bildungs- und Kompetenznachweis</h1>
-		Die Schweizer Armee best&#228;tigt hiermit, dass
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right><br><br>
+		</header>
+		<h1>Attestato di formazione e di competenza</h1>
+		L&#8242;Esercito svizzero conferma che
 		<p class="username">
 			{{User.FirstLastName}}
 		</p>
 		<p>
-			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+			nato il  {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			ha assolto il seguente servizio militare:
 		</p>
 		<table>
 			<tr>
-				<th>Milit&#228;rdienst bei:</th>
+				<th>Servizio militare presso:</th>
 				<td>{{User.Text1}}</td>
 			</tr>
 			<tr>
-				<th>Zeitraum:</th>
+				<th>Periodo:</th>
 				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
 			</tr>
 			<tr>
-				<th>Funktion:</th>
-				<td>Fliegersoldatin &#220;bermittlung</td>
+				<th>Periodo:</th>
+				<td>{{User.Function}}</td>
 			</tr>
 			<tr>
 				<th>Grad:</th>
-				<td>Soldat</td>
+				<td>Soldato</td>
 			</tr>
 		</table>
 		<p>
-			Ich danke Soldat {{User.FirstLastName}} f&#252;r ihr Engagement zugunsten der Schweizer Armee und w&#252;nsche ihr
-			f&#252;r ihre zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro 
+			ogni successo e soddisfazione nella sua futura carriera.
 		</p>
 		<p>
-			Lehrverband Genie / Rettung / ABC
+			Formazione d'addestramento del genio / del salvataggio / NBC
 		</p>
 		<p>
-			<img width=176 height=60 src="Images/Unterschrift_LvbGRttg.png" />
+			<img width=167 height=145 src="Images/Unterschrift_BODLUV_Br33.png" />
 		</p>
 		<p>
-			Brigadier Niels Blatter</br>
-			Kommandant
+			Brigadier Peter Soller</br>
+			Comandante
 		</p>
 		<p class="small">
-			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+			Questo attestato di formazione e competenza &#232; trasparente e non contiene alcuna informazione nascosta
 		</p>
 	</div>
 	<div class="page">
 		<p class="medium">
-			Sie hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+			Durante la scuola reclute, ha acquisito le seguenti competenze teoriche e pratiche:
 		</p>
 		<table class="competences medium">
 			<tr class="colored">
-				<th>Kompetenzen</th>
-				<th>Inhalt / Anwendungsbereich</th>
+				<th>Competenze</th>
+				<th>Contenuto / Portata</th>
 			</tr>
 			<tr>
 				<td>
-					Eigenverantwortung
+					Responsabilit&#224; personale
 				</td>
 				<td>
-					Durch das Zusammenleben in ihrer milit&#228;rischen Einheit musste sie Verantwortung f&#252;r sich und andere
-					innerhalb der Gruppe &#252;bernehmen.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Loyalit&#228;t
-				</td>
-				<td>
-					W&#228;hrend der Dienstdauer lebte sie nach gemeinschaftlichen Werten, sozialen Normen sowie
-					gruppenspezifischen Regeln.
+					Vivendo insieme nella sua unit&#224; militare, ha dovuto assumersi la responsabilit&#224; per 
+					s&#233; stesso e per gli altri all&#8242;interno del gruppo
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Belastbarkeit
+					Lealt&#224;
 				</td>
 				<td>
-					In der Rekrutenschule durchlebte sie Phasen erh&#246;hter physischer sowie psychischer Belastung. Sie hielt
-					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
-				</td>
-				<td>
-					Dank ihrer Lern- und Anpassungsf&#228;higkeit integrierte sie sich in ein f&#252;r ihn ungewohntes Umfeld.
+					Durante il periodo di servizio, ha vissuto secondo i valori della comunit&#224;, le norme 
+					sociali e le regole specifiche del gruppo.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Kritik- und Konfliktf&#228;higkeit
+					Resilienza
 				</td>
 				<td>
-					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Teamf&#228;higkeit
-				</td>
-				<td>
-					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
-					Wertsch&#228;tzung.
+					Durante la scuola reclute, ha vissuto fasi di maggiore stress fisico e psicologico. 
+					Ha resistito a queste condizioni difficili ed &#232; stato in grado di concentrarsi sull&#8242;essenziale.
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Sozialkompetenz
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
 				</td>
 				<td>
-					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
-					sozialer Stellung begleiteten sie w&#228;hrend ihrer Dienstzeit und forderten/f&#246;rderten ihre
-					Sozialkompetenz.
+					Grazie alla sua capacit&#224; di apprendimento e adattamento, &#232; stato in grado di ambientarsi 
+					in un ambiente non familiare.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di gestire le critiche e i conflitti
+				</td>
+				<td>
+					In condizioni di maggiore stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224;
+					di gestire le critiche e i conflitti.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lavoro di squadra
+				</td>
+				<td>
+					La condivisione di compiti, obbiettivi ed esperienze ha rafforzato il rispetto e 
+					l&#8242;apprezzamento reciproco.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Competenze sociali
+				</td>
+				<td>
+					Persone di diverse origini, lingue, culture, generi, religioni e status sociale l&#8242;hanno
+					accompagnato durante il suo servizio e l&#8242;hanno stimolato a consolidare la sua competenza sociale.
 				</td>
 			</tr>
 		</table>
-		<table class="competences medium">
+		<table class="melvin">
 			<tr class="colored">
-				<th>
-					Fachtechnische Kompetenzen
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+					Competenze tecniche
 				</th>
 			</tr>
 			<tr>
 				<td>
-					<p class="bold">Sie hat in der Fachausbildung folgende Module absolviert:</p>
+					<p class="bold">Nell&#8242;istruzione specialistica ha assolto i seguenti moduli:</p>
 					<ul>
-						<li>Human Factors / Flight Safety</li>
-						<li>Einf&#220;hrung und Verhalten auf einem Flugplatz</li>
-						<li>Administrative Arbeitstechnik und Arbeitsgestaltung</li>
-						<li>Ground Handling Signal</li>
-						<li>Milit&#228;rflugdienst</li>
-						<li>Aeronautical Information Service (AIS)</li>
-						<li>VOICE (Ausbildung am Funksystem) als Spezialist</li>
-						<li>Nachrichtendienst</li>
-						<li>Ausbildung im Umgang mit sensitivem Material</li>
-						</ul>
-					<p class="bold">Zu ihrem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+						<li>Documenti militari (presentazioni, abbreviazioni, segni convenzionali);</li>
+						<li>Sicurezza integrale;</li>
+						<li>Tecnica del lavoro amministrativo e gestione del lavoro;</li>
+						<li>Conoscenza di formulari e regolamenti.</li>
+					</ul>
+					<p class="bold">Il suo ambito di competenza comprendeva le seguenti attivit&#224;:</p>
 					<ul>
-						<li>&#220;berwachen des Betriebes der Funknetze und bei technischen Problemen sofort und selbstst&#228;ndig
-							die systematische Fehlersuche und –behebung starten
+						<li>Esecuzione di diversi compiti amministrativi quali la distribuzione del lavoro, 
+						la protezione delle informazioni e l&#8242;analisi di banche dati;
 						</li>
-						<li>Alle Ger&#228;te des &#220;bermittlungsdienstes eines Lufttransportgeschwaders oder einer -abteilung gem&#228;ss 
-							Reglementen und Checklisten bedienen</li>
+						<li>Gestione del materiale nell&#8242;ambito dell&#8242;inventario, delle ordinazioni, dei controlli 
+							delle forniture di documenti e materiale d&#8242;ufficio;</li>
+						<li>Controllo, manutenzione e padronanza dei vari mezzi messi a disposizione (stampante, 
+							fotocopiatrice, laminatrice, fax, rilegatrice ecc.);</li>
+						<li>Supporto nella gestione del personale, sorveglianza della pianificazione delle scadenze</li>
+						<li>Lavori nel settore d&#8242;accoglienza nonch&#233; quale organo d&#8242;informazione (selezione delle telefonate).</li>
 					</ul>
 					<p>
-						Im Rahmen der Selbst- und Kameradenhilfe hat sie die Ausbildung zum Nothelferin erhalten.
+						Nell&#8242;ambito dell&#8242;aiuto a s&#233; stesso ed al camerata ha conseguito l&#8242;istruzione quale soccorritore.
 					</p>
 					<p>
-						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
-						der ersten &#220;berpr&#252;fung zum Zeitpunkt ihrer Rekrutierung hat sie die Sicherheitspr&#252;fung
-						bestanden.
+						L&#8242;Esercito svizzero svolge a scadenze regolari controlli di sicurezza relativi alle persone.
+						In occasione del reclutamento ha avuto il primo controllo sulla sicurezza, che ha superato.
 					</p>
 				</td>
 			</tr>
 		</table>
-	</div>
+	</div>	
 </body>
 </html>
