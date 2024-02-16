@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+			width: 80%;
+			box-style: border-box; 			   
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+		.melvin {
+			border-bottom: 0px solid black;
+			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
+			}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>
+</head>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_BODLUV_Br33.png" align=right><br><br>
+		</header>
+		<h1>Attestato di formazione e di competenza</h1>
+		L&#8242;Esercito svizzero conferma che
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			nato il  {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			ha assolto il seguente servizio militare:
+		</p>
+		<table>
+			<tr>
+				<th>Servizio militare presso:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Periodo:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Periodo:</th>
+				<td>Soldato delle trasmissioni / conducente C1</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldato</td>
+			</tr>
+		</table>
+		<p>
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro 
+			ogni successo e soddisfazione nella sua futura carriera.
+		</p>
+		<p>
+			Brigata d&#226;€™aviazione 31
+		</p>
+		<p>
+			<img width=167 height=145 src="Images/Unterschrift_BODLUV_Br33.png" />
+		</p>
+		<p>
+			Brigadier Peter Soller</br>
+			Comandante
+		</p>
+		<p class="small">
+			Questo attestato di formazione e competenza &#232; trasparente e non contiene alcuna informazione nascosta
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Durante la scuola reclute, ha acquisito le seguenti competenze teoriche e pratiche:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Competenze</th>
+				<th>Contenuto / Portata</th>
+			</tr>
+			<tr>
+				<td>
+					Responsabilit&#224; personale
+				</td>
+				<td>
+					Vivendo insieme nella sua unit&#224; militare, ha dovuto assumersi la responsabilit&#224; per 
+					s&#233; stesso e per gli altri all&#8242;interno del gruppo
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lealt&#224;
+				</td>
+				<td>
+					Durante il periodo di servizio, ha vissuto secondo i valori della comunit&#224;, le norme 
+					sociali e le regole specifiche del gruppo.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Resilienza
+				</td>
+				<td>
+					Durante la scuola reclute, ha vissuto fasi di maggiore stress fisico e psicologico. 
+					Ha resistito a queste condizioni difficili ed &#232; stato in grado di concentrarsi sull&#8242;essenziale.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
+				</td>
+				<td>
+					Grazie alla sua capacit&#224; di apprendimento e adattamento, &#232; stato in grado di ambientarsi 
+					in un ambiente non familiare.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#224; di gestire le critiche e i conflitti
+				</td>
+				<td>
+					In condizioni di maggiore stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224;
+					di gestire le critiche e i conflitti.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lavoro di squadra
+				</td>
+				<td>
+					La condivisione di compiti, obbiettivi ed esperienze ha rafforzato il rispetto e 
+					l&#8242;apprezzamento reciproco.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Competenze sociali
+				</td>
+				<td>
+					Persone di diverse origini, lingue, culture, generi, religioni e status sociale l&#8242;hanno
+					accompagnato durante il suo servizio e l&#8242;hanno stimolato a consolidare la sua competenza sociale.
+				</td>
+			</tr>
+		</table>
+		<table class="melvin">
+			<tr class="colored">
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+					Competenze tecniche
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Nell&#8242;istruzione specialistica ha assolto i seguenti moduli:</p>
+					<ul>
+						<li>Istruzione nei sistemi di comunicazione mobili (radio)</li>
+						<li>Esercizio e lavori di preparazione dei sistemi radio secondo le liste di controllo</li>
+						<li>Istruzione nel trattamento di materiale sensibile</li>
+						<li>Impiego di carte nazionali e del software di rappresentazione delle carte (KADAS)</li>
+						<li>Conoscenze nell&apos;ambito dei simboli e dei segni tattici</li>
+						<li>Condurre veicoli fino a 7,5 t con e senza rimorchio anche in condizioni difficili su strada e nel terreno</li>
+					</ul>
+					<p class="bold">Il suo ambito di competenza comprendeva le seguenti attivit&#224;:</p>
+					<ul>
+						<li>Posa di cavi telefonici e di rete</li>
+						<li>Realizzare le carte necessarie, completarle e aggiornarle facendo in modo di elaborare i contenuti confacenti</li>
+						<li>Aggiornare autonomamente i prodotti (p es personale, servizio informazioni, tecnica dei sistemi, gestione dei rischi, meteo, ultime notizie e logistica) nei singoli ambiti</li>
+						<li>Immagazzinamento, controllo e gestione del materiale nel proprio ambito</li>
+						<li>Manutenzione autonoma dei veicoli nell&apos;ambito delle prescrizioni sul servizio di parco fino all&apos;avvio dei necessari lavori di rimessa in efficienza</li>
+						<li>Possiede conoscenze in materia di operazioni di carico e un&apos;istruzione minima nell&apos;ambito del trasporto di merci pericolose</li>
+					</ul>
+					<p>
+						Nell&#8242;ambito dell&#8242;aiuto a s&#233; stesso ed al camerata ha conseguito l&#8242;istruzione quale soccorritore.
+					</p>
+					<p>
+						L&#8242;Esercito svizzero svolge a scadenze regolari controlli di sicurezza relativi alle persone.
+						In occasione del reclutamento ha avuto il primo controllo sulla sicurezza, che ha superato.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}	
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+			width: 80%;
+			box-style: border-box;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+		.melvin {
+			border-bottom: 0px solid black;
+			padding: 6px 8px;
+			font-size: 10pt;
+			width: 100%;
+			}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_LVB_FU.png" align=right><br><br>
+		</header>
+		<h1>Attestation de formation et de comp&#233;tence</h1>
+			L&#8242;Arm&#233;e suisse confirme que
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			n&#233; le {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+			a accompli le service militaire suivant:
+		</p>
+		<table>
+			<tr>
+				<th>Service militaire &#224;:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>P&#233;riode:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Fonction:</th>
+				<td>Pionni&#232;re d&rsquo;ondes dirig&#233;es / Planificatrice d&rsquo;aide cdmt</td>
+			</tr>
+			<tr>
+				<th>Rang:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Je tiens &#224; remercier la soldat {{User.FirstLastName}} pour son service dans l&#8242;Arm&#233;e suisse et lui souhaite beaucoup de succ&#232;s et de satisfaction 
+			dans sa future carri&#232;re.
+		</p>
+		<p>
+			Brigade de défense aérienne basée au sol 33
+		</p>
+		<p>
+			<img width=167 height=145 src="Images/Unterschrift_LVB_FU.png" />
+		</p>
+		<p>
+			Brigadier Peter Soller</br>
+			Commandant
+		</p>
+		<p class="small">
+			Cette attestation de formation et de comp&#233;tence est transparente et ne contient donc pas d&#8242;information cach&#233;e
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Durant l&#8242;&#233;cole de recrues, il a acquis les comp&#233;tences th&#233;oriques et pratiques suivantes:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Comp&#233;tences</th>
+				<th>Contenu / Port&#233;e</th>
+			</tr>
+			<tr>
+				<td>
+					Responsabilit&#233; personnelle
+				</td>
+				<td>
+					En vivant ensemble dans son unit&#233;, il a d&ucirc; prendre des responsabilit&#233;s 
+					pour lui-m&#234;me et pour les autres au sein du groupe.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyaut&#233;
+				</td>
+				<td>
+					Pendant la p&#233;riode de service, il a v&#233;cu selon les valeurs de la communaut&#233;, les normes 
+					sociales et les r&#234;gles sp&#233;cifique
+				</td>
+			</tr>
+			<tr>
+				<td>
+					R&#233;silience
+				</td>
+				<td>
+					Pendant l&#8242;&#233;cole de recrues, il a connu des phases de stress physique et psychologique accru.
+					Il a r&#233;sist&#233; &#224; ces conditions difficiles et a pu se concentrer sur l&#8242;essentiel.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#233; d&#8242;apprentissage et d&#8242;adaptation (flexibilit&#233;)
+				</td>
+				<td>
+					Gr&#226;ce &#224; sa capacit&#233; d&#8242;apprentissage et d&#8242;adaptation, il a pu s&#8242;acclimater &#224; un environnement peu familier.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Capacit&#233; &#224; g&#233;rer les critiques et les conflits
+				</td>
+				<td>
+					Dans des conditions de stress physique et/ou psycho-&#233;conomique accru, la capacit&#233; &#224; g&#233;rer les critiques et les conflit
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Travail d&#8242;&#233;quipe
+				</td>
+				<td>
+					Le partage des t&#226;ches, des objectifs et des exp&#233;riences a renforc&#233; le respect et l&#8242;appr&#233;ciation mutuels
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Comp&#233;tences sociales
+				</td>
+				<td>
+					Des personnes d&#8242;origines, de langues, de cultures, de sexes, de religions et de statuts sociaux diff&#233;rents 
+					l&#8242;ont accompagn&#233; pendant son service et ont mis au d&#233;fi/promu ses comp&#233;tences sociales
+				</td>
+			</tr>
+		</table>
+		<table class="melvin">
+			<tr class="colored">
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+					Comp&#233;tences techniques
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Il a suivi les modules de formation sp&#233;cialis&#233;e ci-dessous:</p>
+					<ul>
+						<li>Construction et configuration d&rsquo;une station &#224; ondes dirig&#233;es</li>
+						<li>Installer et exploiter diff&#233;rents moyens de transmission militaires tels que le t&#233;l&#233;phone de campagne ou l&rsquo;appareil radio tactique, y compris les diff&#233;rentes antennes </li>
+						<li>Comportement standard pour l&rsquo;&#233;tablissement et l&rsquo;exploitation de sites de transmission techniques</li>
+						<li>Planification de r&#233;seaux radio et d&rsquo;ondes dirig&#233;es militaires &#224; l&rsquo;aide de logiciels sp&#233;cifiques</li>
+						<li>Mise en &#339;uvre des connaissances acquises, dans des conditions difficiles, dans le cadre d&rsquo;exercices</li>
+					</ul>
+					<p class="bold">Il avait les t&#226;ches suivantes:</p>
+					<ul>
+						<li>Mettre en place,exploiter et prot&#233;ger de mani&#232;re autonome et avec des moyens simples, des sites techniques improvis&#233;s au profit des autorit&#233;s f&#233;d&#233;rales, de l&rsquo;arm&#233;e, des formations d&rsquo;intervention et d&rsquo;autres utilisateurs tactiques, en groupe (env. 12 mil), sur une longue dur&#233;e et en dehors des zones habit&#233;es</li>
+						<li>Planification de r&#233;seaux radio et d&rsquo;ondes dirig&#233;es militaires.avec v&#233;rification du contact visuel en fonction de la g&#233;ographie et configuration des terminaux pour les utilisateurs</li>
+						<li>Reconnaissance sur place et r&#233;servation de site avec les autorit&#233;s civiles et militaires </li>
+						<li>Surveillance du r&#233;seau pendant la mise en place et l&rsquo;exploitation du r&#233;seau de communication</li>
+					</ul>
+					<p>
+						Dans le cadre de l&#8242;aide &#224; soi-m&#234;me et au camarade, il a accompli une formation de secouriste.
+					</p>
+					<p>
+						L&#8242;Arm&#233;e suisse proc&#232;de r&#233;guli&#232;rement &#224; des contr&#244;les de s&#233;curit&#233; relatifs aux personnes. La personne 
+						concern&#233;e a pass&#233; sans probl&#232;me le premier contr&#244;le effectu&#233; au moment de son recrutement.
+					</p>
+
+              <p>
+
+              En tant que militaire en service long, elle a rempli ses obligations de service d&rsquo;instruction 
+
+              et n&rsquo;est donc plus convoqu&#233; aux cours de r&#233;p&#233;tition. 
+</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

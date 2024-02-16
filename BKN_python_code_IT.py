@@ -307,7 +307,7 @@ def make_new_html(doc_name: str, create_a_file: bool, print_html: bool = False, 
         "Einh San" in doc_name,
         "DD" in doc_name
     ]
-    create_html_file(doc_attributes, path_to_html, is_male, create_file = False, print_html = True)
+    create_html_file(doc_attributes, path_to_html, is_male, create_file = True, print_html = False)
 
 
 # In case of unaccepted changes in some docs
