@@ -96,22 +96,6 @@ def replace_str(string: str) -> str:
     return string
 
 
-def replace_function(sdt_function: str, html_v0: str) -> str:
-    """replaces the function from the template html with the one from word"""
-
-    # text splitting
-    html_split = html_v0.split(function_text)
-    function_block = html_split[0]
-    lines = function_block.split('\n')
-    # function replacement
-    lines[1] = '				' + sdt_function
-    # text combining
-    function_block = '\n'.join(lines)
-    html_split[0] = function_block
-    html_v1 = function_text.join(html_split)
-    return html_v1
-
-
 def replace_competence(sdt_competences: list, html_v1: str) -> str:
     """replaces the competence description from the template html with the one from word"""
 
@@ -173,7 +157,7 @@ def create_html_file(doc_attributes: list, title: str, is_male: bool, create_fil
     with open(path_to_template, 'r') as f:
         html_v0 = f.read()
     sdt_function = doc_attributes[0]
-    html_v1 = replace_function(sdt_function, html_v0)
+    html_v1 = html_v0.replace('{{User.Function}}', sdt_function)
     sdt_competences = doc_attributes[1]
     html_v2 = replace_competence(sdt_competences, html_v1)
     is_einh_san = doc_attributes[2]
@@ -262,7 +246,6 @@ def function_from_word(doc_name: str) -> str:
         if function_text in paragraph.text:
             sdt_function = re.sub(function_text, "", paragraph.text).strip()
             break
-    sdt_function = "<td>" + str(sdt_function) + "</td>"
     return sdt_function
 
 

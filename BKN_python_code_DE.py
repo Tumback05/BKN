@@ -173,7 +173,7 @@ def find_competence_cell(word_doc: docx, doc_name: str):
             for paragraph in row.cells[0].paragraphs:
                 if training_text in paragraph.text:
                     return row.cells[0]
-    print(f'Error, couldnt find competence cell. Word: ', path, doc_name)
+    print(f'Error, couldnt find competence cell. Word:', doc_name)
     return None
 
 
@@ -240,8 +240,6 @@ def function_from_word(doc_name: str) -> str:
         if function_text in paragraph.text:
             sdt_function = re.sub(function_text, "", paragraph.text).strip()
             break
-    # sdt_function = "<td>" + str(sdt_function) + "</td>"
-    print(f'Funktion des Soldaten:', sdt_function)
     return sdt_function
 
 
