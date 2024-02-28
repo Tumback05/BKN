@@ -6,6 +6,11 @@ de_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'de')
 fr_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'fr')
 it_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'it')
 target_dir = os.path.join(script_dir, 'BKN_Dokumenten', '_drei sprachig')
+exception_list = [
+    'BODLUV Br 33'
+    'LW',
+    'LVb Pz_Art'
+]
 
 class Folder:
     def __init__(self, full_name, name, numbers, lang, common):
@@ -24,6 +29,8 @@ folder_list = []
 # Function to get list of folders in a directory
 def get_folders_in_directory(directory):
     for folder_name in os.listdir(directory):
+        if 'erl' in folder_name:
+            continue
         folder_path = os.path.join(directory, folder_name)
         if os.path.isdir(folder_path):
             full_name = folder_name
@@ -38,6 +45,8 @@ def get_folders_in_directory(directory):
 de_folders = get_folders_in_directory(de_dir)
 fr_folders = get_folders_in_directory(fr_dir)
 it_folders = get_folders_in_directory(it_dir)
+for folder in folder_list:
+    print(folder)
 
 # Create a dictionary to store name, language, and common of every class
 combined_folders = {}
