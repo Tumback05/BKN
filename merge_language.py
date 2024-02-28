@@ -244,8 +244,9 @@ for file_name, file_paths in combined_files.items():
     for file_path in file_paths:
         with open(file_path, 'rb') as file:
             content = file.read().decode('utf-8', errors='replace')
-            print(content)
-            merged_content.append(content)
+            content_v2 = content.split('</style>')
+            # print(content[1])
+            merged_content.append(content_v2[1])
 
     # Define the target file path for saving merged content
     merged_file_path = os.path.join(merged_dir_path, f'{file_name}_merged.html')

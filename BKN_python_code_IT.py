@@ -50,11 +50,11 @@ function_text = "Funzione:"
 file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'it')
 
 folders = {
-    '20230725_BODLUV Br 33': True,
-    '20230731_LW': True,
-    '20231004_G_Rttg_ABC': True,
-    '20231205_LVb Inf': True,
-    '20240123_LVb FU': True
+    '_erl_BODLUV Br 33': True,
+    '_erl_LW': True,
+    'G_Rttg_ABC': True,
+    'LVb Inf': True,
+    'LVb FU': True
 }
 
 # gets all the names of the folders with documents in it
@@ -89,7 +89,7 @@ def replace_str(string: str) -> str:
         'À': '&#192;', 'Â': '&#194;', 'Æ': '&#198;', 'Ç': '&#199;', 'È': '&#201;', 'É': '&#201;', 'Ê': '&#202;', 'Ë': '&#203;', 'Î': '&#206;', 'Ï': '&#207;', 'Ô': '&#212;', 
 	    'œ': '&#339;', 'ù': '&#249;', 'û': '&#251;', 'ÿ': '&#255;',
 	    'Œ': '&#338;','Ù': '&#217;', 'Û': '&#219;', 'Ÿ': '&#376;',
-	    '«': '&laquo;', '»': '&raquo;',  '–': '&ndash;', "'": '&apos;', '’': '&rsquo;'
+	    '«': '&laquo;', '»': '&raquo;',  '–': '&ndash;', "'": '&apos;', '’': '&rsquo;', "´": '&acute;'
     }
     for umlaut, code in html_codes.items():
         string = string.replace(umlaut, code)

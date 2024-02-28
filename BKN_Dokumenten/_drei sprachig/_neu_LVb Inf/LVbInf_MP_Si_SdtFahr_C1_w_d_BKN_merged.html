@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_LVbInfanterie.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funktion:</th>
+				<td>Milit&#228;rpolizei Sicherungssoldatin / Fahrerin C1</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Soldat {{User.FirstLastName}} f&#252;r ihr Engagement zugunsten der Schweizer Armee und w&#252;nsche ihr
+			f&#252;r ihre zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Lehrverband Infanterie
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_LVbInfanterie.png" />
+		</p>
+		<p>
+			Brigadier Peter Baumgartner</br>
+			Kommandant
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Sie hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Eigenverantwortung
+				</td>
+				<td>
+					Durch das Zusammenleben in ihrer milit&#228;rischen Einheit musste sie Verantwortung f&#252;r sich und andere
+					innerhalb der Gruppe &#252;bernehmen.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyalit&#228;t
+				</td>
+				<td>
+					W&#228;hrend der Dienstdauer lebte sie nach gemeinschaftlichen Werten, sozialen Normen sowie
+					gruppenspezifischen Regeln.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Belastbarkeit
+				</td>
+				<td>
+					In der Rekrutenschule durchlebte sie Phasen erh&#246;hter physischer sowie psychischer Belastung. Sie hielt
+					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
+				</td>
+				<td>
+					Dank ihrer Lern- und Anpassungsf&#228;higkeit integrierte sie sich in ein f&#252;r ihn ungewohntes Umfeld.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kritik- und Konfliktf&#228;higkeit
+				</td>
+				<td>
+					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Teamf&#228;higkeit
+				</td>
+				<td>
+					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
+					Wertsch&#228;tzung.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Sozialkompetenz
+				</td>
+				<td>
+					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
+					sozialer Stellung begleiteten sie w&#228;hrend ihrer Dienstzeit und forderten/f&#246;rderten ihre
+					Sozialkompetenz.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Kompetenzen
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Sie hat in der Fachausbildung folgende Module absolviert:</p>
+					<ul>
+						<li>Sicherer und korrekter Umgang mit Waffen und Munition (Verhalten, Handhabung, Einsatz, Wartung)</li>
+						<li>Leistungserbringung im Team zur gemeinsamen und &#252;bergeordneten Zielerreichung</li>
+						<li>Rechtliche Grundlagen f&#252;r das Aus&#252;ben von Zwangsmassnahmen und deren Anwendung in Anlehnung an die zivilpolizeiliche Ausbildung</li>
+						<li>F&#252;hren von Fahrzeugen bis 7,5 t mit und ohne Anh&#228;nger auch unter erschwerten Bedingungen auf der Strasse und im Gel&#228;nde</li>
+						<li>Ladesicherung und eine Minimalausbildung im Bereich Transport gef&#228;hrlicher G&#252;ter</li>
+						</ul>
+					<p class="bold">Zu ihrem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<ul>
+						<li>Analysieren von Situationen, um ihre Waffe(n) wirkungsvoll und ohne Gef&#228;hrdung von Kameraden einzusetzen</li>
+						<li>Aufrechterhalten der Funktionst&#252;chtigkeit ihrer Waffe(n) durch konsequente Wartung und einer systematischen Fehlerbehebung auch unter Stress</li>
+						<li>Ausf&#252;llen ihrer Spezialistenfunktion innerhalb ihrer Gruppe als individueller Beitrag zur Gruppenleistung</li>
+						<li>Anpassung des eigenen Verhaltens in Koordination mit seiner Gruppe an eine sich rasch &#228;ndernde Lage unter konsequenter Verfolgung der Ziele</li>
+						<li>Bew&#228;ltigung von Bedrohungssituation durch verh&#228;ltnism&#228;ssige Zwangsaus&#252;bung (verbale Kommunikation bis hin zum Einsatz von Waffensystemen) zur Auftragserf&#252;llung / Zielerreichung</li>
+						<li>Anwenden von polizeilichen Zwangsmassnahmen der Situation angepasst in enger und rascher Koordination mit Kameraden</li>
+						<li>Selbst&#228;ndiges Warten der Fahrzeuge im Rahmen der Parkdienstvorschriften bis zur Einleitung f&#252;r notwendige Instandsetzungsarbeiten</li>
+					</ul>
+					<p>
+						Im Rahmen der Selbst- und Kameradenhilfe hat sie die Ausbildung zum Nothelferin erhalten.
+					</p>
+					<p>
+						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
+						der ersten &#220;berpr&#252;fung zum Zeitpunkt ihrer Rekrutierung hat sie die Sicherheitspr&#252;fung
+						bestanden.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+</head>
+
+
+
+<body>
+
+	<div class="page">
+
+		<header>
+
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+
+			<img width="138" height="190" src="Images/Logo_LVbInfanterie.png" align=right><br><br>
+
+		</header>
+
+		<h1>Attestation de formation et de comp&#233;tence</h1>
+
+			L&#8242;Arm&#233;e suisse confirme que
+
+		<p class="username">
+
+			{{User.FirstLastName}}
+
+		</p>
+
+		<p>
+
+			n&#233; le {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+
+			a accompli le service militaire suivant:
+
+		</p>
+
+		<table>
+
+			<tr>
+
+				<th>Service militaire &#224;:</th>
+
+				<td>{{User.Text1}}</td>
+
+			</tr>
+
+			<tr>
+
+				<th>P&#233;riode:</th>
+
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+
+			</tr>
+
+			<tr>
+
+				<th>Fonction:</th>
+
+				<td>Soldate de s&#251;ret&#233; de la police militaire - conductrice C1</td>
+
+			</tr>
+
+			<tr>
+
+				<th>Rang:</th>
+
+				<td>Soldat</td>
+
+			</tr>
+
+		</table>
+
+		<p>
+
+			Je tiens &#224; remercier la soldat {{User.FirstLastName}} pour son service dans l&#8242;Arm&#233;e suisse et lui souhaite beaucoup de succ&#232;s et de satisfaction 
+
+			dans sa future carri&#232;re.
+
+		</p>
+
+		<p>
+
+			Brigade de défense aérienne basée au sol 33
+
+		</p>
+
+		<p>
+
+			<img width=167 height=145 src="Images/Unterschrift_LVbInfanterie.png" />
+
+		</p>
+
+		<p>
+
+			Brigadier Peter Soller</br>
+
+			Commandant
+
+		</p>
+
+		<p class="small">
+
+			Cette attestation de formation et de comp&#233;tence est transparente et ne contient donc pas d&#8242;information cach&#233;e
+
+		</p>
+
+	</div>
+
+	<div class="page">
+
+		<p class="medium">
+
+			Durant l&#8242;&#233;cole de recrues, il a acquis les comp&#233;tences th&#233;oriques et pratiques suivantes:
+
+		</p>
+
+		<table class="competences medium">
+
+			<tr class="colored">
+
+				<th>Comp&#233;tences</th>
+
+				<th>Contenu / Port&#233;e</th>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Responsabilit&#233; personnelle
+
+				</td>
+
+				<td>
+
+					En vivant ensemble dans son unit&#233;, il a d&ucirc; prendre des responsabilit&#233;s 
+
+					pour lui-m&#234;me et pour les autres au sein du groupe.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Loyaut&#233;
+
+				</td>
+
+				<td>
+
+					Pendant la p&#233;riode de service, il a v&#233;cu selon les valeurs de la communaut&#233;, les normes 
+
+					sociales et les r&#234;gles sp&#233;cifique
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					R&#233;silience
+
+				</td>
+
+				<td>
+
+					Pendant l&#8242;&#233;cole de recrues, il a connu des phases de stress physique et psychologique accru.
+
+					Il a r&#233;sist&#233; &#224; ces conditions difficiles et a pu se concentrer sur l&#8242;essentiel.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Capacit&#233; d&#8242;apprentissage et d&#8242;adaptation (flexibilit&#233;)
+
+				</td>
+
+				<td>
+
+					Gr&#226;ce &#224; sa capacit&#233; d&#8242;apprentissage et d&#8242;adaptation, il a pu s&#8242;acclimater &#224; un environnement peu familier.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Capacit&#233; &#224; g&#233;rer les critiques et les conflits
+
+				</td>
+
+				<td>
+
+					Dans des conditions de stress physique et/ou psycho-&#233;conomique accru, la capacit&#233; &#224; g&#233;rer les critiques et les conflit
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Travail d&#8242;&#233;quipe
+
+				</td>
+
+				<td>
+
+					Le partage des t&#226;ches, des objectifs et des exp&#233;riences a renforc&#233; le respect et l&#8242;appr&#233;ciation mutuels
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Comp&#233;tences sociales
+
+				</td>
+
+				<td>
+
+					Des personnes d&#8242;origines, de langues, de cultures, de sexes, de religions et de statuts sociaux diff&#233;rents 
+
+					l&#8242;ont accompagn&#233; pendant son service et ont mis au d&#233;fi/promu ses comp&#233;tences sociales
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<table class="melvin">
+
+			<tr class="colored">
+
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+
+					Comp&#233;tences techniques
+
+				</th>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					<p class="bold">Il a suivi les modules de formation sp&#233;cialis&#233;e ci-dessous:</p>
+
+					<ul>
+
+						<li>Maniement s&#251;r et correct des armes et des munitions (comportement, manipulation, utilisation, entretien)</li>
+
+						<li>Fournir des prestations en &#233;quipe pour atteindre des objectifs communs et sup&#233;rieurs</li>
+
+						<li>Bases l&#233;gales pour l&rsquo;exercice de mesures de contrainte et leur application, en s&rsquo;appuyant sur une formation dispens&#233;e par la police civile</li>
+
+						<li>Conduite de v&#233;hicules jusqu&rsquo;&#224; 7,5 t avec ou sans remorque, m&#234;me dans des conditions difficiles, sur route et dans le terrain</li>
+
+						<li>Arrimage du chargement et formation minimale dans le domaine du transport de marchandises dangereuses</li>
+
+					</ul>
+
+					<p class="bold">Il avait les t&#226;ches suivantes:</p>
+
+					<ul>
+
+						<li>Analyser des situations afin d&rsquo;utiliser son / ses arme(s) de mani&#232;re efficace et sans mettre ses camarades en danger</li>
+
+						<li>Maintenir le bon fonctionnement de son / ses arme(s) par une maintenance cons&#233;quente et un d&#233;pannage syst&#233;matique, m&#234;me en situation de stress</li>
+
+						<li>Remplir sa fonction de sp&#233;cialiste au profit de la performance du groupe</li>
+
+						<li>Adapter son comportement, en coordination avec son groupe, &#224; une situation qui &#233;volue rapidement, tout en poursuivant ses objectifs de mani&#232;re coh&#233;rente</li>
+
+						<li>Ma&#238;triser une situation de menace par l&rsquo;exercice proportionn&#233; de la contrainte (de la communication verbale jusqu&rsquo;&#224; l&rsquo;utilisation de syst&#232;mes d&rsquo;armes) pour remplir la mission / atteindre l&rsquo;objectif</li>
+
+						<li>Appliquer des mesures de contrainte polici&#232;res adapt&#233;es &#224; la situation en coordination &#233;troite et rapide avec ses camarades</li>
+
+						<li>Entretien des v&#233;hicules de mani&#232;re autonome dans le cadre des prescriptions du service de parc, jusqu&rsquo;&#224; ce que les travaux de r&#233;paration n&#233;cessaires soient effectu&#233;s</li>
+
+					</ul>
+
+					<p>
+
+						Dans le cadre de l&#8242;aide &#224; soi-m&#234;me et au camarade, il a accompli une formation de secouriste.
+
+					</p>
+
+					<p>
+
+						L&#8242;Arm&#233;e suisse proc&#232;de r&#233;guli&#232;rement &#224; des contr&#244;les de s&#233;curit&#233; relatifs aux personnes. La personne 
+
+						concern&#233;e a pass&#233; sans probl&#232;me le premier contr&#244;le effectu&#233; au moment de son recrutement.
+
+					</p>
+
+				</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+
+</html>
+
+</head>
+
+<body>	
+
+	<div class="page">
+
+		<header>
+
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+
+			<img width="138" height="190" src="Images/Logo_LVbInfanterie.png" align=right><br><br>
+
+		</header>
+
+		<h1>Attestato di formazione e di competenza</h1>
+
+		L&#8242;Esercito svizzero conferma che
+
+		<p class="username">
+
+			{{User.FirstLastName}}
+
+		</p>
+
+		<p>
+
+			nato il  {{User.Birthdate | Date: "dd.MM.yyyy"}}<br>
+
+			ha assolto il seguente servizio militare:
+
+		</p>
+
+		<table>
+
+			<tr>
+
+				<th>Servizio militare presso:</th>
+
+				<td>{{User.Text1}}</td>
+
+			</tr>
+
+			<tr>
+
+				<th>Periodo:</th>
+
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+
+			</tr>
+
+			<tr>
+
+				<th>Periodo:</th>
+
+				<td>Soldato di sicurezza della polizia militare / conducente C1</td>
+
+			</tr>
+
+			<tr>
+
+				<th>Grad:</th>
+
+				<td>Soldato</td>
+
+			</tr>
+
+		</table>
+
+		<p>
+
+			Ringrazio il soldato {{User.FirstLastName}} per il suo impiego nell&#8242;Esercito svizzero e gli auguro 
+
+			ogni successo e soddisfazione nella sua futura carriera.
+
+		</p>
+
+		<p>
+
+			Formazione d'addestramento del genio / del salvataggio / NBC
+
+		</p>
+
+		<p>
+
+			<img width=167 height=145 src="Images/Unterschrift_LVbInfanterie.png" />
+
+		</p>
+
+		<p>
+
+			Brigadier Peter Soller</br>
+
+			Comandante
+
+		</p>
+
+		<p class="small">
+
+			Questo attestato di formazione e competenza &#232; trasparente e non contiene alcuna informazione nascosta
+
+		</p>
+
+	</div>
+
+	<div class="page">
+
+		<p class="medium">
+
+			Durante la scuola reclute, ha acquisito le seguenti competenze teoriche e pratiche:
+
+		</p>
+
+		<table class="competences medium">
+
+			<tr class="colored">
+
+				<th>Competenze</th>
+
+				<th>Contenuto / Portata</th>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Responsabilit&#224; personale
+
+				</td>
+
+				<td>
+
+					Vivendo insieme nella sua unit&#224; militare, ha dovuto assumersi la responsabilit&#224; per 
+
+					s&#233; stesso e per gli altri all&#8242;interno del gruppo
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Lealt&#224;
+
+				</td>
+
+				<td>
+
+					Durante il periodo di servizio, ha vissuto secondo i valori della comunit&#224;, le norme 
+
+					sociali e le regole specifiche del gruppo.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Resilienza
+
+				</td>
+
+				<td>
+
+					Durante la scuola reclute, ha vissuto fasi di maggiore stress fisico e psicologico. 
+
+					Ha resistito a queste condizioni difficili ed &#232; stato in grado di concentrarsi sull&#8242;essenziale.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Capacit&#224; di apprendimento e adattamento (flessibilit&#224;)
+
+				</td>
+
+				<td>
+
+					Grazie alla sua capacit&#224; di apprendimento e adattamento, &#232; stato in grado di ambientarsi 
+
+					in un ambiente non familiare.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Capacit&#224; di gestire le critiche e i conflitti
+
+				</td>
+
+				<td>
+
+					In condizioni di maggiore stress fisico e/o psicologico, &#232; stata richiesta la capacit&#224;
+
+					di gestire le critiche e i conflitti.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Lavoro di squadra
+
+				</td>
+
+				<td>
+
+					La condivisione di compiti, obbiettivi ed esperienze ha rafforzato il rispetto e 
+
+					l&#8242;apprezzamento reciproco.
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					Competenze sociali
+
+				</td>
+
+				<td>
+
+					Persone di diverse origini, lingue, culture, generi, religioni e status sociale l&#8242;hanno
+
+					accompagnato durante il suo servizio e l&#8242;hanno stimolato a consolidare la sua competenza sociale.
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<table class="melvin">
+
+			<tr class="colored">
+
+				<th colspan="2" style="padding: 10px 8px; font-size:10pt">
+
+					Competenze tecniche
+
+				</th>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					<p class="bold">Nell&#8242;istruzione specialistica ha assolto i seguenti moduli:</p>
+
+					<ul>
+
+						<li>Uso sicuro e corretto delle armi e delle munizioni (comportamento, maneggio, impiego, manutenzione)</li>
+
+						<li>Fornitura di prestazioni in team per raggiungere gli obiettivi comuni e superiori</li>
+
+						<li>Basi legali per l&rsquo;esercizio di misure coercitive e la loro applicazione in conformit&#224; con la formazione della polizia civile </li>
+
+						<li>Condurre veicoli fino a 7,5 t con e senza rimorchio anche in condizioni difficili su strada e nel terreno</li>
+
+						<li>&#201; in grado di assicurare il carico e dispone di un&rsquo;istruzione minima nel trasporto di merci pericolose</li>
+
+					</ul>
+
+					<p class="bold">Il suo ambito di competenza comprendeva le seguenti attivit&#224;:</p>
+
+					<ul>
+
+						<li>Analizzare le situazioni per impiegare la propria arma/le proprie armi in modo efficace e senza rischi per i camerati</li>
+
+						<li>Mantenimento della funzionalit&#224; della propria arma/delle proprie armi grazie alla manutenzione mirata e a una eliminazione sistematica dei guasti anche sotto stress</li>
+
+						<li>Esercitare la funzione di specialista all&rsquo;interno del proprio gruppo come contributo individuale alla prestazione del gruppo</li>
+
+						<li>Adeguamento del proprio comportamento, coordinandosi con il proprio gruppo, a una situazione in rapido cambiamento perseguendo con coerenza gli obiettivi</li>
+
+						<li>Gestione di una situazione di minaccia attraverso una coercizione proporzionale (dalla comunicazione verbale all&rsquo;utilizzo di sistemi d&rsquo;arma) per adempiere i compiti / raggiungere gli obiettivi</li>
+
+						<li>Applicazione di misure coercitive di polizia adeguate alla situazione in stretto e rapido coordinamento con i camerati</li>
+
+						<li>Manutenzione autonoma dei veicoli nell&rsquo;ambito delle prescrizioni sul servizio di parco fino all&rsquo;avvio dei necessari lavori di rimessa in efficienza</li>
+
+					</ul>
+
+					<p>
+
+						Nell&#8242;ambito dell&#8242;aiuto a s&#233; stesso ed al camerata ha conseguito l&#8242;istruzione quale soccorritore.
+
+					</p>
+
+					<p>
+
+						L&#8242;Esercito svizzero svolge a scadenze regolari controlli di sicurezza relativi alle persone.
+
+						In occasione del reclutamento ha avuto il primo controllo sulla sicurezza, che ha superato.
+
+					</p>
+
+				</td>
+
+			</tr>
+
+		</table>
+
+	</div>	
+
+</body>
+
+</html>
