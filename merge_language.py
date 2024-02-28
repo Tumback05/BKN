@@ -13,15 +13,14 @@ exception_list = [
 ]
 
 class Folder:
-    def __init__(self, full_name, name, numbers, lang, common):
+    def __init__(self, full_name, name, lang, common):
         self.full_name = full_name
         self.name = name
-        self.numbers = numbers
         self.lang = lang
         self.common = common
 
     def __str__(self):
-        return f'{self.full_name}, {self.name}, {self.numbers}, {self.lang}, {self.common}'
+        return f'{self.full_name}, {self.name}, {self.lang}, {self.common}'
 
 # Create an array to store all folder classes
 folder_list = []
@@ -34,10 +33,9 @@ def get_folders_in_directory(directory):
         folder_path = os.path.join(directory, folder_name)
         if os.path.isdir(folder_path):
             full_name = folder_name
-            name = folder_name[9:]  # Adjust the index to remove the 8 number code and underscore
-            numbers = folder_name[:9]
+            name = folder_name
             lang = directory.split(os.path.sep)[-1]
-            folder_instance = Folder(full_name, name, numbers, lang, 0)
+            folder_instance = Folder(full_name, name, lang, 0)
             folder_list.append(folder_instance)
 
     return folder_list
