@@ -28,7 +28,7 @@ folder_list = []
 # Function to get list of folders in a directory
 def get_folders_in_directory(directory):
     for folder_name in os.listdir(directory):
-        if 'erl' in folder_name:
+        if '_erl_' in folder_name:
             continue
         folder_path = os.path.join(directory, folder_name)
         if os.path.isdir(folder_path):
@@ -43,8 +43,6 @@ def get_folders_in_directory(directory):
 de_folders = get_folders_in_directory(de_dir)
 fr_folders = get_folders_in_directory(fr_dir)
 it_folders = get_folders_in_directory(it_dir)
-for folder in folder_list:
-    print(folder)
 
 # Create a dictionary to store name, language, and common of every class
 combined_folders = {}
@@ -58,6 +56,7 @@ for folder in folder_list:
     else:
         combined_folders[name].add(lang)
 
+print(combined_folders)
 # Update the common attribute for folders present in all three languages
 for folder_name, languages in combined_folders.items():
     if len(languages) == 3:
@@ -80,6 +79,7 @@ def get_html_files(lang):
 de_files = get_html_files(lang='de')
 fr_files = get_html_files(lang='fr')
 it_files = get_html_files(lang='it')
+print(f'de files:', de_files, '\n', 'fr files', fr_files, '\n', 'it files', it_files)
 
 # Create a dictionary to store files with the same name
 combined_files = {}
@@ -98,16 +98,153 @@ for de, fr, it in zip(de_files, fr_files, it_files):
 # Define the target directory for saving merged content
 merged_dir_path = os.path.join(target_dir, 'merged_output')
 
+
 # Create the target directory if it doesn't exist
 os.makedirs(merged_dir_path, exist_ok=True)
+
+# Last element in css: </style>
+css = '''<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #00008A;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #00008A;
+			color: white;
+		}
+	</style>'''
 
 # Merge and save files with the same name
 for file_name, file_paths in combined_files.items():
     merged_content = []
+    merged_content.append(css)
 
     for file_path in file_paths:
         with open(file_path, 'rb') as file:
             content = file.read().decode('utf-8', errors='replace')
+            print(content)
             merged_content.append(content)
 
     # Define the target file path for saving merged content
