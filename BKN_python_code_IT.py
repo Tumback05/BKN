@@ -50,11 +50,12 @@ function_text = "Funzione:"
 file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'it')
 
 folders = {
-    '_erl_BODLUV Br 33': True,
-    '_erl_LW': True,
+    'BODLUV Br 33': True,
     'G_Rttg_ABC': True,
+    'LVb FU': True,
     'LVb Inf': True,
-    'LVb FU': True
+    'LVb Pz_Art': True,
+    'LW': True,
 }
 
 # gets all the names of the folders with documents in it
@@ -222,6 +223,7 @@ def competence_from_word(doc_name: str) -> list:
 
     if double_indent:
         sdt_competences[-1] += end_of_indented_list
+        double_indeted_docs.append(doc_name)
 
     incomplete_competences = len(sdt_competences) < 2
     if incomplete_competences:
@@ -328,12 +330,12 @@ def accept_all_changes(doc_name: str):
     doc.save(path + '/' + doc_name)
 
 
-def iterate_word_docs(create_folders: bool, exception_list: list):
+def iterate_word_docs(create_a_file: bool, exception_list: list):
     """given a certain 'path', this runs through every Word and calls 'make_new_html'"""
 
     for doc_name in os.listdir(path):
         if doc_name.endswith('.docx') and not doc_name.startswith('~$') and doc_name not in exception_list:
-            make_new_html(doc_name, create_folders)
+            make_new_html(doc_name, create_a_file)
 
 
 
@@ -360,6 +362,8 @@ problematic_docs = {
     no_paragraph: []
 }
 
+double_indeted_docs = []
+
 exceptions = []
 
 if iterate_folders:
@@ -369,10 +373,14 @@ if iterate_folders:
         path = os.path.join(file_path, key)
         path_to_male_template = os.path.join(path, male_template)
         path_to_female_template = os.path.join(path, female_template)
-        iterate_word_docs(create_folders=True, exception_list=exceptions)
+        iterate_word_docs(create_a_file=True, exception_list=exceptions)
 
 print("\n# Problems")
 for problem, docs in problematic_docs.items():
-    print(problem)
+    print(problem, len(docs))
     for problem_doc in docs:
         print('"' + problem_doc + '"' + ',')
+
+print('\n# Double indented Documents')
+for docs in double_indeted_docs:
+    print(f'"', docs, '"', ',')

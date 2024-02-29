@@ -52,10 +52,12 @@ function_text = "Fonction:"
 file_path = os.path.join(os.getcwd(), 'BKN_Dokumenten', 'fr')
 
 folders = {
-    '20230725_BODLUV Br 33': True,
-    '20231004_G_Rttg_ABC': True,
-    '20231205_LVb Inf': True,
-    '20240123_LVb FU': True
+    'BODLUV Br 33': True,
+    'G_Rttg_ABC': True,
+    'LVb FU': True,
+    'LVb Inf': True,
+    'LVb Pz_Art': True,
+    'LW': True,
 }
 
 # gets all the names of the folders with documents in it
@@ -331,12 +333,12 @@ def accept_all_changes(doc_name: str):
     doc.save(path + '/' + doc_name)
 
 
-def iterate_word_docs(create_folders: bool, exception_list: list):
+def iterate_word_docs(create_a_file: bool, exception_list: list):
     """given a certain 'path', this runs through every Word and calls 'make_new_html'"""
 
     for doc_name in os.listdir(path):
         if doc_name.endswith('.docx') and not doc_name.startswith('~$') and doc_name not in exception_list:
-            make_new_html(doc_name, create_folders)
+            make_new_html(doc_name, create_a_file)
 
 
 
@@ -363,10 +365,7 @@ problematic_docs = {
     no_paragraph: []
 }
 
-exceptions = [
-    '20230530_Kader_BKN_Chance Armee_m_f.docx',
-    '20230530_Kader_BKN_Chance Armee_f_f.docx'
-]
+exceptions = []
 
 if iterate_folders:
     for key, value in folders.items():
@@ -375,10 +374,10 @@ if iterate_folders:
         path = os.path.join(file_path, key)
         path_to_male_template = os.path.join(path, male_template)
         path_to_female_template = os.path.join(path, female_template)
-        iterate_word_docs(create_folders=True, exception_list=exceptions)
+        iterate_word_docs(create_a_file=True, exception_list=exceptions)
 
 print("\n# Problems")
 for problem, docs in problematic_docs.items():
-    print(problem)
+    print(problem, len(docs))
     for problem_doc in docs:
         print('"' + problem_doc + '"' + ',')

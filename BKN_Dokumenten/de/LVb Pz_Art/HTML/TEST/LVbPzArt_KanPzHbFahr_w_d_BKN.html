@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Light"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+			font-weight: 100;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semilight"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Bold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+			font-weight: 600;
+		}
+
+		@font-face {
+			font-family: SegoeUI;
+			src:
+				local("Segoe UI Semibold"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+				url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+			font-weight: 700;
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		* {
+			font-family: "SegoeUI";
+			box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 48px;
+		}
+
+		body {
+			font-size: 12pt;
+		}
+
+		.page {
+			padding: 20mm;
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			color: #C00000;
+			margin-bottom: 48px;
+			font-size: 30px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table.medium,
+		p.medium {
+			font-size: 10pt;
+		}
+
+		table.competences {
+			margin-bottom: 12pt;
+		}
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		table.competences th {
+			padding: 10px 8px;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		table.competences td {
+			border-bottom: 1px solid black;
+			padding: 6px 8px;
+		}
+
+		p.small {
+			font-size: 9pt;
+		}
+
+		.colored {
+			background-color: #C00000;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<img width="319" height="51" src="Images/schweiz.png" align=left>
+			<img width="138" height="190" src="Images/Logo_LVb_Pz_Art.png" align=right>
+		</header>
+		<br><br><br><br><br><br>
+		<h1>Bildungs- und Kompetenznachweis</h1>
+		Die Schweizer Armee best&#228;tigt hiermit, dass
+		<p class="username">
+			{{User.FirstLastName}}
+		</p>
+		<p>
+			geboren am {{User.Birthdate | Date: "dd.MM.yyyy"}} die folgende milit&#228;rische Dienstleistung absolviert hat:
+		</p>
+		<table>
+			<tr>
+				<th>Milit&#228;rdienst bei:</th>
+				<td>{{User.Text1}}</td>
+			</tr>
+			<tr>
+				<th>Zeitraum:</th>
+				<td> {{DateAcquired | Date: "dd.MM.yyyy"}} - {{ValidUntil | Date: "dd.MM.yyyy"}}</td>
+			</tr>
+			<tr>
+				<th>Funktion:</th>
+				<td>Kanonierin / Panzerhaubitzenfahrerin</td>
+			</tr>
+			<tr>
+				<th>Grad:</th>
+				<td>Soldat</td>
+			</tr>
+		</table>
+		<p>
+			Ich danke Soldat {{User.FirstLastName}} f&#252;r ihr Engagement zugunsten der Schweizer Armee und w&#252;nsche ihr
+			f&#252;r ihre zuk&#252;nftige berufliche T&#228;tigkeit viel Erfolg und Zufriedenheit.
+		</p>
+		<p>
+			Lehrverband Panzer / Artillerie
+		</p>
+		<p>
+			<img width=176 height=60 src="Images/Unterschrift_LVb_Pz_Art.png" />
+		</p>
+		<p>
+			Brigadier Yves G&#228;chter</br>
+			Kommandant
+		</p>
+		<p class="small">
+			Dieser Bildungs- und Kompetenznachweis ist transparent und enth&#228;lt somit keine versteckten Informationen
+		</p>
+	</div>
+	<div class="page">
+		<p class="medium">
+			Sie hat w&#228;hrend der Rekrutenschule in Theorie und Praxis folgende Kompetenzen erworben:
+		</p>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>Kompetenzen</th>
+				<th>Inhalt / Anwendungsbereich</th>
+			</tr>
+			<tr>
+				<td>
+					Eigenverantwortung
+				</td>
+				<td>
+					Durch das Zusammenleben in ihrer milit&#228;rischen Einheit musste sie Verantwortung f&#252;r sich und andere
+					innerhalb der Gruppe &#252;bernehmen.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loyalit&#228;t
+				</td>
+				<td>
+					W&#228;hrend der Dienstdauer lebte sie nach gemeinschaftlichen Werten, sozialen Normen sowie
+					gruppenspezifischen Regeln.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Belastbarkeit
+				</td>
+				<td>
+					In der Rekrutenschule durchlebte sie Phasen erh&#246;hter physischer sowie psychischer Belastung. Sie hielt
+					diesen erschwerten Bedingungen stand und konnte sich auf das Wesentliche fokussieren.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lern- und Anpassungs-f&#228;higkeit (Flexibilit&#228;t)
+				</td>
+				<td>
+					Dank ihrer Lern- und Anpassungsf&#228;higkeit integrierte sie sich in ein f&#252;r ihn ungewohntes Umfeld.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kritik- und Konfliktf&#228;higkeit
+				</td>
+				<td>
+					Unter erh&#246;htem physischem und/oder psychischem Stress war Kritik- und Konfliktf&#228;higkeit gefragt.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Teamf&#228;higkeit
+				</td>
+				<td>
+					Gemeinsame Aufgaben, Ziele und Erlebnisse st&#228;rkten die gegenseitige R&#252;cksichtnahme und
+					Wertsch&#228;tzung.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Sozialkompetenz
+				</td>
+				<td>
+					Menschen unterschiedlicher Herkunft, Sprache, verschiedener Kulturen, Geschlechter, Religionen sowie
+					sozialer Stellung begleiteten sie w&#228;hrend ihrer Dienstzeit und forderten/f&#246;rderten ihre
+					Sozialkompetenz.
+				</td>
+			</tr>
+		</table>
+		<table class="competences medium">
+			<tr class="colored">
+				<th>
+					Fachtechnische Kompetenzen
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<p class="bold">Sie hat in der Fachausbildung folgende Module absolviert:</p>
+					<ul>
+						<li>Grundkenntnisse im technischen Bereich einer Panzerhaubitze</li>
+						<li>Ausbildung im technischen Unterhalt des Systems</li>
+						<li>Ausbildung im Umgang mit dem zugewiesenen, sensitiven Material</li>
+						</ul>
+					<p class="bold">Zu ihrem Aufgabenbereich geh&#246;rten folgende T&#228;tigkeiten:</p>
+					<ul>
+						<li>Ist bef&#228;higt, einer Person den Zutritt zu verwehren und bei Bedarf den f&#252;r die Auftragserf&#252;llung notwendigen Zwang anzuwenden</li>
+						<li>Ist bef&#228;higt, schwere, gepanzerte und &#252;berbreite Raupenfahrzeuge im &#246;ffentlichen Verkehr und in herausfordernden Situationen zu f&#252;hren sowie komplexe Situationen zu meistern</li>
+						<li>Unterhalt, Wartung und kleine technische Reparaturen am Raupenfahrzeug</li>
+					</ul>
+					<p>
+						Im Rahmen der Selbst- und Kameradenhilfe hat sie die Ausbildung zum Nothelferin erhalten.
+					</p>
+					<p>
+						Die Schweizer Armee f&#252;hrt in regelm&#228;ssigen Abst&#228;nden Personensicherheits&#220;berpr&#252;fungen durch. Bei
+						der ersten &#220;berpr&#252;fung zum Zeitpunkt ihrer Rekrutierung hat sie die Sicherheitspr&#252;fung
+						bestanden.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

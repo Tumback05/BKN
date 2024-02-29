@@ -1,0 +1,31 @@
+No competence text: 30
+"20231004_Sdt_BKN_LVbGRttgABC_Bau Pi_m_f.docx",                 erl
+"20231004_Sdt_BKN_LVbGRttgABC_Bau Pi_w_f.docx",                 erl
+"20231004_Sdt_BKN_LVbGRttgABC_Betr Sdt Ausb_Sup C1_m_f.docx",   erl
+"20231004_Sdt_BKN_LVbGRttgABC_Betr Sdt Ausb_Sup C1_w_f.docx",   erl
+"20231004_Sdt_BKN_LVbGRttgABC_Betr Sdt_m_f.docx",               erl
+"20231004_Sdt_BKN_LVbGRttgABC_Betr Sdt_w_f.docx",               erl
+"20231004_Sdt_BKN_LVbGRttgABC_Bm Fahr  ABC Spürer_m_f.docx",    erl
+"20231004_Sdt_BKN_LVbGRttgABC_Bm Fahr  ABC Spürer_w_f.docx",    erl
+"20231004_Sdt_BKN_LVbGRttgABC_Bm Fahr (DD)_m_f.docx",           erl
+"20231004_Sdt_BKN_LVbGRttgABC_Bm Fahr (DD)_w_f.docx",           erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  ABC Spürer_m_f.docx",      erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  ABC Spürer_w_f.docx",      erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  Fahr B_m_f.docx",          erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  Fahr B_w_f.docx",          erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  Fahr C1_m_f.docx",         erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS  Fahr C1_w_f.docx",         erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS_m_f.docx",                  erl
+"20231004_Sdt_BKN_LVbGRttgABC_BootS_w_f.docx",                  erl
+"20231004_Sdt_BKN_LVbGRttgABC_Büro Ord_m_f.docx",               erl
+"20231004_Sdt_BKN_LVbGRttgABC_Büro Ord_w_f.docx",               erl
+"20231004_Sdt_BKN_LVbGRttgABC_Einh San Fahr C1_m_f.docx",       erl
+"20231004_Sdt_BKN_LVbGRttgABC_Einh San Fahr C1_w_f.docx",       erl
+"20240123_Sdt_BKN_LVbFU_Infra Sich Sdt_m_f.docx",               erl
+"20240123_Sdt_BKN_LVbFU_Infra Sich Sdt_w_f.docx",               erl
+"20230731_Sdt_BKN_LVbPzArt_Pz SapMirm Pz Fahr_m_f.docx",        erl
+"20230731_Sdt_BKN_LVbPzArt_Pz SapMirm Pz Fahr_w_f.docx",        erl
+"20230731_Sdt_BKN_LVbPzArt_Pz SapSpz Fahr_m_f.docx",            erl
+"20230731_Sdt_BKN_LVbPzArt_Pz SapSpz Fahr_w_f.docx",            erl
+"20230731_Sdt_BKN_LVbPzArt_SdtRpe_TrspwFahr_m_f.docx",          erl
+"20230731_Sdt_BKN_LVbPzArt_SdtRpe_TrspwFahr_w_f.docx"           erl

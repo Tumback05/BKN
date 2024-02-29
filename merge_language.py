@@ -6,11 +6,6 @@ de_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'de')
 fr_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'fr')
 it_dir = os.path.join(script_dir, 'BKN_Dokumenten', 'it')
 target_dir = os.path.join(script_dir, 'BKN_Dokumenten', '_drei sprachig')
-exception_list = [
-    'BODLUV Br 33'
-    'LW',
-    'LVb Pz_Art'
-]
 
 class Folder:
     def __init__(self, full_name, name, lang, common):
