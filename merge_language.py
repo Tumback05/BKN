@@ -19,11 +19,12 @@ class Folder:
 
 # Create an array to store all folder classes
 folder_list = []
+folders = ['BODLUV Br 33']
 
 # Function to get list of folders in a directory
 def get_folders_in_directory(directory):
     for folder_name in os.listdir(directory):
-        if '_erl_' in folder_name:
+        if folder_name not in folders:
             continue
         folder_path = os.path.join(directory, folder_name)
         if os.path.isdir(folder_path):
@@ -51,7 +52,6 @@ for folder in folder_list:
     else:
         combined_folders[name].add(lang)
 
-print(combined_folders)
 # Update the common attribute for folders present in all three languages
 for folder_name, languages in combined_folders.items():
     if len(languages) == 3:
@@ -74,7 +74,6 @@ def get_html_files(lang):
 de_files = get_html_files(lang='de')
 fr_files = get_html_files(lang='fr')
 it_files = get_html_files(lang='it')
-print(f'de files:', de_files, '\n', 'fr files', fr_files, '\n', 'it files', it_files)
 
 # Create a dictionary to store files with the same name
 combined_files = {}
@@ -240,7 +239,6 @@ for file_name, file_paths in combined_files.items():
         with open(file_path, 'rb') as file:
             content = file.read().decode('utf-8', errors='replace')
             content_v2 = content.split('</style>')
-            # print(content[1])
             merged_content.append(content_v2[1])
 
     # Define the target file path for saving merged content
